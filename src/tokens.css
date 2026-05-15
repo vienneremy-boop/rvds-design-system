@@ -1,0 +1,250 @@
+/* ============================================================
+   Design OS — Rémy Vienne — Design Tokens
+   ============================================================ */
+
+/* Fonts loaded via @fontsource — no CORS issues in Storybook */
+
+/* ---- Light mode (default) --------------------------------- */
+:root {
+  /* Surface */
+  --color-surface-page: #F2F2EE;
+  --color-surface-card: #FFFFFF;
+  --color-surface-raised: #C4BAFF;
+  --color-surface-deep: #1D0A3D;
+
+  /* Text on Surface/deep (inverts with the surface) */
+  --color-text-on-deep: #FFFFFF;
+  --color-text-secondary-on-deep: rgba(255, 255, 255, 0.5);
+  --color-text-muted-on-deep: #B3BCC3;
+  --color-border-on-deep: rgba(255, 255, 255, 0.12);
+  --color-divider-on-deep: rgba(255, 255, 255, 0.1);
+  --color-surface-overlay: rgba(29, 10, 56, 0.06);
+
+  /* Text */
+  --color-text-primary: #1D0A3D;
+  --color-text-secondary: #4E5B6B;
+  --color-text-inverse: #F7F5FF;
+  --color-text-subtle: #B3BCC3;
+  --color-text-disabled: #B5ADBE;
+
+  /* Action — brand violet (buttons, interactive) */
+  --color-action-primary: #5A14BF;
+  --color-action-primary-hover: #4A1495;
+  --color-action-accent: #7115E0;
+  --color-action-deep: #1D0A3D;
+  --color-action-deep-hover: #2E1460;
+
+  /* Electric lime accent */
+  --color-electric: #D7FC41;
+  --color-electric-bg: #FAFFE9;
+  --color-electric-border: #DEE8A7;
+  --color-electric-text: #6E760D;
+
+  /* Button surfaces */
+  --color-btn-primary-text: #FFFFFF;
+  --color-btn-secondary-bg: #F2F2EE;
+  --color-action-row-hover: #EFF1F3;
+  --color-btn-secondary-border: #5A14BF;
+  --color-btn-tertiary-hover: rgba(90, 20, 191, 0.08);
+  --color-nav-glass-bg: rgba(255, 255, 255, 0.5);
+  --color-nav-tab-hover: #ECEAFF;
+
+  /* Input / Form */
+  --color-input-bg: #FFFFFF;
+  --color-input-border: #EAE4E1;
+  --color-input-placeholder: #8C96A2;
+  --color-input-focus-border: var(--color-action-primary);
+  /* Chip */
+  --color-chip-bg: #F7F8F9;
+  /* Skeleton */
+  --color-skeleton: #ECEAFF;
+
+  /* Tag surfaces */
+  --color-tag-brand-bg: #F8F7FF;
+  --color-tag-brand-border: #EAE7FF;
+  --color-tag-brand-text: #5A14BF;
+  --color-tag-inverse-bg: #EADCFA;
+  --color-tag-inverse-border: #C5ADE9;
+  --color-tag-neutral-bg: #F5F5F8;
+  --color-tag-neutral-border: #E4E8EA;
+  --color-tag-neutral-text: #4E5B6B;
+
+  /* Badge surfaces */
+  --color-badge-brand-bg: #DED9FF;
+  --color-badge-electric-bg: #E8FE91;
+  --color-badge-electric-border: #A1BC03;
+  --color-badge-success-bg: #BEEFE3;
+  --color-badge-success-text: #029E73;
+  --color-badge-error-bg: #FFE2E1;
+  --color-badge-error-text: #F8413B;
+  --color-badge-warning-bg: #FFDDB4;
+  --color-badge-warning-text: #FF5A02;
+  --color-badge-info-bg: #C4BAFF;
+  --color-badge-neutral-bg: #FFFFFF;
+  --color-badge-neutral-border: #EAE4E1;
+  --color-badge-neutral-text: #4E5B6B;
+  --color-badge-outline-border: #B3BCC3;
+  --color-divider: #EAE4E1;
+
+  /* Semantic */
+  --color-success: #22C55E;
+  --color-success-bg: #DCFCE7;
+  --color-warning: #F59E0B;
+  --color-warning-bg: #FEF3C7;
+  --color-error: #EF4444;
+  --color-error-bg: #FEE2E2;
+  --color-info: #3B82F6;
+  --color-info-bg: #DBEAFE;
+
+  /* Border */
+  --color-border: rgba(29, 10, 56, 0.12);
+  --color-border-strong: rgba(29, 10, 56, 0.24);
+
+  /* Typography */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --font-body: system-ui, -apple-system, sans-serif;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-black: 900;
+
+  /* Font sizes */
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 1.875rem;  /* 30px */
+  --text-4xl: 2.25rem;   /* 36px */
+  --text-5xl: 3rem;      /* 48px */
+  --text-6xl: 3.75rem;   /* 60px */
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* Border radius */
+  --radius-btn: 100px;
+  --radius-card: 20px;
+  --radius-default: 12px;
+  --radius-sm: 6px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(29, 10, 56, 0.08), 0 1px 2px rgba(29, 10, 56, 0.06);
+  --shadow-md: 0 4px 16px rgba(29, 10, 56, 0.10), 0 2px 6px rgba(29, 10, 56, 0.06);
+  --shadow-lg: 0 12px 40px rgba(29, 10, 56, 0.14), 0 4px 12px rgba(29, 10, 56, 0.08);
+  --shadow-modal: 0 24px 80px rgba(29, 10, 56, 0.20);
+
+  /* Transitions */
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 350ms ease;
+}
+
+/* ---- Dark mode -------------------------------------------- */
+[data-theme="dark"] {
+  /* Surface */
+  --color-surface-page: #0C0619;
+  --color-surface-card: #150D27;
+  --color-surface-raised: #2D1B69;
+  --color-surface-deep: #C4BAFF;
+
+  /* Text on Surface/deep (dark mode: deep is light violet → dark text) */
+  --color-text-on-deep: #1D0A3D;
+  --color-text-secondary-on-deep: rgba(29, 10, 61, 0.55);
+  --color-text-muted-on-deep: rgba(29, 10, 61, 0.45);
+  --color-border-on-deep: rgba(29, 10, 61, 0.12);
+  --color-divider-on-deep: rgba(29, 10, 61, 0.1);
+  --color-surface-overlay: rgba(237, 233, 248, 0.06);
+
+  /* Text */
+  --color-text-primary: #EDE9F8;
+  --color-text-secondary: #9188A8;
+  --color-text-inverse: #0C0619;
+  --color-text-subtle: #4A4160;
+  --color-text-disabled: #4A4160;
+
+  /* Action */
+  --color-action-primary: #D7FC41;
+  --color-action-primary-hover: #E8FF6A;
+  --color-action-accent: #9B4DFF;
+  --color-action-deep: #EDE9F8;
+  --color-action-deep-hover: #FFFFFF;
+
+  /* Button surfaces */
+  --color-btn-primary-text: #0C0619;
+  --color-btn-secondary-bg: #1A0F35;
+  --color-action-row-hover: rgba(237, 233, 248, 0.06);
+  --color-btn-secondary-border: #D7FC41;
+  --color-btn-tertiary-hover: rgba(237, 233, 248, 0.10);
+  --color-nav-glass-bg: rgba(12, 6, 25, 0.8);
+  --color-nav-tab-hover: rgba(236, 234, 255, 0.10);
+
+  /* Input / Form */
+  --color-input-bg: #150D27;
+  --color-input-border: rgba(237, 233, 248, 0.12);
+  --color-input-placeholder: #4A4160;
+  /* Chip */
+  --color-chip-bg: rgba(237, 233, 248, 0.06);
+  /* Skeleton */
+  --color-skeleton: #2D1B69;
+
+  /* Electric lime */
+  --color-electric: #D7FC41;
+  --color-electric-bg: #1D2200;
+  --color-electric-border: #3D4800;
+  --color-electric-text: #D7FC41;
+
+  /* Tag surfaces */
+  --color-tag-brand-bg: #1F1247;
+  --color-tag-brand-border: #3D2080;
+  --color-tag-brand-text: #C4BAFF;
+  --color-tag-inverse-bg: #2D1560;
+  --color-tag-inverse-border: #5A2DB0;
+  --color-tag-neutral-bg: rgba(237, 233, 248, 0.06);
+  --color-tag-neutral-border: rgba(237, 233, 248, 0.10);
+  --color-tag-neutral-text: #9188A8;
+
+  /* Badge surfaces */
+  --color-badge-brand-bg: #2D1B69;
+  --color-badge-electric-bg: #1D2200;
+  --color-badge-electric-border: #3D4800;
+  --color-badge-neutral-bg: rgba(237, 233, 248, 0.06);
+  --color-badge-neutral-border: rgba(237, 233, 248, 0.10);
+  --color-badge-neutral-text: #9188A8;
+  --color-badge-outline-border: rgba(237, 233, 248, 0.20);
+
+  /* Divider */
+  --color-divider: rgba(237, 233, 248, 0.12);
+
+  /* Semantic */
+  --color-success: #4ADE80;
+  --color-success-bg: rgba(34, 197, 94, 0.15);
+  --color-warning: #FBBF24;
+  --color-warning-bg: rgba(245, 158, 11, 0.15);
+  --color-error: #F87171;
+  --color-error-bg: rgba(239, 68, 68, 0.15);
+  --color-info: #60A5FA;
+  --color-info-bg: rgba(59, 130, 246, 0.15);
+
+  /* Border */
+  --color-border: rgba(237, 233, 248, 0.12);
+  --color-border-strong: rgba(237, 233, 248, 0.24);
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.30), 0 1px 2px rgba(0, 0, 0, 0.20);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.40), 0 2px 6px rgba(0, 0, 0, 0.20);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.50), 0 4px 12px rgba(0, 0, 0, 0.30);
+  --shadow-modal: 0 24px 80px rgba(0, 0, 0, 0.60);
+}
