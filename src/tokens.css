@@ -48,6 +48,7 @@
   --color-btn-tertiary-hover: rgba(90, 20, 191, 0.08);
   --color-nav-glass-bg: rgba(255, 255, 255, 0.5);
   --color-nav-tab-hover: #ECEAFF;
+  --color-syntax-keyword: #7ee8a2;
 
   /* Input / Form */
   --color-input-bg: #FFFFFF;
@@ -190,6 +191,7 @@
   --color-btn-tertiary-hover: rgba(237, 233, 248, 0.10);
   --color-nav-glass-bg: rgba(12, 6, 25, 0.8);
   --color-nav-tab-hover: rgba(236, 234, 255, 0.10);
+  --color-syntax-keyword: #7ee8a2;
 
   /* Input / Form */
   --color-input-bg: #150D27;
