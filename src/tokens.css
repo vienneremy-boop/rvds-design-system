@@ -146,6 +146,7 @@
   --shadow-md: 0 4px 16px rgba(29, 10, 56, 0.10), 0 2px 6px rgba(29, 10, 56, 0.06);
   --shadow-lg: 0 12px 40px rgba(29, 10, 56, 0.14), 0 4px 12px rgba(29, 10, 56, 0.08);
   --shadow-modal: 0 24px 80px rgba(29, 10, 56, 0.20);
+  --shadow-accent: 0 16px 40px rgba(113, 21, 224, 0.12);
 
   /* Transitions */
   --transition-fast: 120ms ease;
