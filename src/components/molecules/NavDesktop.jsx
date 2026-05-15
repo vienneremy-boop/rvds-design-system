@@ -87,7 +87,7 @@ export function NavDesktop({
     <nav
       aria-label="Navigation principale"
       style={{
-        width: '1232px',
+        width: 'min(1232px, calc(100vw - 48px))',
         backdropFilter: 'blur(30px)',
         WebkitBackdropFilter: 'blur(30px)',
         background: 'var(--color-nav-glass-bg)',
