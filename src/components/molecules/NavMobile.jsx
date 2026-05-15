@@ -33,7 +33,7 @@ export function NavMobile({
       <div
         style={{
           width: '100%',
-          maxWidth: '401px',
+          maxWidth: '540px',
           height: '70px',
           borderRadius: '100px',
           backdropFilter: 'blur(30px)',

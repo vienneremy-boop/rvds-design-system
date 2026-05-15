@@ -14,7 +14,6 @@ export function TabItem({
 
   // Hovered only (not active): inner content gets nav-tab-hover pill
   const contentBg = (!active && hovered) ? 'var(--color-nav-tab-hover)' : 'transparent';
-  const contentRadius = (!active && hovered) ? 'var(--radius-full)' : '0';
 
   return (
     <button
@@ -45,7 +44,7 @@ export function TabItem({
           justifyContent: 'center',
           padding: '8px 20px',
           background: contentBg,
-          borderRadius: contentRadius,
+          borderRadius: 'var(--radius-full)',
           flexShrink: 0,
           transition: 'background var(--transition-fast)',
           whiteSpace: 'nowrap',
