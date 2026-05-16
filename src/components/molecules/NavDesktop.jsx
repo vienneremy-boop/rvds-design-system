@@ -82,6 +82,7 @@ export function NavDesktop({
   lang = 'FR / EN',
   onLangClick,
   onDarkModeClick,
+  isDark = false,
 }) {
   return (
     <nav
@@ -130,7 +131,7 @@ export function NavDesktop({
           />
           <LangToggle lang={lang} onClick={onLangClick} />
           <IconButton label="Changer de thème" onClick={onDarkModeClick}>
-            <Icon name="Moon" size={20} style={{ color: 'var(--color-text-primary)' }} />
+            <Icon name={isDark ? 'Sun' : 'Moon'} size={20} style={{ color: 'var(--color-text-primary)' }} />
           </IconButton>
         </div>
       </div>
