@@ -30,7 +30,6 @@ export function TabItem({
         borderRadius: outerRadius,
         border: 'none',
         cursor: 'pointer',
-        outline: 'none',
         userSelect: 'none',
         flexShrink: 0,
         transition: 'background var(--transition-fast)',

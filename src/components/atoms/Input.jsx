@@ -50,6 +50,8 @@ export function Input({
         onChange={onChange}
         placeholder={placeholder}
         disabled={isDisabled}
+        aria-invalid={isError || undefined}
+        aria-describedby={isError && errorText && id ? `${id}-error` : undefined}
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
         style={{
@@ -63,7 +65,6 @@ export function Input({
           fontSize: '14px',
           fontWeight: 400,
           color: 'var(--color-text-primary)',
-          outline: 'none',
           opacity: isDisabled ? 0.4 : 1,
           cursor: isDisabled ? 'not-allowed' : 'text',
           transition: 'border var(--transition-fast)',
@@ -71,7 +72,7 @@ export function Input({
         }}
       />
       {isError && errorText && (
-        <span style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--color-error)' }}>
+        <span id={id ? `${id}-error` : undefined} role="alert" style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--color-error)' }}>
           {errorText}
         </span>
       )}

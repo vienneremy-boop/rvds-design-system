@@ -24,7 +24,7 @@
   --color-text-primary: #1D0A3D;
   --color-text-secondary: #4E5B6B;
   --color-text-inverse: #F7F5FF;
-  --color-text-subtle: #B3BCC3;
+  --color-text-subtle: #6B7786;
   --color-text-disabled: #B5ADBE;
 
   /* Action — brand violet (buttons, interactive) */
@@ -38,7 +38,7 @@
   --color-electric: #D7FC41;
   --color-electric-bg: #FAFFE9;
   --color-electric-border: #DEE8A7;
-  --color-electric-text: #6E760D;
+  --color-electric-text: #636b0c;
 
   /* Button surfaces */
   --color-btn-primary-text: #FFFFFF;
@@ -174,7 +174,7 @@
   --color-text-primary: #fbf9f8;
   --color-text-secondary: #b3bcc3;
   --color-text-inverse: #1d0a3d;
-  --color-text-subtle: #344050;
+  --color-text-subtle: #8A9AA8;
   --color-text-disabled: #344050;
 
   /* Action */

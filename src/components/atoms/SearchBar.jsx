@@ -56,7 +56,7 @@ export function SearchBar({
           fontSize: '14px',
           fontWeight: 400,
           color: 'var(--color-text-primary)',
-          outline: 'none',
+  
           cursor: isDisabled ? 'not-allowed' : 'text',
           minWidth: 0,
         }}

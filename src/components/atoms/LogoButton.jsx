@@ -9,6 +9,7 @@ export function LogoButton({ onClick }) {
       onClick={onClick}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      aria-label="Rémy Vienne — Accueil"
       style={{
         display: 'inline-flex',
         alignItems: 'center',
@@ -19,7 +20,6 @@ export function LogoButton({ onClick }) {
         borderRadius: '9999px',
         border: 'none',
         cursor: 'pointer',
-        outline: 'none',
         boxShadow: hovered
           ? '0 2px 4px rgba(0,0,0,0.04), 0 1px 1px rgba(0,0,0,0.02)'
           : '0 1px 4px rgba(29,10,61,0.08)',

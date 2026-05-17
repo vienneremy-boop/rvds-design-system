@@ -31,7 +31,6 @@ function IconButton({ onClick, children, label }) {
         borderRadius: '50%',
         cursor: 'pointer',
         padding: 0,
-        outline: 'none',
         transition: 'background var(--transition-fast)',
         flexShrink: 0,
       }}
@@ -46,6 +45,7 @@ function LangToggle({ lang, onClick }) {
   return (
     <button
       onClick={onClick}
+      aria-label={`Changer de langue — ${lang}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
@@ -62,7 +62,6 @@ function LangToggle({ lang, onClick }) {
         color: 'var(--color-text-primary)',
         cursor: 'pointer',
         whiteSpace: 'nowrap',
-        outline: 'none',
         transition: 'background var(--transition-fast)',
         flexShrink: 0,
       }}

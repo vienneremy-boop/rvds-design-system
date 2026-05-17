@@ -66,7 +66,7 @@ export function Modal({
           borderRadius: '24px',
           boxShadow: '0px 24px 64px 0px rgba(26,10,56,0.3)',
           overflow: 'hidden',
-          outline: 'none',
+  
           flexShrink: 0,
         }}
       >

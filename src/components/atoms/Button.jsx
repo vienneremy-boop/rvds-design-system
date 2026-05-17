@@ -38,6 +38,8 @@ export function Button({
   disabled = false,
   fullWidth = false,
   onClick,
+  type = 'button',
+  'aria-label': ariaLabel,
 }) {
   const [hovered, setHovered] = useState(false);
 
@@ -65,7 +67,9 @@ export function Button({
 
   return (
     <button
+      type={type}
       disabled={disabled}
+      aria-label={ariaLabel}
       onClick={disabled ? undefined : onClick}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -92,7 +96,6 @@ export function Button({
         transition: 'background var(--transition-fast), border var(--transition-fast), transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow var(--transition-fast)',
         whiteSpace: 'nowrap',
         userSelect: 'none',
-        outline: 'none',
       }}
     >
       {iconPosition === 'left' && iconEl}
@@ -111,6 +114,8 @@ Button.propTypes = {
   disabled:     PropTypes.bool,
   fullWidth:    PropTypes.bool,
   onClick:      PropTypes.func,
+  type:         PropTypes.oneOf(['button', 'submit', 'reset']),
+  'aria-label': PropTypes.string,
 };
 
 export default Button;

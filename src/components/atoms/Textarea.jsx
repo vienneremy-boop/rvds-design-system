@@ -10,6 +10,7 @@ export function Textarea({
   rows = 4,
   helperText,
   errorText,
+  id,
 }) {
   const [focused, setFocused] = useState(false);
 
@@ -30,6 +31,7 @@ export function Textarea({
     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
       {label && (
         <label
+          htmlFor={id}
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: '13px',
@@ -41,11 +43,14 @@ export function Textarea({
         </label>
       )}
       <textarea
+        id={id}
         value={value}
         onChange={onChange}
         placeholder={placeholder}
         disabled={isDisabled}
         rows={rows}
+        aria-invalid={isError || undefined}
+        aria-describedby={isError && errorText && id ? `${id}-error` : undefined}
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
         style={{
@@ -59,7 +64,6 @@ export function Textarea({
           fontSize: '14px',
           fontWeight: 400,
           color: 'var(--color-text-primary)',
-          outline: 'none',
           opacity: isDisabled ? 0.4 : 1,
           cursor: isDisabled ? 'not-allowed' : 'text',
           resize: 'vertical',
@@ -68,7 +72,7 @@ export function Textarea({
         }}
       />
       {isError && errorText && (
-        <span style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--color-error)' }}>
+        <span id={id ? `${id}-error` : undefined} role="alert" style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--color-error)' }}>
           {errorText}
         </span>
       )}
@@ -90,6 +94,7 @@ Textarea.propTypes = {
   rows:       PropTypes.number,
   helperText: PropTypes.string,
   errorText:  PropTypes.string,
+  id:         PropTypes.string,
 };
 
 export default Textarea;

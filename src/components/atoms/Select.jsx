@@ -58,7 +58,7 @@ export function Select({
             fontSize: '14px',
             fontWeight: 400,
             color: value ? 'var(--color-text-primary)' : 'var(--color-text-secondary)',
-            outline: 'none',
+    
             opacity: isDisabled ? 0.4 : 1,
             cursor: isDisabled ? 'not-allowed' : 'pointer',
             appearance: 'none',

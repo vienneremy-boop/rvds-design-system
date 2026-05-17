@@ -54,7 +54,7 @@ export function Chip({
         opacity: disabled ? 0.4 : 1,
         transition: 'background var(--transition-fast), border var(--transition-fast), color var(--transition-fast)',
         userSelect: 'none',
-        outline: 'none',
+
         whiteSpace: 'nowrap',
       }}
     >

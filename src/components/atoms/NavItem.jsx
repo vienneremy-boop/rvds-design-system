@@ -35,7 +35,6 @@ export function NavItem({
         border: 'none',
         borderRadius: '20px',
         cursor: 'pointer',
-        outline: 'none',
         userSelect: 'none',
         boxSizing: 'border-box',
         minWidth: 0,
