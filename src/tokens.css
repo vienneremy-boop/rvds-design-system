@@ -57,7 +57,8 @@
   --color-input-focus-border: var(--color-action-primary);
   /* Chip */
   --color-chip-bg: #F7F8F9;
-  --color-chip-selected-text: #D7FC41;
+  --color-chip-selected-bg: var(--color-electric);
+  --color-chip-selected-text: #1D0A3D;
   /* Skeleton */
   --color-skeleton: #ECEAFF;
 
@@ -201,6 +202,7 @@
   --color-input-placeholder: #4e5b6b;
   /* Chip */
   --color-chip-bg: rgba(251, 249, 248, 0.06);
+  --color-chip-selected-bg: var(--color-electric);
   --color-chip-selected-text: #0C0619;
   /* Skeleton */
   --color-skeleton: #4a1495;

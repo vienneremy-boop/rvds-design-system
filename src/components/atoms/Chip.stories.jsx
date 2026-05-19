@@ -17,6 +17,7 @@ export const Default = {
 };
 
 export const Selected = {
+  name: 'Selected (Light)',
   args: {
     label: 'Design',
     selected: true,

@@ -19,8 +19,8 @@ export function Chip({
   let bg, border, color;
 
   if (selected) {
-    bg = 'var(--color-action-primary)';
-    border = '1px solid var(--color-action-primary)';
+    bg = 'var(--color-chip-selected-bg)';
+    border = '1px solid var(--color-chip-selected-bg)';
     color = 'var(--color-chip-selected-text)';
   } else if (hovered && !disabled) {
     bg = 'var(--color-surface-raised)';
