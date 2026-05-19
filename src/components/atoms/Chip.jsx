@@ -21,7 +21,7 @@ export function Chip({
   if (selected) {
     bg = 'var(--color-action-primary)';
     border = '1px solid var(--color-action-primary)';
-    color = 'var(--color-electric)';
+    color = 'var(--color-chip-selected-text)';
   } else if (hovered && !disabled) {
     bg = 'var(--color-surface-raised)';
     border = '1px solid var(--color-border-strong)';
