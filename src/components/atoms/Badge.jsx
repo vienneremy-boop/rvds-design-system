@@ -28,7 +28,7 @@ export function Badge({ type = 'neutral', label }) {
         background: cfg.bg,
         border: cfg.border,
         fontFamily: 'var(--font-mono)',
-        fontSize: '10px',
+        fontSize: '11px',
         fontWeight: 700,
         color: cfg.color,
         lineHeight: 'normal',

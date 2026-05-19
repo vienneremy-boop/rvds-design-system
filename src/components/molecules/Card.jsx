@@ -79,7 +79,7 @@ export function Card({
             <span
               style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: '10px',
+                fontSize: '11px',
                 fontWeight: 500,
                 color: 'var(--color-action-primary)',
                 whiteSpace: 'nowrap',

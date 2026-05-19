@@ -85,7 +85,7 @@ export function NavItem({
         <span
           style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '10px',
+            fontSize: '11px',
             fontWeight: active ? 500 : 400,
             color: active ? 'var(--color-action-accent)' : 'var(--color-text-primary)',
             letterSpacing: '0.2px',
