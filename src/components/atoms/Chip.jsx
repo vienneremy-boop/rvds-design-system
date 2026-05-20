@@ -3,17 +3,15 @@ import { useState } from 'react';
 
 export function Chip({
   label,
-  selected: selectedProp = false,
+  selected = false,
   onClick,
   disabled = false,
 }) {
-  const [selected, setSelected] = useState(selectedProp);
   const [hovered, setHovered] = useState(false);
 
   const handleClick = () => {
     if (disabled) return;
-    setSelected(s => !s);
-    onClick?.(!selected);
+    onClick?.();
   };
 
   let bg, border, color;
@@ -36,6 +34,7 @@ export function Chip({
     <button
       onClick={handleClick}
       disabled={disabled}
+      aria-pressed={selected}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
@@ -54,9 +53,11 @@ export function Chip({
         opacity: disabled ? 0.4 : 1,
         transition: 'background var(--transition-fast), border var(--transition-fast), color var(--transition-fast)',
         userSelect: 'none',
-
+        outline: 'none',
         whiteSpace: 'nowrap',
       }}
+      onFocus={e => { e.currentTarget.style.boxShadow = '0 0 0 3px var(--color-action-primary)'; }}
+      onBlur={e => { e.currentTarget.style.boxShadow = 'none'; }}
     >
       {label}
     </button>
