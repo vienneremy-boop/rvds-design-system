@@ -27,7 +27,7 @@ export function Select({
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-1)' }}>
       {label && (
         <label
           style={{
@@ -50,9 +50,9 @@ export function Select({
           style={{
             height: '44px',
             width: '100%',
-            padding: '0 36px 0 12px',
+            padding: '0 36px 0 var(--space-3)',
             border: borderStyle,
-            borderRadius: '8px',
+            borderRadius: 'var(--radius-sm)',
             background: 'var(--color-input-bg)',
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',

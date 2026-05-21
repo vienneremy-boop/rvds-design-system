@@ -12,7 +12,7 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
           height: '1px',
           width: '100%',
           background: 'var(--color-divider)',
-          borderRadius: '8px',
+          borderRadius: 'var(--radius-sm)',
         }}
       />
     );
@@ -27,7 +27,7 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
           height: '1px',
           width: '100%',
           background: 'var(--color-action-primary)',
-          borderRadius: '8px',
+          borderRadius: 'var(--radius-sm)',
         }}
       />
     );
@@ -41,11 +41,11 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
         style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '16px',
+          gap: 'var(--space-4)',
           width: '100%',
         }}
       >
-        <div style={{ flex: 1, height: '1px', background: 'var(--color-divider)', borderRadius: '8px' }} />
+        <div style={{ flex: 1, height: '1px', background: 'var(--color-divider)', borderRadius: 'var(--radius-sm)' }} />
         <span
           style={{
             fontFamily: 'var(--font-mono)',
@@ -59,7 +59,7 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
         >
           {label}
         </span>
-        <div style={{ flex: 1, height: '1px', background: 'var(--color-divider)', borderRadius: '8px' }} />
+        <div style={{ flex: 1, height: '1px', background: 'var(--color-divider)', borderRadius: 'var(--radius-sm)' }} />
       </div>
     );
   }
@@ -71,11 +71,11 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
         style={{
           display: 'inline-flex',
           alignItems: 'center',
-          gap: '8px',
-          padding: '4px 20px',
+          gap: 'var(--space-2)',
+          padding: 'var(--space-1) 20px',
           background: 'var(--color-badge-neutral-bg)',
           border: '1px solid var(--color-divider)',
-          borderRadius: '999px',
+          borderRadius: 'var(--radius-full)',
           boxShadow: '0 0 0 0 rgba(29,10,61,0.12)',
         }}
       >

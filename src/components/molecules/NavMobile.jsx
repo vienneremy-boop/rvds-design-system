@@ -35,7 +35,7 @@ export function NavMobile({
           width: '100%',
           maxWidth: '540px',
           height: '70px',
-          borderRadius: '100px',
+          borderRadius: 'var(--radius-btn)',
           backdropFilter: 'blur(30px)',
           WebkitBackdropFilter: 'blur(30px)',
           background: 'var(--color-nav-glass-bg)',

@@ -38,7 +38,7 @@ export function Switch({
           display: 'inline-block',
           width: '52px',
           height: '30px',
-          borderRadius: '999px',
+          borderRadius: 'var(--radius-full)',
           background: checked ? 'var(--color-action-primary)' : 'var(--color-input-placeholder)',
           transition: 'background var(--transition-fast)',
           flexShrink: 0,

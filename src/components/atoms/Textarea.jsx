@@ -28,7 +28,7 @@ export function Textarea({
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-1)' }}>
       {label && (
         <label
           htmlFor={id}
@@ -56,9 +56,9 @@ export function Textarea({
         style={{
           minHeight: '96px',
           width: '100%',
-          padding: '12px',
+          padding: 'var(--space-3)',
           border: borderStyle,
-          borderRadius: '8px',
+          borderRadius: 'var(--radius-sm)',
           background: 'var(--color-input-bg)',
           fontFamily: 'var(--font-mono)',
           fontSize: 'var(--text-sm)',

@@ -13,11 +13,11 @@ export function LogoButton({ onClick }) {
       style={{
         display: 'inline-flex',
         alignItems: 'center',
-        gap: '4px',
+        gap: 'var(--space-1)',
         height: '32px',
         padding: '0 10px',
         background: hovered ? 'var(--color-electric)' : 'var(--color-btn-secondary-bg)',
-        borderRadius: '9999px',
+        borderRadius: 'var(--radius-full)',
         border: 'none',
         cursor: 'pointer',
         boxShadow: hovered

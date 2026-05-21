@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import { Badge } from '../atoms/Badge';
 
 const alertConfig = {
-  success: { containerBg: '#d5f5ec' },
-  error:   { containerBg: '#fff1f1' },
-  warning: { containerBg: '#ffe5d6' },
-  info:    { containerBg: '#eceaff' },
+  success: { containerBg: 'var(--color-success-bg)' },
+  error:   { containerBg: 'var(--color-error-bg)' },
+  warning: { containerBg: 'var(--color-warning-bg)' },
+  info:    { containerBg: 'var(--color-info-bg)' },
 };
 
 export function Alert({ type = 'info', title, message }) {
@@ -16,10 +16,10 @@ export function Alert({ type = 'info', title, message }) {
       role="alert"
       style={{
         display: 'flex',
-        gap: '12px',
+        gap: 'var(--space-3)',
         alignItems: 'flex-start',
-        padding: '16px',
-        borderRadius: '8px',
+        padding: 'var(--space-4)',
+        borderRadius: 'var(--radius-sm)',
         background: config.containerBg,
       }}
     >

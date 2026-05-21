@@ -92,8 +92,8 @@ export function NavDesktop({
         WebkitBackdropFilter: 'blur(30px)',
         background: 'var(--color-nav-glass-bg)',
         border: '1px solid var(--color-border)',
-        borderRadius: '100px',
-        padding: '0 48px',
+        borderRadius: 'var(--radius-btn)',
+        padding: '0 var(--space-12)',
         boxSizing: 'border-box',
       }}
     >
@@ -121,7 +121,7 @@ export function NavDesktop({
         </div>
 
         {/* Right actions */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-1)' }}>
           <Button
             variant="secondary"
             size="small"

@@ -16,7 +16,7 @@ export function Skeleton({
         width,
         height,
         background: 'var(--color-btn-secondary-bg)',
-        borderRadius: '12px',
+        borderRadius: 'var(--radius-default)',
         overflow: 'hidden',
       }}
     >
@@ -88,7 +88,7 @@ export function Skeleton({
           top: '126px',
           width: '72px',
           height: '22px',
-          borderRadius: '999px',
+          borderRadius: 'var(--radius-full)',
           ...pulseStyle,
         }}
       />

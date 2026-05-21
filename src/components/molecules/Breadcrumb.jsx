@@ -15,7 +15,7 @@ export function Breadcrumb({ items = [] }) {
         style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '4px',
+          gap: 'var(--space-1)',
           listStyle: 'none',
           padding: 0,
           margin: 0,

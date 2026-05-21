@@ -14,11 +14,11 @@ export function ListItem({ state = 'default', label, description, leading, onCli
   const containerStyle = {
     display: 'flex',
     alignItems: 'center',
-    gap: '12px',
-    paddingTop: '16px',
-    paddingBottom: '16px',
-    paddingLeft: hasPaddingX ? '8px' : '0',
-    paddingRight: hasPaddingX ? '8px' : '0',
+    gap: 'var(--space-3)',
+    paddingTop: 'var(--space-4)',
+    paddingBottom: 'var(--space-4)',
+    paddingLeft: hasPaddingX ? 'var(--space-2)' : '0',
+    paddingRight: hasPaddingX ? 'var(--space-2)' : '0',
     borderBottom: '1px solid var(--color-divider)',
     background: isHover || isActive ? 'var(--color-action-row-hover)' : 'var(--color-surface-page)',
     opacity: isDisabled ? 0.4 : 1,
@@ -51,7 +51,7 @@ export function ListItem({ state = 'default', label, description, leading, onCli
           {leading}
         </div>
       )}
-      <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: '4px' }}>
+      <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-1)' }}>
         <p
           style={{
             fontFamily: 'var(--font-mono)',

@@ -21,10 +21,10 @@ export function Badge({ type = 'neutral', label }) {
       style={{
         display: 'inline-flex',
         alignItems: 'center',
-        gap: cfg.dot ? '4px' : 0,
+        gap: cfg.dot ? 'var(--space-1)' : 0,
         height: '22px',
-        padding: '0 8px',
-        borderRadius: '20px',
+        padding: '0 var(--space-2)',
+        borderRadius: 'var(--radius-full)',
         background: cfg.bg,
         border: cfg.border,
         fontFamily: 'var(--font-mono)',

@@ -25,7 +25,7 @@ export function TabItem({
         flexDirection: 'column',
         alignItems: 'stretch',
         overflow: 'clip',
-        padding: '0 8px',
+        padding: '0 var(--space-2)',
         background: outerBg,
         borderRadius: outerRadius,
         border: 'none',
@@ -107,7 +107,7 @@ export function Tabs({ items = [], defaultActive = 0 }) {
           />
         ))}
       </div>
-      <div style={{ paddingTop: '16px' }}>
+      <div style={{ paddingTop: 'var(--space-4)' }}>
         {items[activeIndex]?.content}
       </div>
     </div>
