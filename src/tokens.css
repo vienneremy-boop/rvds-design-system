@@ -49,6 +49,10 @@
   --color-nav-glass-bg: rgba(255, 255, 255, 0.5);
   --color-nav-tab-hover: #ECEAFF;
   --color-syntax-keyword: #7ee8a2;
+  --color-syntax-purple: #c792ea;
+  --color-syntax-green: #c3e88d;
+  --color-syntax-blue: #82aaff;
+  --color-text-on-electric: #0C0619; /* dark text on electric/lime bg */
 
   /* Input / Form */
   --color-input-bg: #FFFFFF;
@@ -98,6 +102,17 @@
   --color-error-bg: #FEE2E2;
   --color-info: #3B82F6;
   --color-info-bg: #DBEAFE;
+
+  /* Comparison block (Avant / Après) */
+  --color-compare-before-bg: #FFF0EE;
+  --color-compare-before-border: #FBBFB8;
+  --color-compare-before-text: #D93B2A;
+  --color-compare-after-bg: #EFFFEF;
+  --color-compare-after-border: #86EFAC;
+  --color-compare-after-text: #16A34A;
+
+  /* Code block */
+  --color-surface-code: #0F1117;
 
   /* Border */
   --color-border: rgba(29, 10, 56, 0.12);
