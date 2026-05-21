@@ -163,7 +163,7 @@ export function HeroSection({
             <span
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: '56px',
+                fontSize: 'var(--text-7xl)',
                 fontWeight: 400,
                 fontStyle: 'italic',
                 color: 'var(--color-action-accent)',
@@ -188,7 +188,7 @@ export function HeroSection({
             <span
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: '56px',
+                fontSize: 'var(--text-7xl)',
                 fontWeight: 400,
                 fontStyle: 'italic',
                 color: 'var(--color-action-accent)',

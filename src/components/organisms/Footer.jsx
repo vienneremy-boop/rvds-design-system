@@ -118,7 +118,7 @@ export function Footer({
         <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
           <p style={{
             fontFamily: 'var(--font-display)',
-            fontSize: '88px',
+            fontSize: 'var(--text-9xl)',
             fontWeight: 700,
             color: 'var(--color-text-on-deep)',
             margin: 0,
@@ -130,7 +130,7 @@ export function Footer({
           </p>
           <p style={{
             fontFamily: 'var(--font-display)',
-            fontSize: '88px',
+            fontSize: 'var(--text-9xl)',
             fontWeight: 900,
             fontStyle: 'italic',
             color: 'var(--color-electric)',
@@ -143,7 +143,7 @@ export function Footer({
           </p>
           <p style={{
             fontFamily: 'var(--font-display)',
-            fontSize: '88px',
+            fontSize: 'var(--text-9xl)',
             fontWeight: 900,
             color: 'var(--color-action-accent)',
             margin: 0,

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const sizeMap = {
-  xs: { diameter: '20px', fontSize: '8px' },
+  xs: { diameter: '20px', fontSize: 'var(--text-2xs)' },
   s:  { diameter: '28px', fontSize: 'var(--text-xs)' },
   m:  { diameter: '36px', fontSize: 'var(--text-sm)' },
   l:  { diameter: '44px', fontSize: 'var(--text-base)' },

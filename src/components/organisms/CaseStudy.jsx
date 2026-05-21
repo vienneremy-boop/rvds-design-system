@@ -175,7 +175,7 @@ export function CaseStudy({
         <div
           style={{
             fontFamily: 'var(--font-display)',
-            fontSize: '64px',
+            fontSize: 'var(--text-8xl)',
             fontWeight: 900,
             fontStyle: 'italic',
             color: 'var(--color-text-primary)',
@@ -235,7 +235,7 @@ export function CaseStudy({
           <p
             style={{
               fontFamily: 'var(--font-display)',
-              fontSize: '56px',
+              fontSize: 'var(--text-7xl)',
               fontWeight: 900,
               fontStyle: 'italic',
               color: 'var(--color-electric)',
