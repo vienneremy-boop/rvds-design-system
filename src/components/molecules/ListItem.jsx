@@ -45,7 +45,7 @@ export function ListItem({ state = 'default', label, description, leading, onCli
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            fontSize: '14px',
+            fontSize: 'var(--text-sm)',
           }}
         >
           {leading}
@@ -55,7 +55,7 @@ export function ListItem({ state = 'default', label, description, leading, onCli
         <p
           style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '14px',
+            fontSize: 'var(--text-sm)',
             fontWeight: 500,
             color: isActive ? 'var(--color-action-accent)' : 'var(--color-text-primary)',
             lineHeight: 1.4,
@@ -72,7 +72,7 @@ export function ListItem({ state = 'default', label, description, leading, onCli
           <p
             style={{
               fontFamily: 'var(--font-mono)',
-              fontSize: '12px',
+              fontSize: 'var(--text-xs)',
               fontWeight: 400,
               color: 'var(--color-text-secondary)',
               lineHeight: 1,

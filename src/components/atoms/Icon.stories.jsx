@@ -53,7 +53,7 @@ export const AllIcons = {
           <span
             style={{
               fontFamily: 'var(--font-mono)',
-              fontSize: '10px',
+              fontSize: 'var(--text-xs)',
               color: 'var(--color-text-secondary)',
               textAlign: 'center',
               wordBreak: 'break-word',

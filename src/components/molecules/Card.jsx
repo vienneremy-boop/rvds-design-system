@@ -56,7 +56,7 @@ export function Card({
             <span
               style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: '12px',
+                fontSize: 'var(--text-xs)',
                 fontWeight: 700,
                 color: 'var(--color-action-accent)',
                 letterSpacing: '1.5px',
@@ -79,7 +79,7 @@ export function Card({
             <span
               style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: '11px',
+                fontSize: 'var(--text-xs)',
                 fontWeight: 500,
                 color: 'var(--color-action-primary)',
                 whiteSpace: 'nowrap',
@@ -173,7 +173,7 @@ export function Card({
             <span
               style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: '12px',
+                fontSize: 'var(--text-xs)',
                 fontWeight: 500,
                 color: 'var(--color-action-primary)',
                 lineHeight: 1.3,

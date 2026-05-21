@@ -53,7 +53,7 @@ export function SearchBar({
           border: 'none',
           background: 'transparent',
           fontFamily: 'var(--font-mono)',
-          fontSize: '14px',
+          fontSize: 'var(--text-sm)',
           fontWeight: 400,
           color: 'var(--color-text-primary)',
   
@@ -72,7 +72,7 @@ export function SearchBar({
             border: 'none',
             cursor: 'pointer',
             color: 'var(--color-text-secondary)',
-            fontSize: '14px',
+            fontSize: 'var(--text-sm)',
             padding: '0',
             lineHeight: 1,
             flexShrink: 0,

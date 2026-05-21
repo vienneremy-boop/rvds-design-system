@@ -69,7 +69,7 @@ function Step({ number, title }) {
       <p
         style={{
           fontFamily: 'var(--font-display)',
-          fontSize: '36px',
+          fontSize: 'var(--text-4xl)',
           fontWeight: 900,
           fontStyle: 'italic',
           color: 'var(--color-action-primary)',
@@ -83,7 +83,7 @@ function Step({ number, title }) {
       <p
         style={{
           fontFamily: 'var(--font-display)',
-          fontSize: '20px',
+          fontSize: 'var(--text-xl)',
           fontWeight: 600,
           color: 'var(--color-text-primary)',
           lineHeight: 1.2,
@@ -158,7 +158,7 @@ export function CaseStudy({
           <p
             style={{
               fontFamily: 'var(--font-mono)',
-              fontSize: '12px',
+              fontSize: 'var(--text-xs)',
               fontWeight: 700,
               color: 'var(--color-text-secondary)',
               letterSpacing: '1.5px',
@@ -192,7 +192,7 @@ export function CaseStudy({
         <p
           style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '20px',
+            fontSize: 'var(--text-xl)',
             fontWeight: 400,
             color: 'var(--color-text-secondary)',
             lineHeight: 1.6,
@@ -281,7 +281,7 @@ export function CaseStudy({
       <p
         style={{
           fontFamily: 'var(--font-mono)',
-          fontSize: '11px',
+          fontSize: 'var(--text-xs)',
           fontWeight: 700,
           color: '#836f61',
           letterSpacing: '2px',

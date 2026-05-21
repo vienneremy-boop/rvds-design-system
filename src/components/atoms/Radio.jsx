@@ -68,7 +68,7 @@ export function Radio({
         <span
           style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '14px',
+            fontSize: 'var(--text-sm)',
             fontWeight: 500,
             color: 'var(--color-text-primary)',
           }}

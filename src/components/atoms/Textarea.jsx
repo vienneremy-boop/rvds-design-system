@@ -34,7 +34,7 @@ export function Textarea({
           htmlFor={id}
           style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '13px',
+            fontSize: 'var(--text-sm)',
             fontWeight: 500,
             color: 'var(--color-text-primary)',
           }}
@@ -61,7 +61,7 @@ export function Textarea({
           borderRadius: '8px',
           background: 'var(--color-input-bg)',
           fontFamily: 'var(--font-mono)',
-          fontSize: '14px',
+          fontSize: 'var(--text-sm)',
           fontWeight: 400,
           color: 'var(--color-text-primary)',
           opacity: isDisabled ? 0.4 : 1,
@@ -72,12 +72,12 @@ export function Textarea({
         }}
       />
       {isError && errorText && (
-        <span id={id ? `${id}-error` : undefined} role="alert" style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--color-error)' }}>
+        <span id={id ? `${id}-error` : undefined} role="alert" style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', color: 'var(--color-error)' }}>
           {errorText}
         </span>
       )}
       {!isError && helperText && (
-        <span style={{ fontFamily: 'var(--font-mono)', fontSize: '12px', color: 'var(--color-text-secondary)' }}>
+        <span style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', color: 'var(--color-text-secondary)' }}>
           {helperText}
         </span>
       )}

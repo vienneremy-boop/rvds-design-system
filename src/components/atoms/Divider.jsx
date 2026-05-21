@@ -49,7 +49,7 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
         <span
           style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '12px',
+            fontSize: 'var(--text-xs)',
             fontWeight: 700,
             color: 'var(--color-action-accent)',
             letterSpacing: '0.18px',
@@ -83,7 +83,7 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
         <span
           style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '12px',
+            fontSize: 'var(--text-xs)',
             fontWeight: 700,
             color: 'var(--color-action-accent)',
             letterSpacing: '0.18px',

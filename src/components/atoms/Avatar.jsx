@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 const sizeMap = {
   xs: { diameter: '20px', fontSize: '8px' },
-  s:  { diameter: '28px', fontSize: '11px' },
-  m:  { diameter: '36px', fontSize: '14px' },
-  l:  { diameter: '44px', fontSize: '16px' },
-  xl: { diameter: '56px', fontSize: '20px' },
+  s:  { diameter: '28px', fontSize: 'var(--text-xs)' },
+  m:  { diameter: '36px', fontSize: 'var(--text-sm)' },
+  l:  { diameter: '44px', fontSize: 'var(--text-base)' },
+  xl: { diameter: '56px', fontSize: 'var(--text-xl)' },
 };
 
 export function Avatar({

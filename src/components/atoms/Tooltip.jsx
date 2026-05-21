@@ -77,7 +77,7 @@ export function Tooltip({
             background: 'var(--color-action-deep)',
             color: 'var(--color-text-inverse)',
             fontFamily: 'var(--font-mono)',
-            fontSize: '12px',
+            fontSize: 'var(--text-xs)',
             fontWeight: 400,
             padding: '8px 12px',
             borderRadius: '8px',

@@ -3,9 +3,9 @@ import { useState } from 'react';
 
 // Figma: Primary = violet #5A14BF | Secondary = off-white bg + violet border | Tertiary = ghost
 const sizeMap = {
-  large:  { padding: '20px 32px', fontSize: '14px', gap: '8px',  iconSize: '24px' },
-  medium: { padding: '12px 20px', fontSize: '14px', gap: '8px',  iconSize: '20px' },
-  small:  { padding: '8px 16px',  fontSize: '12px', gap: '4px',  iconSize: '16px' },
+  large:  { padding: '20px 32px', fontSize: 'var(--text-sm)', gap: '8px',  iconSize: '24px' },
+  medium: { padding: '12px 20px', fontSize: 'var(--text-sm)', gap: '8px',  iconSize: '20px' },
+  small:  { padding: '8px 16px',  fontSize: 'var(--text-xs)', gap: '4px',  iconSize: '16px' },
 };
 
 const variantBase = {

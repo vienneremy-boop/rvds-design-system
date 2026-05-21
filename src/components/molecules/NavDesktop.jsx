@@ -57,7 +57,7 @@ function LangToggle({ lang, onClick }) {
         border: 'none',
         borderRadius: 'var(--radius-btn)',
         fontFamily: 'var(--font-mono)',
-        fontSize: '12px',
+        fontSize: 'var(--text-xs)',
         fontWeight: 500,
         color: 'var(--color-text-primary)',
         cursor: 'pointer',

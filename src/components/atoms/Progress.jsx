@@ -53,7 +53,7 @@ export function Progress({
         <span
           style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '12px',
+            fontSize: 'var(--text-xs)',
             fontWeight: 400,
             color: labelColor,
             flexShrink: 0,

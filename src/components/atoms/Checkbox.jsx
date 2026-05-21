@@ -60,7 +60,7 @@ export function Checkbox({
           <span
             style={{
               color: '#FFFFFF',
-              fontSize: '12px',
+              fontSize: 'var(--text-xs)',
               fontWeight: 700,
               lineHeight: 1,
             }}
@@ -73,7 +73,7 @@ export function Checkbox({
         <span
           style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '14px',
+            fontSize: 'var(--text-sm)',
             fontWeight: 500,
             color: 'var(--color-text-primary)',
           }}

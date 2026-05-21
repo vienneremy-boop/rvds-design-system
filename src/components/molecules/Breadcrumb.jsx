@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const linkBase = {
   fontFamily: 'var(--font-mono)',
-  fontSize: '13px',
+  fontSize: 'var(--text-sm)',
   fontWeight: 500,
   letterSpacing: '0.5px',
   lineHeight: 1.4,
@@ -53,7 +53,7 @@ export function Breadcrumb({ items = [] }) {
                   aria-hidden="true"
                   style={{
                     fontFamily: 'var(--font-mono)',
-                    fontSize: '12px',
+                    fontSize: 'var(--text-xs)',
                     fontWeight: 400,
                     color: 'var(--color-text-secondary)',
                     userSelect: 'none',

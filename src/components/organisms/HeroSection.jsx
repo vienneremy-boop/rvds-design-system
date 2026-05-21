@@ -63,7 +63,7 @@ export function HeroSection({
             <p
               style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: '12px',
+                fontSize: 'var(--text-xs)',
                 fontWeight: 700,
                 color: 'var(--color-text-secondary)',
                 letterSpacing: '1.5px',
@@ -77,7 +77,7 @@ export function HeroSection({
             <p
               style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: '12px',
+                fontSize: 'var(--text-xs)',
                 fontWeight: 700,
                 color: 'var(--color-text-secondary)',
                 letterSpacing: '1.5px',
@@ -151,7 +151,7 @@ export function HeroSection({
             <span
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: '48px',
+                fontSize: 'var(--text-5xl)',
                 fontWeight: 600,
                 color: 'var(--color-text-primary)',
                 lineHeight: '52.8px',
@@ -176,7 +176,7 @@ export function HeroSection({
               <span
                 style={{
                   fontFamily: 'var(--font-display)',
-                  fontSize: '48px',
+                  fontSize: 'var(--text-5xl)',
                   fontWeight: 600,
                   color: 'var(--color-text-primary)',
                   lineHeight: '52.8px',
@@ -200,7 +200,7 @@ export function HeroSection({
             <span
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: '48px',
+                fontSize: 'var(--text-5xl)',
                 fontWeight: 600,
                 color: 'var(--color-action-accent)',
                 lineHeight: '52.8px',

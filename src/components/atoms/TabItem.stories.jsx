@@ -32,7 +32,7 @@ export const TabsStory = {
         {
           label: 'Overview',
           content: (
-            <div style={{ fontFamily: 'var(--font-mono)', fontSize: '14px', color: 'var(--color-text-primary)' }}>
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', color: 'var(--color-text-primary)' }}>
               This is the Overview tab content. It gives a high-level summary of the component.
             </div>
           ),
@@ -40,7 +40,7 @@ export const TabsStory = {
         {
           label: 'Properties',
           content: (
-            <div style={{ fontFamily: 'var(--font-mono)', fontSize: '14px', color: 'var(--color-text-primary)' }}>
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', color: 'var(--color-text-primary)' }}>
               This is the Properties tab. Here you would list all available props.
             </div>
           ),
@@ -48,7 +48,7 @@ export const TabsStory = {
         {
           label: 'Usage',
           content: (
-            <div style={{ fontFamily: 'var(--font-mono)', fontSize: '14px', color: 'var(--color-text-primary)' }}>
+            <div style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', color: 'var(--color-text-primary)' }}>
               This is the Usage tab. Code examples and best practices go here.
             </div>
           ),

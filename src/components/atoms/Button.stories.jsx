@@ -78,7 +78,7 @@ export const AllVariants = {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
       {['large', 'medium', 'small'].map((size) => (
         <div key={size} style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap' }}>
-          <span style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'var(--color-text-secondary)', width: '52px', textTransform: 'uppercase' }}>{size}</span>
+          <span style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', color: 'var(--color-text-secondary)', width: '52px', textTransform: 'uppercase' }}>{size}</span>
           <Button label="Primary"   variant="primary"   size={size} />
           <Button label="Secondary" variant="secondary" size={size} />
           <Button label="Tertiary"  variant="tertiary"  size={size} />

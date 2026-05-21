@@ -44,7 +44,7 @@ function FooterListItem({ label, detail }) {
       <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', flex: 1, minWidth: 0 }}>
         <p style={{
           fontFamily: 'var(--font-mono)',
-          fontSize: '14px',
+          fontSize: 'var(--text-sm)',
           fontWeight: 500,
           color: 'var(--color-text-on-deep)',
           lineHeight: 1.4,
@@ -55,7 +55,7 @@ function FooterListItem({ label, detail }) {
         </p>
         <p style={{
           fontFamily: 'var(--font-mono)',
-          fontSize: '12px',
+          fontSize: 'var(--text-xs)',
           fontWeight: 400,
           color: 'var(--color-text-muted-on-deep)',
           lineHeight: 1.5,
@@ -161,7 +161,7 @@ export function Footer({
           {/* Intro */}
           <p style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '20px',
+            fontSize: 'var(--text-xl)',
             fontWeight: 400,
             color: 'var(--color-text-secondary-on-deep)',
             margin: 0,
@@ -222,7 +222,7 @@ export function Footer({
           <LogoButton onClick={onLogoClick} />
           <p style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: '13px',
+            fontSize: 'var(--text-sm)',
             fontWeight: 400,
             color: 'var(--color-text-muted-on-deep)',
             margin: 0,
@@ -243,7 +243,7 @@ export function Footer({
             >
               <span style={{
                 fontFamily: 'var(--font-mono)',
-                fontSize: '14px',
+                fontSize: 'var(--text-sm)',
                 fontWeight: 500,
                 color: 'var(--color-text-on-deep)',
                 letterSpacing: '0.2px',

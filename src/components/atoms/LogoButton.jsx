@@ -33,7 +33,7 @@ export function LogoButton({ onClick }) {
       <span
         style={{
           fontFamily: 'var(--font-display)',
-          fontSize: '16px',
+          fontSize: 'var(--text-base)',
           fontWeight: 600,
           color: 'var(--color-action-deep)',
           fontVariationSettings: "'SOFT' 0, 'WONK' 1",
@@ -45,7 +45,7 @@ export function LogoButton({ onClick }) {
       <span
         style={{
           fontFamily: 'var(--font-display)',
-          fontSize: '16px',
+          fontSize: 'var(--text-base)',
           fontStyle: 'italic',
           fontWeight: 400,
           color: 'var(--color-action-primary)',
