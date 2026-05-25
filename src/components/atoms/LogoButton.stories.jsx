@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component:
-          'Pill logo cliquable. "Rémy" en Fraunces SemiBold deep + "Vienne" en Fraunces Italic primary. Fond blanc → off-white au hover avec ombre violette subtile. Utilisé dans NavDesktop et Footer.',
+          'Pill logo cliquable. "Rémy" en Fraunces SemiBold deep + "Vienne" en Fraunces Italic primary. Hover : fond electric (light) ou fond violet via --color-logo-hover-bg (dark). Textes via --color-logo-hover-text / --color-logo-hover-italic. Utilisé dans NavDesktop et Footer.',
       },
     },
     layout: 'centered',
