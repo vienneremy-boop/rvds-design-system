@@ -10,13 +10,14 @@ export function LogoButton({ onClick }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       aria-label="Rémy Vienne — Accueil"
+      data-hovered={hovered}
       style={{
         display: 'inline-flex',
         alignItems: 'center',
         gap: 'var(--space-1)',
         height: '32px',
         padding: '0 10px',
-        background: hovered ? 'var(--color-electric)' : 'var(--color-btn-secondary-bg)',
+        background: hovered ? 'var(--color-logo-hover-bg, var(--color-electric))' : 'var(--color-btn-secondary-bg)',
         borderRadius: 'var(--radius-full)',
         border: 'none',
         cursor: 'pointer',
@@ -35,9 +36,10 @@ export function LogoButton({ onClick }) {
           fontFamily: 'var(--font-display)',
           fontSize: 'var(--text-base)',
           fontWeight: 600,
-          color: 'var(--color-action-deep)',
+          color: 'var(--color-logo-hover-text, var(--color-action-deep))',
           fontVariationSettings: "'SOFT' 0, 'WONK' 1",
           lineHeight: 1,
+          transition: 'color var(--transition-fast)',
         }}
       >
         Rémy
@@ -48,9 +50,10 @@ export function LogoButton({ onClick }) {
           fontSize: 'var(--text-base)',
           fontStyle: 'italic',
           fontWeight: 400,
-          color: 'var(--color-action-primary)',
+          color: 'var(--color-logo-hover-italic, var(--color-action-primary))',
           fontVariationSettings: "'SOFT' 0, 'WONK' 1",
           lineHeight: 1,
+          transition: 'color var(--transition-fast)',
         }}
       >
         Vienne
