@@ -301,6 +301,16 @@ const icons = {
     <g transform="translate(3,12)"><path d="M 0 0 L 12 0" {...S} /></g>
     <g transform="translate(3,18)"><path d="M 0 0 L 6 0" {...S} /></g>
   </>),
+
+  // ── Missing (used on site) ────────────────────────────────────
+  X: () => (
+    <g transform="translate(5,5)"><path d="M 14 0 L 0 14 M 0 0 L 14 14" {...S} /></g>
+  ),
+  ZoomIn: () => (<>
+    <g transform="translate(3,3)"><path d="M 16 8 C 16 12.418 12.418 16 8 16 C 3.582 16 0 12.418 0 8 C 0 3.582 3.582 0 8 0 C 12.418 0 16 3.582 16 8 Z" {...S} /></g>
+    <g transform="translate(16.65,16.65)"><path d="M 4.35 4.35 L 0 0" {...S} /></g>
+    <g transform="translate(8,8)"><path d="M 0 -4 L 0 4 M -4 0 L 4 0" {...S} /></g>
+  </>),
 };
 
 export function Icon({ name, size = 24, style, className }) {
@@ -325,7 +335,7 @@ export function Icon({ name, size = 24, style, className }) {
 
 Icon.propTypes = {
   name:      PropTypes.oneOf(Object.keys(icons)).isRequired,
-  size:      PropTypes.oneOf([16, 20, 24]),
+  size:      PropTypes.number,
   style:     PropTypes.object,
   className: PropTypes.string,
 };

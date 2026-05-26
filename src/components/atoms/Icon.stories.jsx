@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component:
-          '60+ icônes SVG issues de la page Atoms/Icons du Figma. Stroke par défaut, currentColor, size configurable. Utiliser `name` pour choisir l\'icône.',
+          '60+ icônes SVG issues de la page Atoms/Icons du Figma. Stroke par défaut, currentColor, `size` accepte toute valeur numérique. Utiliser `name` pour choisir l\'icône.',
       },
     },
   },
