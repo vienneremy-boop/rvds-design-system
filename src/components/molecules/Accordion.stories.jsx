@@ -21,7 +21,7 @@ const ITEMS = [
   {
     id: 'discovery',
     title: 'Découverte & cadrage',
-    body: 'Audit de l'existant, interviews utilisateurs, cartographie des flows. On aligne les objectifs business et les besoins UX avant de poser le moindre pixel.',
+    body: "Audit de l'existant, interviews utilisateurs, cartographie des flows. On aligne les objectifs business et les besoins UX avant de poser le moindre pixel.",
   },
   {
     id: 'design',
@@ -36,7 +36,7 @@ const ITEMS = [
   {
     id: 'iteration',
     title: 'Tests & itération',
-    body: 'Tests d'utilisabilité, A/B testing, mesure des KPIs. On valide, on ajuste, on livre.',
+    body: "Tests d'utilisabilité, A/B testing, mesure des KPIs. On valide, on ajuste, on livre.",
   },
 ];
 
