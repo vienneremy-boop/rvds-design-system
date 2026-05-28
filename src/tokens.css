@@ -160,16 +160,25 @@
   /* Spacing — aliases utilitaires */
   --space-1: 4px;
   --space-2: 8px;
+  --space-2-5: 10px;
   --space-3: 12px;
+  --space-3-5: 14px;
   --space-4: 16px;
+  --space-5: 20px;
   --space-6: 24px;
+  --space-7: 28px;
   --space-8: 32px;
+  --space-10: 40px;
   --space-12: 48px;
+  --space-14: 56px;
   --space-16: 64px;
+  --space-18: 72px;
   --space-20: 80px;
 
   /* Border radius — Figma DS tokens */
   --pf-radius-card: 8px;
+  --pf-radius-tag: 20px;
+  --pf-radius-btn: 9999px;
 
   /* Border radius — code */
   --radius-btn: 100px;
@@ -180,9 +189,17 @@
 
   /* Border width — Figma DS tokens */
   --pf-stroke-default: 1px;
+  --pf-stroke-focus: 2px;
+  --pf-stroke-button: 1px;
 
   /* Shadows — Figma DS tokens */
   --pf-shadow-1: 0 2px 4px rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.02);
+  --pf-shadow-2: 0 4px 10px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
+  --pf-shadow-3: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 20px rgba(0, 0, 0, 0.04);
+  --pf-shadow-4: 0 24px 60px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.06);
+  --pf-shadow-brand: 0 16px 40px rgba(90, 20, 191, 0.18);
+  --pf-shadow-electric: 0 8px 24px rgba(215, 252, 65, 0.24);
+  --pf-shadow-focus-ring: 0 0 0 3px rgba(90, 20, 191, 0.30);
 
   /* Shadows — code */
   --shadow-sm: 0 1px 3px rgba(29, 10, 56, 0.08), 0 1px 2px rgba(29, 10, 56, 0.06);
