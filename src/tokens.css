@@ -144,7 +144,20 @@
   --text-8xl: 4rem;      /* 64px */
   --text-9xl: 5.5rem;    /* 88px */
 
-  /* Spacing */
+  /* Spacing — Figma DS tokens (--pf-*) */
+  --pf-padding-s: 4px;
+  --pf-padding-m: 8px;
+  --pf-padding-l: 12px;
+  --pf-element-gap-m: 16px;
+  --pf-element-gap-l: 20px;
+  --pf-grid-gutter-mobile: 16px;
+  --pf-grid-gutter: 24px;
+  --pf-page-gap: 32px;
+  --pf-touch-target: 44px;
+  --pf-section-gap: 48px;
+  --pf-grid-margin: 80px;
+
+  /* Spacing — aliases utilitaires */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
