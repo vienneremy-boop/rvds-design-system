@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const defaultLogos = [
   { key: 'decathlon',       src: '/logos/decathlon.webp',      label: 'Decathlon',       height: 46 },
   { key: 'leroymerlin',     src: '/logos/leroy-merlin.webp',   label: 'Leroy Merlin',    height: 38 },
-  { key: 'ingroupe',        src: '/logos/in.webp',             label: 'IN Groupe',       height: 50 },
+  { key: 'ingroupe',        src: '/logos/in.webp',             label: 'IN Groupe',       height: 72 },
   { key: 'easyence',        src: '/logos/easyence.webp',       label: 'Easyence',        height: 46 },
   { key: 'genesdiffusion',  src: '/logos/genes-diffusion.webp',label: 'Gènes Diffusion', height: 54 },
 ];
