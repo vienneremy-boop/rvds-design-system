@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './Reassurance.css';
 
 const defaultItems = [
   { metric: '12 ans', description: 'Design produit - Direction artistique' },
@@ -11,6 +12,7 @@ function InfoItem({ metric, description }) {
   return (
     <div style={{ display: 'flex', alignItems: 'flex-start', height: '100%', flexShrink: 0 }}>
       <div
+        className="reassurance-dot"
         style={{
           width: '24px',
           height: '24px',
@@ -31,6 +33,7 @@ function InfoItem({ metric, description }) {
         }}
       >
         <p
+          className="reassurance-stat"
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-base)',
@@ -45,6 +48,7 @@ function InfoItem({ metric, description }) {
           {metric}
         </p>
         <p
+          className="reassurance-desc"
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-xs)',

@@ -1,0 +1,11 @@
+[data-theme='dark'] .reassurance-dot {
+  background: var(--color-surface-deep) !important;
+}
+
+[data-theme='dark'] .reassurance-stat {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .reassurance-desc {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
