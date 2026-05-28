@@ -20,6 +20,7 @@ export function TabItem({
       onClick={onClick}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      aria-current={active ? 'page' : undefined}
       style={{
         display: 'inline-flex',
         flexDirection: 'column',
