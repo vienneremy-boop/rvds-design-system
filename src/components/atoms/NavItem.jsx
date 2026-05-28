@@ -29,8 +29,8 @@ export function NavItem({
         gap: 'var(--space-2)',
         flex: '1 0 0',
         paddingBottom: 'var(--space-1)',
-        paddingLeft: 'var(--space-2)',
-        paddingRight: 'var(--space-2)',
+        paddingLeft: 'var(--space-1)',
+        paddingRight: 'var(--space-1)',
         background: 'transparent',
         border: 'none',
         borderRadius: 'var(--radius-card)',
@@ -38,6 +38,7 @@ export function NavItem({
         userSelect: 'none',
         boxSizing: 'border-box',
         minWidth: 0,
+        overflow: 'hidden',
       }}
     >
       {/* Indicateur 2px en haut */}
@@ -85,7 +86,7 @@ export function NavItem({
         <span
           style={{
             fontFamily: 'var(--font-mono)',
-            fontSize: 'var(--text-xs)',
+            fontSize: '10px',
             fontWeight: active ? 500 : 400,
             color: active ? 'var(--color-action-accent)' : 'var(--color-text-primary)',
             letterSpacing: '0.2px',
@@ -94,6 +95,8 @@ export function NavItem({
             width: '100%',
             transition: 'color var(--transition-fast)',
             whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
           }}
         >
           {label}
