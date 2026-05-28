@@ -28,7 +28,7 @@ export function LabNav({
   const labelStyle = {
     fontFamily: 'var(--font-mono)',
     fontSize: 'var(--text-xs)',
-    fontWeight: 700,
+    fontWeight: 'var(--font-weight-bold)',
     textTransform: 'uppercase',
     letterSpacing: '0.15em',
     color: 'rgba(255,255,255,0.5)',
@@ -37,7 +37,7 @@ export function LabNav({
 
   const titleStyle = {
     fontFamily: 'var(--font-display)',
-    fontWeight: 900,
+    fontWeight: 'var(--font-weight-black)',
     fontStyle: 'italic',
     lineHeight: 1,
     letterSpacing: '-0.03em',
@@ -56,7 +56,7 @@ export function LabNav({
     marginLeft: '12px',
     fontFamily: 'var(--font-mono)',
     fontSize: 'var(--text-xs)',
-    fontWeight: 600,
+    fontWeight: 'var(--font-weight-semibold)',
     textTransform: 'uppercase',
     letterSpacing: '0.1em',
     color: 'rgba(255,255,255,0.6)',

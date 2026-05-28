@@ -35,7 +35,7 @@ export function Textarea({
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 500,
+            fontWeight: 'var(--font-weight-medium)',
             color: 'var(--color-text-primary)',
           }}
         >
@@ -62,7 +62,7 @@ export function Textarea({
           background: 'var(--color-input-bg)',
           fontFamily: 'var(--font-mono)',
           fontSize: 'var(--text-sm)',
-          fontWeight: 400,
+          fontWeight: 'var(--font-weight-regular)',
           color: 'var(--color-text-primary)',
           opacity: isDisabled ? 0.4 : 1,
           cursor: isDisabled ? 'not-allowed' : 'text',

@@ -50,7 +50,7 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-xs)',
-            fontWeight: 700,
+            fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-action-accent)',
             letterSpacing: '0.18px',
             lineHeight: '1.4',
@@ -84,7 +84,7 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-xs)',
-            fontWeight: 700,
+            fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-action-accent)',
             letterSpacing: '0.18px',
             lineHeight: '1.4',

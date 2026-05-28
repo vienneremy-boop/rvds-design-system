@@ -33,7 +33,7 @@ export function ClientBand({ label = "Ils m'ont fait confiance", logos = default
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-xs)',
-            fontWeight: 700,
+            fontWeight: 'var(--font-weight-bold)',
             textTransform: 'uppercase',
             letterSpacing: '0.15em',
             color: 'var(--color-text-subtle)',

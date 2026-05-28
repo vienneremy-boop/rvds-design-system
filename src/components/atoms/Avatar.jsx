@@ -42,7 +42,7 @@ export function Avatar({
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize,
-            fontWeight: 700,
+            fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-action-accent)',
             textTransform: 'uppercase',
             letterSpacing: '0.02em',

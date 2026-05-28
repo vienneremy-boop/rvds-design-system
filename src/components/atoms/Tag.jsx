@@ -36,7 +36,7 @@ export function Tag({ type = 'brand', label }) {
         borderRadius: 'var(--radius-default)',
         fontFamily: 'var(--font-mono)',
         fontSize: 'var(--text-xs)',
-        fontWeight: 700,
+        fontWeight: 'var(--font-weight-bold)',
         lineHeight: 'normal',
         whiteSpace: 'nowrap',
         ...style,

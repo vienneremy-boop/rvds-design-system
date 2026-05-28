@@ -10,13 +10,13 @@ function MetaCell({ label, value }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 4, flex: 1, minWidth: 0 }}>
       <span style={{
-        fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 700,
+        fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 'var(--font-weight-bold)',
         textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--color-text-subtle)',
       }}>
         {label}
       </span>
       <span style={{
-        fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', fontWeight: 500,
+        fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', fontWeight: 'var(--font-weight-medium)',
         color: 'var(--color-text-primary)', lineHeight: 1.4,
       }}>
         {value}
@@ -35,14 +35,14 @@ function KpiCard({ value, label, color = 'electric' }) {
     }}>
       <span style={{
         fontFamily: 'var(--font-display)', fontSize: 'clamp(28px, 3vw, 40px)',
-        fontWeight: 900, fontStyle: 'italic', letterSpacing: '-0.03em',
+        fontWeight: 'var(--font-weight-black)', fontStyle: 'italic', letterSpacing: '-0.03em',
         color: valueColor, lineHeight: 1,
         fontVariationSettings: "'SOFT' 0, 'WONK' 1",
       }}>
         {value}
       </span>
       <span style={{
-        fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 400,
+        fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 'var(--font-weight-regular)',
         color: 'var(--color-text-secondary)', lineHeight: 1.4,
       }}>
         {label}
@@ -55,7 +55,7 @@ function SectionHeader({ num, label, heading }) {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 24 }}>
       <p style={{
-        fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 700,
+        fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 'var(--font-weight-bold)',
         textTransform: 'uppercase', letterSpacing: '0.15em',
         color: 'var(--color-action-accent)', margin: 0,
       }}>
@@ -63,7 +63,7 @@ function SectionHeader({ num, label, heading }) {
       </p>
       <h2 style={{
         fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 3vw, 36px)',
-        fontWeight: 900, fontStyle: 'italic', letterSpacing: '-0.02em',
+        fontWeight: 'var(--font-weight-black)', fontStyle: 'italic', letterSpacing: '-0.02em',
         color: 'var(--color-text-primary)', margin: 0, lineHeight: 1.1,
         fontVariationSettings: "'SOFT' 0, 'WONK' 1",
       }}>
@@ -88,13 +88,13 @@ function AccordionStep({ step, isOpen, onToggle }) {
         }}
       >
         <span style={{
-          fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 700,
+          fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 'var(--font-weight-bold)',
           letterSpacing: '0.1em', color: 'var(--color-action-primary)', flexShrink: 0, minWidth: 44,
         }}>
           {step.num}
         </span>
         <h3 style={{
-          fontFamily: 'var(--font-display)', fontSize: 'var(--text-base)', fontWeight: 700,
+          fontFamily: 'var(--font-display)', fontSize: 'var(--text-base)', fontWeight: 'var(--font-weight-bold)',
           color: 'var(--color-text-primary)', margin: 0, flex: 1,
           fontVariationSettings: "'SOFT' 0, 'WONK' 1",
         }}>
@@ -113,7 +113,7 @@ function AccordionStep({ step, isOpen, onToggle }) {
       {isOpen && (
         <div style={{ padding: '0 0 20px 56px' }}>
           <p style={{
-            fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', fontWeight: 400,
+            fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-secondary)', lineHeight: 1.65, margin: '0 0 12px',
           }}>
             {step.desc}
@@ -122,7 +122,7 @@ function AccordionStep({ step, isOpen, onToggle }) {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
               {step.tools.map((tool) => (
                 <span key={tool} style={{
-                  fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 500,
+                  fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 'var(--font-weight-medium)',
                   color: 'var(--color-text-subtle)', background: 'var(--color-surface-raised)',
                   border: '1px solid var(--color-border)', borderRadius: 'var(--radius-btn)',
                   padding: '3px 10px',
@@ -192,7 +192,7 @@ export function CaseStudy({
   };
 
   const bodyTextStyle = {
-    fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', fontWeight: 400,
+    fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', fontWeight: 'var(--font-weight-regular)',
     color: 'var(--color-text-secondary)', lineHeight: 1.7, margin: 0,
   };
 
@@ -216,7 +216,7 @@ export function CaseStudy({
 
         <h1 style={{
           fontFamily: 'var(--font-display)', fontSize: 'clamp(48px, 7vw, 96px)',
-          fontWeight: 900, fontStyle: 'italic', letterSpacing: '-0.03em',
+          fontWeight: 'var(--font-weight-black)', fontStyle: 'italic', letterSpacing: '-0.03em',
           color: '#ffffff', margin: 0, lineHeight: 0.95,
           fontVariationSettings: "'SOFT' 0, 'WONK' 1",
         }}>

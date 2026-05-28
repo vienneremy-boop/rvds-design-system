@@ -29,7 +29,7 @@ export function Badge({ type = 'neutral', label }) {
         border: cfg.border,
         fontFamily: 'var(--font-mono)',
         fontSize: 'var(--text-xs)',
-        fontWeight: 700,
+        fontWeight: 'var(--font-weight-bold)',
         color: cfg.color,
         lineHeight: 'normal',
         whiteSpace: 'nowrap',

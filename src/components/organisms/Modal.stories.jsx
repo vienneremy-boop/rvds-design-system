@@ -41,7 +41,7 @@ export const Default = {
             cursor: 'pointer',
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 500,
+            fontWeight: 'var(--font-weight-medium)',
             color: '#fff',
           }}
         >

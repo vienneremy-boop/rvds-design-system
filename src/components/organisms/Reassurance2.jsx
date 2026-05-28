@@ -34,7 +34,7 @@ function InfoItem({ label, sublabel }) {
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-base)',
-            fontWeight: 600,
+            fontWeight: 'var(--font-weight-semibold)',
             color: 'var(--color-action-accent)',
             margin: 0,
             lineHeight: 1,
@@ -47,7 +47,7 @@ function InfoItem({ label, sublabel }) {
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 400,
+            fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-primary)',
             margin: 0,
             lineHeight: 1,

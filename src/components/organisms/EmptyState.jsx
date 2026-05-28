@@ -45,7 +45,7 @@ export function EmptyState({
         style={{
           fontFamily: 'var(--font-display)',
           fontSize: 'var(--text-2xl)',
-          fontWeight: 600,
+          fontWeight: 'var(--font-weight-semibold)',
           color: 'var(--color-text-primary)',
           margin: 0,
           lineHeight: 1,
@@ -63,7 +63,7 @@ export function EmptyState({
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-base)',
-            fontWeight: 500,
+            fontWeight: 'var(--font-weight-medium)',
             color: 'var(--color-text-secondary)',
             margin: 0,
             lineHeight: 1,

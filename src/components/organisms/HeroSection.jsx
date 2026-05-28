@@ -64,7 +64,7 @@ export function HeroSection({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: 'var(--text-xs)',
-                fontWeight: 700,
+                fontWeight: 'var(--font-weight-bold)',
                 color: 'var(--color-text-secondary)',
                 letterSpacing: '1.5px',
                 lineHeight: 1.4,
@@ -78,7 +78,7 @@ export function HeroSection({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: 'var(--text-xs)',
-                fontWeight: 700,
+                fontWeight: 'var(--font-weight-bold)',
                 color: 'var(--color-text-secondary)',
                 letterSpacing: '1.5px',
                 lineHeight: 1.4,
@@ -127,7 +127,7 @@ export function HeroSection({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: 'var(--text-sm)',
-                fontWeight: 400,
+                fontWeight: 'var(--font-weight-regular)',
                 color: 'var(--color-action-accent)',
                 lineHeight: 1.6,
                 margin: 0,
@@ -152,7 +152,7 @@ export function HeroSection({
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-5xl)',
-                fontWeight: 600,
+                fontWeight: 'var(--font-weight-semibold)',
                 color: 'var(--color-text-primary)',
                 lineHeight: '52.8px',
               }}
@@ -164,7 +164,7 @@ export function HeroSection({
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-7xl)',
-                fontWeight: 400,
+                fontWeight: 'var(--font-weight-regular)',
                 fontStyle: 'italic',
                 color: 'var(--color-action-accent)',
                 lineHeight: '52.8px',
@@ -177,7 +177,7 @@ export function HeroSection({
                 style={{
                   fontFamily: 'var(--font-display)',
                   fontSize: 'var(--text-5xl)',
-                  fontWeight: 600,
+                  fontWeight: 'var(--font-weight-semibold)',
                   color: 'var(--color-text-primary)',
                   lineHeight: '52.8px',
                 }}
@@ -189,7 +189,7 @@ export function HeroSection({
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-7xl)',
-                fontWeight: 400,
+                fontWeight: 'var(--font-weight-regular)',
                 fontStyle: 'italic',
                 color: 'var(--color-action-accent)',
                 lineHeight: '52.8px',
@@ -201,7 +201,7 @@ export function HeroSection({
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-5xl)',
-                fontWeight: 600,
+                fontWeight: 'var(--font-weight-semibold)',
                 color: 'var(--color-action-accent)',
                 lineHeight: '52.8px',
               }}
@@ -216,7 +216,7 @@ export function HeroSection({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: 'var(--text-sm)',
-                fontWeight: 400,
+                fontWeight: 'var(--font-weight-regular)',
                 color: 'var(--color-text-secondary)',
                 lineHeight: 1,
                 margin: 0,

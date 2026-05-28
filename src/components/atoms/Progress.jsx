@@ -54,7 +54,7 @@ export function Progress({
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-xs)',
-            fontWeight: 400,
+            fontWeight: 'var(--font-weight-regular)',
             color: labelColor,
             flexShrink: 0,
             minWidth: '32px',

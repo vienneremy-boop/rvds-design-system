@@ -35,7 +35,7 @@ export function LogoButton({ onClick }) {
         style={{
           fontFamily: 'var(--font-display)',
           fontSize: 'var(--text-base)',
-          fontWeight: 600,
+          fontWeight: 'var(--font-weight-semibold)',
           color: 'var(--color-logo-hover-text, var(--color-action-deep))',
           fontVariationSettings: "'SOFT' 0, 'WONK' 1",
           lineHeight: 1,
@@ -49,7 +49,7 @@ export function LogoButton({ onClick }) {
           fontFamily: 'var(--font-display)',
           fontSize: 'var(--text-base)',
           fontStyle: 'italic',
-          fontWeight: 400,
+          fontWeight: 'var(--font-weight-regular)',
           color: 'var(--color-logo-hover-italic, var(--color-action-primary))',
           fontVariationSettings: "'SOFT' 0, 'WONK' 1",
           lineHeight: 1,

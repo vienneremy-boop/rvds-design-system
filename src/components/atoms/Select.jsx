@@ -33,7 +33,7 @@ export function Select({
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 500,
+            fontWeight: 'var(--font-weight-medium)',
             color: 'var(--color-text-primary)',
           }}
         >
@@ -56,7 +56,7 @@ export function Select({
             background: 'var(--color-input-bg)',
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 400,
+            fontWeight: 'var(--font-weight-regular)',
             color: value ? 'var(--color-text-primary)' : 'var(--color-text-secondary)',
     
             opacity: isDisabled ? 0.4 : 1,

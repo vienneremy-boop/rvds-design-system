@@ -61,7 +61,7 @@ export function Checkbox({
             style={{
               color: '#FFFFFF',
               fontSize: 'var(--text-xs)',
-              fontWeight: 700,
+              fontWeight: 'var(--font-weight-bold)',
               lineHeight: 1,
             }}
           >
@@ -74,7 +74,7 @@ export function Checkbox({
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 500,
+            fontWeight: 'var(--font-weight-medium)',
             color: 'var(--color-text-primary)',
           }}
         >

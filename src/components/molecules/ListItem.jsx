@@ -56,7 +56,7 @@ export function ListItem({ state = 'default', label, description, leading, onCli
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 500,
+            fontWeight: 'var(--font-weight-medium)',
             color: isActive ? 'var(--color-action-accent)' : 'var(--color-text-primary)',
             lineHeight: 1.4,
             letterSpacing: '0.5px',
@@ -73,7 +73,7 @@ export function ListItem({ state = 'default', label, description, leading, onCli
             style={{
               fontFamily: 'var(--font-mono)',
               fontSize: 'var(--text-xs)',
-              fontWeight: 400,
+              fontWeight: 'var(--font-weight-regular)',
               color: 'var(--color-text-secondary)',
               lineHeight: 1,
               margin: 0,

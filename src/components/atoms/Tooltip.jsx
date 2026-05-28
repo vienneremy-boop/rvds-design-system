@@ -78,7 +78,7 @@ export function Tooltip({
             color: 'var(--color-text-inverse)',
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-xs)',
-            fontWeight: 400,
+            fontWeight: 'var(--font-weight-regular)',
             padding: 'var(--space-2) var(--space-3)',
             borderRadius: 'var(--radius-sm)',
             whiteSpace: 'nowrap',

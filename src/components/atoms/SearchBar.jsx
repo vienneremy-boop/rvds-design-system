@@ -54,7 +54,7 @@ export function SearchBar({
           background: 'transparent',
           fontFamily: 'var(--font-mono)',
           fontSize: 'var(--text-sm)',
-          fontWeight: 400,
+          fontWeight: 'var(--font-weight-regular)',
           color: 'var(--color-text-primary)',
   
           cursor: isDisabled ? 'not-allowed' : 'text',

@@ -34,7 +34,7 @@ function AccordionItem({ id, title, body, isOpen, onToggle }) {
           style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'var(--text-base)',
-            fontWeight: 700,
+            fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-text-primary)',
             lineHeight: 1.3,
             fontVariationSettings: "'SOFT' 0, 'WONK' 1",
@@ -70,7 +70,7 @@ function AccordionItem({ id, title, body, isOpen, onToggle }) {
             padding: '0 20px 20px',
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 400,
+            fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-secondary)',
             lineHeight: 1.7,
           }}

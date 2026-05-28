@@ -45,7 +45,7 @@ function FooterListItem({ label, detail }) {
         <p style={{
           fontFamily: 'var(--font-mono)',
           fontSize: 'var(--text-sm)',
-          fontWeight: 500,
+          fontWeight: 'var(--font-weight-medium)',
           color: 'var(--color-text-on-deep)',
           lineHeight: 1.4,
           letterSpacing: '0.5px',
@@ -56,7 +56,7 @@ function FooterListItem({ label, detail }) {
         <p style={{
           fontFamily: 'var(--font-mono)',
           fontSize: 'var(--text-xs)',
-          fontWeight: 400,
+          fontWeight: 'var(--font-weight-regular)',
           color: 'var(--color-text-muted-on-deep)',
           lineHeight: 1.5,
           margin: 0,
@@ -119,7 +119,7 @@ export function Footer({
           <p style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'var(--text-9xl)',
-            fontWeight: 700,
+            fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-text-on-deep)',
             margin: 0,
             lineHeight: '92px',
@@ -131,7 +131,7 @@ export function Footer({
           <p style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'var(--text-9xl)',
-            fontWeight: 900,
+            fontWeight: 'var(--font-weight-black)',
             fontStyle: 'italic',
             color: 'var(--color-electric)',
             margin: 0,
@@ -144,7 +144,7 @@ export function Footer({
           <p style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'var(--text-9xl)',
-            fontWeight: 900,
+            fontWeight: 'var(--font-weight-black)',
             color: 'var(--color-action-accent)',
             margin: 0,
             lineHeight: '92px',
@@ -162,13 +162,13 @@ export function Footer({
           <p style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-xl)',
-            fontWeight: 400,
+            fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-secondary-on-deep)',
             margin: 0,
             lineHeight: 1.6,
           }}>
             <span style={{ color: 'var(--color-text-on-deep)' }}>Je suis disponible pour des </span>
-            <span style={{ fontWeight: 700, color: 'var(--color-electric)' }}>missions freelance</span>
+            <span style={{ fontWeight: 'var(--font-weight-bold)', color: 'var(--color-electric)' }}>missions freelance</span>
           </p>
 
           {/* Tags */}
@@ -223,7 +223,7 @@ export function Footer({
           <p style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 400,
+            fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-muted-on-deep)',
             margin: 0,
             whiteSpace: 'nowrap',
@@ -244,7 +244,7 @@ export function Footer({
               <span style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: 'var(--text-sm)',
-                fontWeight: 500,
+                fontWeight: 'var(--font-weight-medium)',
                 color: 'var(--color-text-on-deep)',
                 letterSpacing: '0.2px',
                 lineHeight: 1,
@@ -257,7 +257,7 @@ export function Footer({
           <p style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 400,
+            fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-muted-on-deep)',
             margin: 0,
             whiteSpace: 'nowrap',

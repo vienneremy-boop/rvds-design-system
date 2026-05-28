@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const linkBase = {
   fontFamily: 'var(--font-mono)',
   fontSize: 'var(--text-sm)',
-  fontWeight: 500,
+  fontWeight: 'var(--font-weight-medium)',
   letterSpacing: '0.5px',
   lineHeight: 1.4,
 };
@@ -54,7 +54,7 @@ export function Breadcrumb({ items = [] }) {
                   style={{
                     fontFamily: 'var(--font-mono)',
                     fontSize: 'var(--text-xs)',
-                    fontWeight: 400,
+                    fontWeight: 'var(--font-weight-regular)',
                     color: 'var(--color-text-secondary)',
                     userSelect: 'none',
                     lineHeight: 1,

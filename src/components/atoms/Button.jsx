@@ -85,7 +85,7 @@ export function Button({
         border,
         fontFamily: 'var(--font-mono)',
         fontSize,
-        fontWeight: 500,
+        fontWeight: 'var(--font-weight-medium)',
         lineHeight: '1.4',
         letterSpacing: 0,
         cursor: disabled ? 'not-allowed' : 'pointer',

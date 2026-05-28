@@ -57,7 +57,7 @@ export function Card({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: 'var(--text-xs)',
-                fontWeight: 700,
+                fontWeight: 'var(--font-weight-bold)',
                 color: 'var(--color-action-accent)',
                 letterSpacing: '1.5px',
                 lineHeight: 1.4,
@@ -80,7 +80,7 @@ export function Card({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: 'var(--text-xs)',
-                fontWeight: 500,
+                fontWeight: 'var(--font-weight-medium)',
                 color: 'var(--color-action-primary)',
                 whiteSpace: 'nowrap',
                 lineHeight: 1,
@@ -108,7 +108,7 @@ export function Card({
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-2xl)',
-                fontWeight: 600,
+                fontWeight: 'var(--font-weight-semibold)',
                 color: 'var(--color-text-primary)',
                 lineHeight: 1,
               }}
@@ -121,7 +121,7 @@ export function Card({
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-lg)',
-                fontWeight: 600,
+                fontWeight: 'var(--font-weight-semibold)',
                 color: 'var(--color-text-primary)',
                 lineHeight: 1.2,
                 margin: 0,
@@ -136,7 +136,7 @@ export function Card({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: 'var(--text-sm)',
-                fontWeight: 400,
+                fontWeight: 'var(--font-weight-regular)',
                 color: 'var(--color-text-secondary)',
                 margin: 0,
                 lineHeight: 1,
@@ -174,7 +174,7 @@ export function Card({
               style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: 'var(--text-xs)',
-                fontWeight: 500,
+                fontWeight: 'var(--font-weight-medium)',
                 color: 'var(--color-action-primary)',
                 lineHeight: 1.3,
                 whiteSpace: 'nowrap',
