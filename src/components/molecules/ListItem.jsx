@@ -75,7 +75,7 @@ export function ListItem({ state = 'default', label, description, leading, onCli
               fontSize: 'var(--text-xs)',
               fontWeight: 'var(--font-weight-regular)',
               color: 'var(--color-text-secondary)',
-              lineHeight: 1,
+              lineHeight: 1.5,
               margin: 0,
               whiteSpace: 'nowrap',
               overflow: 'hidden',
