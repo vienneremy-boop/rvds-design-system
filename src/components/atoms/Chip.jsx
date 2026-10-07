@@ -44,7 +44,7 @@ export function Chip({
         padding: 0,
         border: 0,
         background: 'transparent',
-        fontFamily: 'var(--font-mono)',
+        fontFamily: 'var(--font-body)',
         fontSize: 'var(--text-sm)',
         fontWeight: 'var(--font-weight-regular)',
         cursor: disabled ? 'not-allowed' : 'pointer',

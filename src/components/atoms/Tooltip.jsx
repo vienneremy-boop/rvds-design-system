@@ -76,7 +76,7 @@ export function Tooltip({
             ...positionStyles[position],
             background: 'var(--color-action-deep)',
             color: 'var(--color-text-inverse)',
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-xs)',
             fontWeight: 'var(--font-weight-regular)',
             padding: 'var(--space-2) var(--space-3)',

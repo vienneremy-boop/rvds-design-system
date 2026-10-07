@@ -16,7 +16,7 @@ function MetaCell({ label, value }) {
         {label}
       </span>
       <span style={{
-        fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', fontWeight: 'var(--font-weight-medium)',
+        fontFamily: 'var(--font-body)', fontSize: 'var(--text-sm)', fontWeight: 'var(--font-weight-medium)',
         color: 'var(--color-text-primary)', lineHeight: 1.4,
       }}>
         {value}
@@ -41,7 +41,7 @@ function KpiCard({ value, label, color = 'electric' }) {
         {value}
       </span>
       <span style={{
-        fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', fontWeight: 'var(--font-weight-regular)',
+        fontFamily: 'var(--font-body)', fontSize: 'var(--text-xs)', fontWeight: 'var(--font-weight-regular)',
         color: 'var(--color-text-secondary)', lineHeight: 1.4,
       }}>
         {label}

@@ -173,7 +173,7 @@ export function Card({
           >
             <span
               style={{
-                fontFamily: 'var(--font-mono)',
+                fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-xs)',
                 fontWeight: 'var(--font-weight-medium)',
                 color: 'var(--color-action-primary)',

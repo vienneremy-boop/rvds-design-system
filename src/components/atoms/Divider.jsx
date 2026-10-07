@@ -48,7 +48,7 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
         <div style={{ flex: 1, height: '1px', background: 'var(--color-divider)', borderRadius: 'var(--radius-sm)' }} />
         <span
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-xs)',
             fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-action-accent)',
@@ -80,7 +80,7 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
         <span style={{ display: 'inline-block', width: '5px', height: '5px', background: 'var(--color-action-accent)' }} />
         <span
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-xs)',
             fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-action-accent)',

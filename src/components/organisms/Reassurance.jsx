@@ -51,7 +51,7 @@ function InfoItem({ metric, description }) {
         <p
           className="reassurance-desc"
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-xs)',
             fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-secondary)',

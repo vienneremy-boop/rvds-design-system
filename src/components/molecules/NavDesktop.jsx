@@ -56,7 +56,7 @@ function LangToggle({ lang, onClick }) {
         background: hovered ? 'var(--color-btn-tertiary-hover)' : 'transparent',
         border: 'none',
         borderRadius: 'var(--radius-btn)',
-        fontFamily: 'var(--font-mono)',
+        fontFamily: 'var(--font-body)',
         fontSize: 'var(--text-xs)',
         fontWeight: 'var(--font-weight-medium)',
         color: 'var(--color-text-primary)',

@@ -31,7 +31,7 @@ export function Select({
       {label && (
         <label
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-sm)',
             fontWeight: 'var(--font-weight-medium)',
             color: 'var(--color-text-primary)',
@@ -103,12 +103,12 @@ export function Select({
         </svg>
       </div>
       {isError && errorText && (
-        <span style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', color: 'var(--color-error)' }}>
+        <span style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-xs)', color: 'var(--color-error)' }}>
           {errorText}
         </span>
       )}
       {!isError && helperText && (
-        <span style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-xs)', color: 'var(--color-text-secondary)' }}>
+        <span style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-xs)', color: 'var(--color-text-secondary)' }}>
           {helperText}
         </span>
       )}

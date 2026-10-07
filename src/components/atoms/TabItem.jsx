@@ -52,7 +52,7 @@ export function TabItem({
       >
         <span
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-sm)',
             fontWeight: active ? 700 : 500,
             lineHeight: 1,

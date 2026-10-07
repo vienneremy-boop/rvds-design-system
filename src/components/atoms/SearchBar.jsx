@@ -52,7 +52,7 @@ export function SearchBar({
           flex: 1,
           border: 'none',
           background: 'transparent',
-          fontFamily: 'var(--font-mono)',
+          fontFamily: 'var(--font-body)',
           fontSize: 'var(--text-sm)',
           fontWeight: 'var(--font-weight-regular)',
           color: 'var(--color-text-primary)',

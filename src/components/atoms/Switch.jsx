@@ -60,7 +60,7 @@ export function Switch({
       {label && (
         <span
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-sm)',
             fontWeight: 'var(--font-weight-medium)',
             color: 'var(--color-text-primary)',

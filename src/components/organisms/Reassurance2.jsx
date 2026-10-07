@@ -32,7 +32,7 @@ function InfoItem({ label, sublabel }) {
       >
         <p
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-base)',
             fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-action-accent)',
@@ -45,7 +45,7 @@ function InfoItem({ label, sublabel }) {
         </p>
         <p
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-sm)',
             fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-primary)',

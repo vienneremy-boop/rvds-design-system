@@ -71,7 +71,7 @@ export function ListItem({ state = 'default', label, description, leading, onCli
         {description && (
           <p
             style={{
-              fontFamily: 'var(--font-mono)',
+              fontFamily: 'var(--font-body)',
               fontSize: 'var(--text-xs)',
               fontWeight: 'var(--font-weight-regular)',
               color: 'var(--color-text-secondary)',

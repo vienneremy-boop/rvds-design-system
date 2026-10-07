@@ -20,7 +20,7 @@ export default {
 export const Top = {
   render: () => (
     <Tooltip content="This is a tooltip" position="top">
-      <span style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', color: 'var(--color-text-primary)', cursor: 'default' }}>
+      <span style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-sm)', color: 'var(--color-text-primary)', cursor: 'default' }}>
         Hover me (top)
       </span>
     </Tooltip>
@@ -30,7 +30,7 @@ export const Top = {
 export const Bottom = {
   render: () => (
     <Tooltip content="Tooltip below" position="bottom">
-      <span style={{ fontFamily: 'var(--font-mono)', fontSize: 'var(--text-sm)', color: 'var(--color-text-primary)', cursor: 'default' }}>
+      <span style={{ fontFamily: 'var(--font-body)', fontSize: 'var(--text-sm)', color: 'var(--color-text-primary)', cursor: 'default' }}>
         Hover me (bottom)
       </span>
     </Tooltip>
