@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component:
-          'Footer pleine largeur sur Surface/deep. Glow décoratif, titre héro Fraunces, tags inverse, deux CTA (email + Calendly), liste disponibilité. Footer bar : LogoButton + nav + copyright.',
+          'Footer pleine largeur sur Surface/deep. Titre héro Outfit Bold, tags inverse, deux CTA (email + Calendly), liste disponibilité. Footer bar : LogoButton + nav + copyright.',
       },
     },
     layout: 'fullscreen',

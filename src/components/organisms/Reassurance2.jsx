@@ -34,7 +34,7 @@ function InfoItem({ label, sublabel }) {
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-base)',
-            fontWeight: 'var(--font-weight-semibold)',
+            fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-action-accent)',
             margin: 0,
             lineHeight: 1,

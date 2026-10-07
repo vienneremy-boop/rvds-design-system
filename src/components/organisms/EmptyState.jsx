@@ -32,7 +32,8 @@ export function EmptyState({
           justifyContent: 'center',
           width: '72px',
           height: '72px',
-          borderRadius: '36px',
+          borderRadius: 0,
+          clipPath: 'var(--cut-m)',
           background: 'var(--color-btn-secondary-bg)',
           flexShrink: 0,
         }}
@@ -45,7 +46,7 @@ export function EmptyState({
         style={{
           fontFamily: 'var(--font-display)',
           fontSize: 'var(--text-2xl)',
-          fontWeight: 'var(--font-weight-semibold)',
+          fontWeight: 'var(--font-weight-bold)',
           color: 'var(--color-text-primary)',
           margin: 0,
           lineHeight: 1,
@@ -61,7 +62,7 @@ export function EmptyState({
       {message && (
         <p
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-base)',
             fontWeight: 'var(--font-weight-medium)',
             color: 'var(--color-text-secondary)',

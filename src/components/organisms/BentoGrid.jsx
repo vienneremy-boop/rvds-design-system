@@ -62,7 +62,7 @@ export function BentoGrid({
           style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'var(--text-5xl)',
-            fontWeight: 'var(--font-weight-semibold)',
+            fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-text-primary)',
             margin: 0,
             lineHeight: 1,

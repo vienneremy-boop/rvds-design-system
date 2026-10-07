@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component:
-          'État vide avec icône Token hexagonale, titre Fraunces et CTA primary. Surface surface-page, dimensions 640×400px.',
+          'État vide avec icône Token hexagonale, titre Outfit Bold et CTA primary. Surface surface-page, dimensions 640×400px.',
       },
     },
   },

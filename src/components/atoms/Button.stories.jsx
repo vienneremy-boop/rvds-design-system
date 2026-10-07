@@ -8,7 +8,7 @@ export default {
     docs: {
       description: {
         component:
-          'Action principale ou secondaire. 3 variants × 3 tailles. Primary = violet #5A14BF. Secondary = fond off-white + bordure violet. Tertiary = ghost.',
+          'Action principale ou secondaire. 3 variants × 3 tailles. Primary = turquoise #07786A, texte blanc (lime en dark). Secondary = contour bleu, fond blanc. Tertiary = ghost. Primary et Secondary portent la coupe du point (coin bas-droit, 60°). Option `arrow` : flèche à droite du libellé.',
       },
     },
   },
@@ -47,6 +47,14 @@ export const Disabled = {
 
 export const WithIcon = {
   args: { label: 'Continue', variant: 'primary', size: 'large', icon: '→', iconPosition: 'right' },
+};
+
+export const WithArrow = {
+  args: { label: 'Voir mes études de cas', variant: 'primary', size: 'large', arrow: true },
+};
+
+export const SecondaryWithArrow = {
+  args: { label: 'Me contacter', variant: 'secondary', size: 'large', arrow: true },
 };
 
 export const FullWidth = {

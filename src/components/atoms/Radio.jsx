@@ -67,9 +67,9 @@ export function Radio({
       {label && (
         <span
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 'var(--font-weight-medium)',
+            fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-primary)',
           }}
         >

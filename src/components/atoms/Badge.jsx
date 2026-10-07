@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 
-// Figma: h=22px, radius=20px, 10px Bold JetBrains Mono
-// success/error show a colored dot before text
+// v2 : h=22px, coins droits (sous 24 px : pas de coupe), JetBrains Mono Bold
+// success/error : pastille carrée (le point) avant le texte
 const badgeConfig = {
   neutral:  { bg: 'var(--color-badge-neutral-bg)',  color: 'var(--color-badge-neutral-text)', border: '1px solid var(--color-badge-neutral-border)', dot: false },
-  brand:    { bg: 'var(--color-badge-brand-bg)',    color: 'var(--color-action-primary)',      border: '1px solid var(--color-btn-secondary-border)',  dot: false },
+  brand:    { bg: 'var(--color-badge-brand-bg)',    color: 'var(--color-tag-brand-text)',      border: 'none',                                          dot: false },
   electric: { bg: 'var(--color-badge-electric-bg)', color: 'var(--color-electric-text)',       border: '1px solid var(--color-badge-electric-border)', dot: false },
-  success:  { bg: 'var(--color-badge-success-bg)',  color: 'var(--color-badge-success-text)', border: 'none',                                          dot: '#029E73' },
-  error:    { bg: 'var(--color-badge-error-bg)',    color: 'var(--color-badge-error-text)',   border: 'none',                                          dot: '#F8413B' },
+  success:  { bg: 'var(--color-badge-success-bg)',  color: 'var(--color-badge-success-text)', border: 'none',                                          dot: 'var(--color-badge-success-text)' },
+  error:    { bg: 'var(--color-badge-error-bg)',    color: 'var(--color-badge-error-text)',   border: 'none',                                          dot: 'var(--color-badge-error-text)' },
   warning:  { bg: 'var(--color-badge-warning-bg)', color: 'var(--color-badge-warning-text)', border: 'none',                                          dot: false },
-  info:     { bg: 'var(--color-badge-info-bg)',     color: 'var(--color-action-primary)',      border: 'none',                                          dot: false },
+  info:     { bg: 'var(--color-badge-info-bg)',     color: 'var(--color-text-primary)',        border: 'none',                                          dot: false },
   outline:  { bg: 'transparent',                    color: 'var(--color-badge-neutral-text)', border: '1px solid var(--color-badge-outline-border)',   dot: false },
 };
 
@@ -24,7 +24,7 @@ export function Badge({ type = 'neutral', label }) {
         gap: cfg.dot ? 'var(--space-1)' : 0,
         height: '22px',
         padding: '0 var(--space-2)',
-        borderRadius: 'var(--radius-full)',
+        borderRadius: 2,
         background: cfg.bg,
         border: cfg.border,
         fontFamily: 'var(--font-mono)',
@@ -42,7 +42,6 @@ export function Badge({ type = 'neutral', label }) {
             display: 'inline-block',
             width: '5px',
             height: '5px',
-            borderRadius: '50%',
             background: cfg.dot,
             flexShrink: 0,
           }}

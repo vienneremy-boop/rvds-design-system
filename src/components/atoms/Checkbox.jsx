@@ -59,7 +59,7 @@ export function Checkbox({
         {checked && (
           <span
             style={{
-              color: '#FFFFFF',
+              color: 'var(--color-btn-primary-text)',
               fontSize: 'var(--text-xs)',
               fontWeight: 'var(--font-weight-bold)',
               lineHeight: 1,
@@ -72,9 +72,9 @@ export function Checkbox({
       {label && (
         <span
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 'var(--font-weight-medium)',
+            fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-primary)',
           }}
         >

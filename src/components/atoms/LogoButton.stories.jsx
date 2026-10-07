@@ -7,16 +7,16 @@ export default {
     docs: {
       description: {
         component:
-          'Pill logo cliquable. "Rémy" en Fraunces SemiBold deep + "Vienne" en Fraunces Italic primary. Hover : fond electric (light) ou fond violet via --color-logo-hover-bg (dark). Textes via --color-logo-hover-text / --color-logo-hover-italic. Utilisé dans NavDesktop et Footer.',
+          'Logo vectoriel « le point final » (version compacte). Texte en couleur du texte, point turquoise ; sur fond sombre (onDark) : texte toile, point lime. Utilisé dans NavDesktop et Footer.',
       },
     },
     layout: 'centered',
     backgrounds: {
       default: 'glass',
       values: [
-        { name: 'glass', value: 'rgba(200,200,220,0.4)' },
+        { name: 'glass', value: 'rgba(242,242,238,0.6)' },
         { name: 'white', value: '#ffffff' },
-        { name: 'deep', value: '#1d0a3d' },
+        { name: 'deep', value: '#0C364E' },
       ],
     },
   },

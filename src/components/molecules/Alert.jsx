@@ -31,9 +31,9 @@ export function Alert({ type = 'info', title, message }) {
         {title && (
           <p
             style={{
-              fontFamily: 'var(--font-mono)',
+              fontFamily: 'var(--font-body)',
               fontSize: 'var(--text-base)',
-              fontWeight: 'var(--font-weight-semibold)',
+              fontWeight: 'var(--font-weight-bold)',
               color: 'var(--color-text-primary)',
               margin: 0,
               lineHeight: 1,
@@ -45,7 +45,7 @@ export function Alert({ type = 'info', title, message }) {
         {message && (
           <p
             style={{
-              fontFamily: 'var(--font-mono)',
+              fontFamily: 'var(--font-body)',
               fontSize: 'var(--text-sm)',
               fontWeight: 'var(--font-weight-regular)',
               color: 'var(--color-text-secondary)',

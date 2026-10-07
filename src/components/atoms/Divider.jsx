@@ -74,12 +74,10 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
           gap: 'var(--space-2)',
           padding: 'var(--space-1) 20px',
           background: 'var(--color-badge-neutral-bg)',
-          border: '1px solid var(--color-divider)',
-          borderRadius: 'var(--radius-full)',
-          boxShadow: '0 0 0 0 rgba(29,10,61,0.12)',
+          clipPath: 'var(--cut-xs)',
         }}
       >
-        <span style={{ display: 'inline-block', width: '5px', height: '5px', borderRadius: '50%', background: 'var(--color-action-accent)' }} />
+        <span style={{ display: 'inline-block', width: '5px', height: '5px', background: 'var(--color-action-accent)' }} />
         <span
           style={{
             fontFamily: 'var(--font-mono)',
@@ -93,7 +91,7 @@ export function Divider({ type = 'default', label = 'Section Label' }) {
         >
           {label}
         </span>
-        <span style={{ display: 'inline-block', width: '5px', height: '5px', borderRadius: '50%', background: 'var(--color-action-accent)' }} />
+        <span style={{ display: 'inline-block', width: '5px', height: '5px', background: 'var(--color-action-accent)' }} />
       </div>
     );
   }

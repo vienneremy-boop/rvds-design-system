@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component:
-          'Project card en deux densités. `Feature` (480×380px) : titre Fraunces 2 lignes + description + footer tags/CTA. `Small` (300×280px) : titre Fraunces 1 ligne + description + footer tags/CTA.',
+          'Project card en deux densités. `Feature` (480×380px) : titre Outfit Bold 2 lignes + description + footer tags/CTA. `Small` (300×280px) : titre Outfit Bold 1 ligne + description + footer tags/CTA.',
       },
     },
   },

@@ -37,13 +37,12 @@ export function LabNav({
 
   const titleStyle = {
     fontFamily: 'var(--font-display)',
-    fontWeight: 'var(--font-weight-black)',
-    fontStyle: 'italic',
+    fontWeight: 'var(--font-weight-bold)',
+    fontStyle: 'normal',
     lineHeight: 1,
     letterSpacing: '-0.03em',
     color: '#ffffff',
     margin: 0,
-    fontVariationSettings: "'SOFT' 0, 'WONK' 1",
     fontSize: hasBoth ? 'clamp(28px, 4vw, 52px)' : 'clamp(36px, 6vw, 72px)',
   };
 
@@ -56,7 +55,7 @@ export function LabNav({
     marginLeft: '12px',
     fontFamily: 'var(--font-mono)',
     fontSize: 'var(--text-xs)',
-    fontWeight: 'var(--font-weight-semibold)',
+    fontWeight: 'var(--font-weight-bold)',
     textTransform: 'uppercase',
     letterSpacing: '0.1em',
     color: 'rgba(255,255,255,0.6)',
@@ -71,7 +70,7 @@ export function LabNav({
       style={{
         display: 'grid',
         gridTemplateColumns: hasBoth ? '1fr 1fr' : '1fr',
-        background: 'linear-gradient(135deg, #3a0d8c 0%, #1D0A3D 60%, #0c0619 100%)',
+        background: '#0C364E',
       }}
       aria-label="Navigation entre projets"
     >

@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component:
-          'Grille projets : 1 Card Feature à gauche (flex-1) + 2 Cards Small empilées à droite (340px). Header avec titre Fraunces h1 + lien "Voir tous".',
+          'Grille projets : 1 Card Feature à gauche (flex-1) + 2 Cards Small empilées à droite (340px). Header avec titre Outfit Bold h1 + lien "Voir tous".',
       },
     },
     layout: 'fullscreen',

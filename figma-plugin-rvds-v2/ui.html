@@ -1,0 +1,37 @@
+<style>
+  body { font: 13px/1.45 Inter, system-ui, sans-serif; color: #0C364E; margin: 0; padding: 16px; }
+  h1 { font-size: 15px; margin: 0 0 4px; } p { margin: 0 0 12px; color: #4C5E6A; }
+  .row { display: flex; gap: 8px; margin-bottom: 12px; }
+  button { font: 600 12px Inter, system-ui; padding: 8px 12px; border: 1px solid #0C364E; background: #fff; color: #0C364E; cursor: pointer; }
+  button.primary { background: #07786A; border-color: #07786A; color: #fff; } button:disabled { opacity: .4; cursor: default; }
+  #list { border: 1px solid #D5D8D2; height: 330px; overflow: auto; font: 11px/1.5 ui-monospace, Menlo, monospace; }
+  .it { display: flex; gap: 8px; align-items: center; padding: 4px 8px; border-bottom: 1px solid #EEF2F1; }
+  .sw { width: 12px; height: 12px; border: 1px solid #0002; flex: none; } .lb { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  textarea { width: 100%; height: 330px; font: 11px ui-monospace, Menlo, monospace; box-sizing: border-box; }
+  #status { margin-top: 10px; font-weight: 600; }
+</style>
+<h1>Passage à l'identité v2</h1>
+<p>1. Aperçu : rien n'est modifié. 2. Vérifie la liste. 3. Appliquer. Annulable avec ⌘Z.</p>
+<div class="row">
+  <button id="scan">1 · Aperçu</button>
+  <button id="apply" class="primary" disabled>2 · Appliquer</button>
+  <button id="inv">Exporter l'inventaire</button>
+</div>
+<div id="list"></div>
+<div id="status"></div>
+<script>
+  const $ = (id) => document.getElementById(id);
+  $('scan').onclick = () => parent.postMessage({ pluginMessage: { type: 'scan' } }, '*');
+  $('apply').onclick = () => { $('apply').disabled = true; parent.postMessage({ pluginMessage: { type: 'apply' } }, '*'); };
+  $('inv').onclick = () => parent.postMessage({ pluginMessage: { type: 'inventory' } }, '*');
+  onmessage = (e) => {
+    const m = e.data.pluginMessage;
+    if (m.type === 'scan') {
+      $('list').innerHTML = m.changes.map((c) => `<div class="it">${c.kind === 'color' ? `<span class="sw" style="background:${c.from}"></span>→<span class="sw" style="background:${c.to}"></span>` : '<span>Aa</span>'}<span class="lb" title="${c.label}">${c.label}</span><span>${c.from} → ${c.to}</span></div>`).join('') || '<div class="it">Rien à changer.</div>';
+      $('status').textContent = `${m.changes.length} modification(s) prête(s).`;
+      $('apply').disabled = m.changes.length === 0;
+    }
+    if (m.type === 'applied') $('status').textContent = `${m.done} modification(s) appliquée(s). ${m.errors.length ? 'Erreurs : ' + m.errors.join(' · ') : ''}`;
+    if (m.type === 'inventory') { $('list').innerHTML = `<textarea readonly>${JSON.stringify(m.data, null, 1).replace(/</g, '&lt;')}</textarea>`; $('status').textContent = `${m.data.length} variables. Copie le texte et colle-le dans Claude pour un réglage fin.`; }
+  };
+</script>

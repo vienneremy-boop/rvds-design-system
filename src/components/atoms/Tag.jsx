@@ -1,26 +1,22 @@
 import PropTypes from 'prop-types';
 
-// Figma: 4 types, radius-card (8px), 10px Bold, px-8px py-4px
+// v2 : coupe XS (coin bas-droit 60°), sans contour, JetBrains Mono Bold
 const tagStyles = {
   brand: {
     background: 'var(--color-tag-brand-bg)',
     color: 'var(--color-tag-brand-text)',
-    border: '1px solid var(--color-tag-brand-border)',
   },
   electric: {
     background: 'var(--color-electric-bg)',
     color: 'var(--color-electric-text)',
-    border: '1px solid var(--color-electric-border)',
   },
   white: {
     background: 'var(--color-tag-neutral-bg)',
     color: 'var(--color-tag-neutral-text)',
-    border: '1px solid var(--color-tag-neutral-border)',
   },
   'brand-inverse': {
     background: 'var(--color-tag-inverse-bg)',
     color: 'var(--color-tag-brand-text)',
-    border: '1px solid var(--color-tag-inverse-border)',
   },
 };
 
@@ -32,8 +28,8 @@ export function Tag({ type = 'brand', label }) {
       style={{
         display: 'inline-flex',
         alignItems: 'center',
-        padding: '4px 8px',
-        borderRadius: 'var(--radius-default)',
+        padding: '4px 12px 4px 8px',
+        clipPath: 'var(--cut-xs)',
         fontFamily: 'var(--font-mono)',
         fontSize: 'var(--text-xs)',
         fontWeight: 'var(--font-weight-bold)',

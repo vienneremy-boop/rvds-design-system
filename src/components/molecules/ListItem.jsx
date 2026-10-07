@@ -24,7 +24,7 @@ export function ListItem({ state = 'default', label, description, leading, onCli
     opacity: isDisabled ? 0.4 : 1,
     cursor: isDisabled ? 'not-allowed' : onClick || href ? 'pointer' : 'default',
     textDecoration: 'none',
-    color: 'inherit',
+    color: 'var(--color-text-primary)',
     width: '100%',
     boxSizing: 'border-box',
     transition: 'padding var(--transition-fast)',
@@ -54,7 +54,7 @@ export function ListItem({ state = 'default', label, description, leading, onCli
       <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: 'var(--space-1)' }}>
         <p
           style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-sm)',
             fontWeight: 'var(--font-weight-medium)',
             color: isActive ? 'var(--color-action-accent)' : 'var(--color-text-primary)',

@@ -6,7 +6,7 @@ export default {
   parameters: {
     docs: {
       description: {
-        component: 'Barre de progression h=5px, 2 variantes : brand (dégradé violet) et electric (dégradé lime).',
+        component: 'Barre de progression h=5px, 2 variantes : brand (turquoise) et electric (lime, sur fond bleu uniquement).',
       },
     },
   },

@@ -10,7 +10,7 @@ export function TabItem({
 
   // Active + hovered: outer gets brand-bg pill
   const outerBg = (active && hovered) ? 'var(--color-badge-brand-bg)' : 'transparent';
-  const outerRadius = (active && hovered) ? 'var(--radius-full)' : 'var(--radius-sm)';
+  const outerRadius = 'var(--radius-sm)';
 
   // Hovered only (not active): inner content gets nav-tab-hover pill
   const contentBg = (!active && hovered) ? 'var(--color-nav-tab-hover)' : 'transparent';

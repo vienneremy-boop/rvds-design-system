@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 const VARIANTS = {
   brand: {
     track: 'var(--color-divider)',
-    bar: 'linear-gradient(to right, #6600FF, #A880FF)',
+    bar: 'var(--color-action-primary)',
     labelColor: 'var(--color-text-secondary)',
   },
   electric: {
     track: 'var(--color-surface-page)',
-    bar: 'linear-gradient(to right, #96C200, #C8F000)',
+    bar: 'var(--color-electric)',
     labelColor: 'var(--color-text-subtle)',
   },
 };

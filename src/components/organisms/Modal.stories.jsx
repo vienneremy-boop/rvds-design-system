@@ -9,7 +9,7 @@ export default {
     docs: {
       description: {
         component:
-          'Modale 600×520px. Header avec titre Fraunces + close button (fond info-bg). Body avec description mono + content slot (fond info-bg). Footer avec boutons Annuler + Confirmer. Fermeture Escape + clic overlay.',
+          'Modale 600×520px. Header avec titre Outfit Bold + close button (fond info-bg). Body avec description Outfit + content slot (fond info-bg). Footer avec boutons Annuler + Confirmer. Fermeture Escape + clic overlay.',
       },
     },
   },
@@ -36,13 +36,14 @@ export const Default = {
           style={{
             padding: '12px 20px',
             background: 'var(--color-action-primary)',
-            border: '2px solid var(--color-action-deep)',
-            borderRadius: 'var(--radius-btn)',
+            border: 'none',
+            borderRadius: 0,
+            clipPath: 'var(--cut-s)',
             cursor: 'pointer',
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-sm)',
-            fontWeight: 'var(--font-weight-medium)',
-            color: '#fff',
+            fontWeight: 'var(--font-weight-bold)',
+            color: 'var(--color-btn-primary-text)',
           }}
         >
           Ouvrir la modale

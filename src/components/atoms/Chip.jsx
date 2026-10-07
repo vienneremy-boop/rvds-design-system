@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import { Cut } from './Cut';
 
 export function Chip({
   label,
@@ -30,6 +31,7 @@ export function Chip({
     color = 'var(--color-text-primary)';
   }
 
+  const borderColor = border.replace('1px solid ', '');
   return (
     <button
       onClick={handleClick}
@@ -39,27 +41,23 @@ export function Chip({
       onMouseLeave={() => setHovered(false)}
       style={{
         display: 'inline-flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 'var(--space-2) var(--space-3)',
-        borderRadius: 'var(--radius-full)',
-        background: bg,
-        border,
+        padding: 0,
+        border: 0,
+        background: 'transparent',
         fontFamily: 'var(--font-mono)',
         fontSize: 'var(--text-sm)',
-        fontWeight: 'var(--font-weight-medium)',
-        color,
+        fontWeight: 'var(--font-weight-regular)',
         cursor: disabled ? 'not-allowed' : 'pointer',
         opacity: disabled ? 0.4 : 1,
-        transition: 'background var(--transition-fast), border var(--transition-fast), color var(--transition-fast)',
         userSelect: 'none',
-        outline: 'none',
         whiteSpace: 'nowrap',
+        outlineOffset: 3,
       }}
-      onFocus={e => { e.currentTarget.style.boxShadow = '0 0 0 3px var(--color-action-primary)'; }}
-      onBlur={e => { e.currentTarget.style.boxShadow = 'none'; }}
     >
-      {label}
+      <Cut size="xs" background={bg} borderColor={borderColor} borderWidth={1}
+        innerStyle={{ alignItems: 'center', padding: 'var(--space-2) var(--space-4) var(--space-2) var(--space-3)', color, transition: 'background var(--transition-fast), color var(--transition-fast)' }}>
+        {label}
+      </Cut>
     </button>
   );
 }

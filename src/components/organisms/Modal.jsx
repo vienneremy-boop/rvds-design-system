@@ -42,7 +42,7 @@ export function Modal({
       style={{
         position: 'fixed',
         inset: 0,
-        background: 'rgba(8,4,26,0.6)',
+        background: 'rgba(6,27,39,0.6)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -63,8 +63,9 @@ export function Modal({
           width: '600px',
           height: '520px',
           background: 'var(--color-btn-secondary-bg)',
-          borderRadius: '24px',
-          boxShadow: '0px 24px 64px 0px rgba(26,10,56,0.3)',
+          borderRadius: 0,
+          clipPath: 'var(--cut-m)',
+          boxShadow: '0px 24px 64px 0px rgba(12,54,78,0.3)',
           overflow: 'hidden',
   
           flexShrink: 0,
@@ -86,7 +87,7 @@ export function Modal({
             style={{
               fontFamily: 'var(--font-display)',
               fontSize: 'var(--text-2xl)',
-              fontWeight: 'var(--font-weight-semibold)',
+              fontWeight: 'var(--font-weight-bold)',
               color: 'var(--color-text-primary)',
               margin: 0,
               lineHeight: 1,
@@ -104,7 +105,7 @@ export function Modal({
               justifyContent: 'center',
               width: '40px',
               height: '40px',
-              borderRadius: '100px',
+              borderRadius: 0,
               background: 'var(--color-badge-info-bg)',
               border: 'none',
               cursor: 'pointer',
@@ -131,7 +132,7 @@ export function Modal({
           {description && (
             <p
               style={{
-                fontFamily: 'var(--font-mono)',
+                fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-base)',
                 fontWeight: 'var(--font-weight-medium)',
                 color: 'var(--color-text-secondary)',
@@ -148,7 +149,7 @@ export function Modal({
               flex: 1,
               minHeight: 0,
               background: 'var(--color-badge-info-bg)',
-              borderRadius: '12px',
+              borderRadius: 'var(--radius-sm)',
               overflow: 'hidden',
             }}
           >

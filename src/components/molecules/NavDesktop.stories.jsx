@@ -17,7 +17,7 @@ export default {
       values: [
         { name: 'hero', value: 'linear-gradient(135deg, #f0eeff 0%, #e8f5e9 100%)' },
         { name: 'white', value: '#ffffff' },
-        { name: 'deep', value: '#1d0a3d' },
+        { name: 'deep', value: '#0C364E' },
       ],
     },
   },

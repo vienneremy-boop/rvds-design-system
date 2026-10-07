@@ -14,12 +14,13 @@ function InfoItem({ metric, description }) {
       <div
         className="reassurance-dot"
         style={{
-          width: '24px',
-          height: '24px',
-          borderRadius: '50%',
-          background: 'var(--color-electric)',
+          width: '12px',
+          height: '12px',
+          clipPath: 'var(--cut-point)',
+          background: 'var(--color-action-primary)',
           flexShrink: 0,
-          marginRight: '-12px',
+          marginTop: '5px',
+          marginRight: '10px',
         }}
       />
       <div
@@ -37,7 +38,7 @@ function InfoItem({ metric, description }) {
           style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-base)',
-            fontWeight: 'var(--font-weight-semibold)',
+            fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-text-primary)',
             margin: 0,
             lineHeight: 1,

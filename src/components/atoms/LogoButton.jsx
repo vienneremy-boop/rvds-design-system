@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import { Logo } from './Logo';
 
-export function LogoButton({ onClick }) {
+// v2 : le logo vectoriel compact (jamais retapé). Au survol, le point passe en bleu puis revient : un clin d'œil, pas une animation.
+export function LogoButton({ onClick, height = 26, onDark = false }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -14,56 +16,27 @@ export function LogoButton({ onClick }) {
       style={{
         display: 'inline-flex',
         alignItems: 'center',
-        gap: 'var(--space-1)',
-        height: '32px',
-        padding: '0 10px',
-        background: hovered ? 'var(--color-logo-hover-bg, var(--color-electric))' : 'var(--color-btn-secondary-bg)',
-        borderRadius: 'var(--radius-full)',
+        padding: '6px 4px',
+        background: 'transparent',
         border: 'none',
         cursor: 'pointer',
-        boxShadow: hovered
-          ? '0 2px 4px rgba(0,0,0,0.04), 0 1px 1px rgba(0,0,0,0.02)'
-          : '0 1px 4px rgba(29,10,61,0.08)',
-        transition:
-          'background var(--transition-fast), box-shadow var(--transition-fast)',
-        whiteSpace: 'nowrap',
-        userSelect: 'none',
+        color: onDark ? 'var(--color-text-on-deep)' : 'var(--color-text-primary)',
+        '--rv-logo-point': onDark ? 'var(--color-electric)' : undefined,
         flexShrink: 0,
+        outlineOffset: 3,
+        transform: hovered ? 'translateY(-1px)' : 'none',
+        transition: 'transform var(--transition-fast)',
       }}
     >
-      <span
-        style={{
-          fontFamily: 'var(--font-display)',
-          fontSize: 'var(--text-base)',
-          fontWeight: 'var(--font-weight-semibold)',
-          color: 'var(--color-logo-hover-text, var(--color-action-deep))',
-          fontVariationSettings: "'SOFT' 0, 'WONK' 1",
-          lineHeight: 1,
-          transition: 'color var(--transition-fast)',
-        }}
-      >
-        Rémy
-      </span>
-      <span
-        style={{
-          fontFamily: 'var(--font-display)',
-          fontSize: 'var(--text-base)',
-          fontStyle: 'italic',
-          fontWeight: 'var(--font-weight-regular)',
-          color: 'var(--color-logo-hover-italic, var(--color-action-primary))',
-          fontVariationSettings: "'SOFT' 0, 'WONK' 1",
-          lineHeight: 1,
-          transition: 'color var(--transition-fast)',
-        }}
-      >
-        Vienne
-      </span>
+      <Logo variant="compact" height={height} />
     </button>
   );
 }
 
 LogoButton.propTypes = {
   onClick: PropTypes.func,
+  height:  PropTypes.number,
+  onDark:  PropTypes.bool,
 };
 
 export default LogoButton;

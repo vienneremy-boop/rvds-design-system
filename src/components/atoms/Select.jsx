@@ -54,7 +54,7 @@ export function Select({
             border: borderStyle,
             borderRadius: 'var(--radius-sm)',
             background: 'var(--color-input-bg)',
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-sm)',
             fontWeight: 'var(--font-weight-regular)',
             color: value ? 'var(--color-text-primary)' : 'var(--color-text-secondary)',

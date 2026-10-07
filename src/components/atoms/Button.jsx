@@ -1,33 +1,28 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import { Cut } from './Cut';
 
-// Figma: Primary = violet #5A14BF | Secondary = off-white bg + violet border | Tertiary = ghost
+// v2 « le point final » : coin bas-droit coupé à 60° (coupe S), Outfit Bold, flèche optionnelle à droite.
+// Primary = turquoise + texte blanc (lime + texte bleu en dark) | Secondary = contour bleu, fond blanc | Tertiary = ghost, sans coupe
 const sizeMap = {
-  large:  { padding: '20px 32px', fontSize: 'var(--text-sm)', gap: '8px',  iconSize: '24px' },
-  medium: { padding: '12px 20px', fontSize: 'var(--text-sm)', gap: '8px',  iconSize: '20px' },
-  small:  { padding: '8px 16px',  fontSize: 'var(--text-xs)', gap: '4px',  iconSize: '16px' },
+  large:  { padding: '16px 24px 16px 22px', fontSize: 'var(--text-base)', gap: '12px', iconSize: '20px' },
+  medium: { padding: '12px 20px 12px 18px', fontSize: '15px',             gap: '10px', iconSize: '18px' },
+  small:  { padding: '8px 16px 8px 14px',   fontSize: 'var(--text-sm)',   gap: '8px',  iconSize: '16px' },
 };
 
 const variantBase = {
-  primary: {
-    background: 'var(--color-action-primary)',
-    color: 'var(--color-btn-primary-text)',
-    border: '2px solid transparent',
-    hoverBackground: 'var(--color-action-primary-hover)',
-  },
-  secondary: {
-    background: 'var(--color-btn-secondary-bg)',
-    color: 'var(--color-action-primary)',
-    border: '2px solid var(--color-btn-secondary-border)',
-    hoverBackground: 'var(--color-surface-card)',
-  },
-  tertiary: {
-    background: 'transparent',
-    color: 'var(--color-action-deep)',
-    border: '2px solid transparent',
-    hoverBackground: 'var(--color-btn-tertiary-hover)',
-  },
+  primary:   { background: 'var(--color-action-primary)', color: 'var(--color-btn-primary-text)', hoverBackground: 'var(--color-action-primary-hover)' },
+  secondary: { background: 'var(--color-btn-secondary-bg)', color: 'var(--color-action-deep)', border: 'var(--color-btn-secondary-border)', hoverBackground: 'var(--color-action-row-hover)' },
+  tertiary:  { background: 'transparent', color: 'var(--color-action-deep)', hoverBackground: 'var(--color-btn-tertiary-hover)' },
 };
+
+export function Arrow({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 20 20" aria-hidden="true" style={{ display: 'block' }}>
+      <path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square" />
+    </svg>
+  );
+}
 
 export function Button({
   variant = 'primary',
@@ -35,6 +30,7 @@ export function Button({
   label = 'Button',
   icon,
   iconPosition = 'right',
+  arrow = false,
   disabled = false,
   fullWidth = false,
   onClick,
@@ -42,28 +38,27 @@ export function Button({
   'aria-label': ariaLabel,
 }) {
   const [hovered, setHovered] = useState(false);
-
   const { padding, fontSize, gap, iconSize } = sizeMap[size] || sizeMap.large;
   const v = variantBase[variant] || variantBase.primary;
+  const active = hovered && !disabled;
+  const bg = active ? v.hoverBackground : v.background;
 
-  const bg    = hovered && !disabled ? v.hoverBackground : v.background;
-  const color = v.color;
-  const border = variant === 'secondary' && hovered && !disabled
-    ? '2px solid var(--color-action-primary-hover)'
-    : v.border;
-
-  const transform = hovered && !disabled ? 'translateY(-2px) scale(1.01)' : 'none';
-  const boxShadow = hovered && !disabled
-    ? variant === 'primary'
-      ? '0 8px 24px rgba(90, 20, 191, 0.3)'
-      : variant === 'secondary'
-        ? '0 4px 16px rgba(90, 20, 191, 0.15)'
-        : 'none'
-    : 'none';
-
-  const iconEl = icon ? (
-    <span style={{ display: 'flex', alignItems: 'center', fontSize: iconSize }}>{icon}</span>
+  const iconEl = icon ? <span style={{ display: 'flex', alignItems: 'center', fontSize: iconSize }}>{icon}</span> : null;
+  const arrowEl = arrow ? (
+    <span style={{ display: 'flex', transform: active ? 'translateX(3px)' : 'none', transition: 'transform var(--transition-base)' }}>
+      <Arrow size={parseInt(iconSize, 10) - 2} />
+    </span>
   ) : null;
+
+  const content = (
+    <>
+      {iconPosition === 'left' && iconEl}
+      {label}
+      {iconPosition === 'right' && iconEl}
+      {arrowEl}
+    </>
+  );
+  const inner = { alignItems: 'center', justifyContent: 'center', gap, padding, width: '100%', color: v.color, transition: 'background var(--transition-fast)' };
 
   return (
     <button
@@ -74,33 +69,30 @@ export function Button({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
-        display: 'inline-flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap,
-        padding,
-        borderRadius: 'var(--radius-btn)',
-        background: bg,
-        color,
-        border,
-        fontFamily: 'var(--font-mono)',
+        display: fullWidth ? 'flex' : 'inline-flex',
+        padding: 0,
+        border: 0,
+        background: 'transparent',
+        fontFamily: 'var(--font-display)',
         fontSize,
-        fontWeight: 'var(--font-weight-medium)',
-        lineHeight: '1.4',
-        letterSpacing: 0,
+        fontWeight: 'var(--font-weight-bold)',
+        lineHeight: 1.2,
+        letterSpacing: '0.005em',
         cursor: disabled ? 'not-allowed' : 'pointer',
         opacity: disabled ? 0.38 : 1,
         width: fullWidth ? '100%' : undefined,
-        transform,
-        boxShadow,
-        transition: 'background var(--transition-fast), border var(--transition-fast), transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow var(--transition-fast)',
         whiteSpace: 'nowrap',
         userSelect: 'none',
+        outlineOffset: 3,
       }}
     >
-      {iconPosition === 'left' && iconEl}
-      {label}
-      {iconPosition === 'right' && iconEl}
+      {variant === 'tertiary' ? (
+        <span style={{ display: 'inline-flex', background: bg, borderRadius: 'var(--radius-sm)', ...inner }}>{content}</span>
+      ) : (
+        <Cut size="s" background={bg} borderColor={v.border} style={{ width: fullWidth ? '100%' : undefined }} innerStyle={inner}>
+          {content}
+        </Cut>
+      )}
     </button>
   );
 }
@@ -111,6 +103,7 @@ Button.propTypes = {
   label:        PropTypes.string,
   icon:         PropTypes.node,
   iconPosition: PropTypes.oneOf(['left', 'right']),
+  arrow:        PropTypes.bool,
   disabled:     PropTypes.bool,
   fullWidth:    PropTypes.bool,
   onClick:      PropTypes.func,

@@ -9,7 +9,7 @@ export default {
     docs: {
       description: {
         component:
-          "Bottom bar mobile — 4 tabs pill 401×70px. Indicateur 2px violet en haut sur l'actif. Icons : Home, Terminal, Wireframe, Mail. Backdrop-filter blur + safe-area-inset-bottom.",
+          "Bottom bar mobile — 4 tabs pill 401×70px. Indicateur 2px turquoise en haut sur l'actif. Icons : Home, Terminal, Wireframe, Mail. Backdrop-filter blur + safe-area-inset-bottom.",
       },
     },
     layout: 'fullscreen',

@@ -37,7 +37,6 @@ function AccordionItem({ id, title, body, isOpen, onToggle }) {
             fontWeight: 'var(--font-weight-bold)',
             color: 'var(--color-text-primary)',
             lineHeight: 1.3,
-            fontVariationSettings: "'SOFT' 0, 'WONK' 1",
           }}
         >
           {title}
@@ -68,7 +67,7 @@ function AccordionItem({ id, title, body, isOpen, onToggle }) {
         <div
           style={{
             padding: '0 20px 20px',
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-sm)',
             fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-secondary)',

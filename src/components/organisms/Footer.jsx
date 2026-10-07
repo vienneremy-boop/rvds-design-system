@@ -39,7 +39,7 @@ function FooterListItem({ label, detail }) {
       boxSizing: 'border-box',
     }}>
       <div style={{ width: '20px', height: '20px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--color-electric)' }} />
+        <div style={{ width: '8px', height: '8px', background: 'var(--color-electric)' }} />
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', flex: 1, minWidth: 0 }}>
         <p style={{
@@ -88,20 +88,6 @@ export function Footer({
       position: 'relative',
     }}>
 
-      {/* Decorative glow blob */}
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '800px',
-        height: '600px',
-        borderRadius: '50%',
-        background: 'rgba(89,20,178,0.25)',
-        filter: 'blur(80px)',
-        pointerEvents: 'none',
-        zIndex: 0,
-      }} />
-
       {/* Contact section */}
       <div style={{
         position: 'relative',
@@ -124,32 +110,29 @@ export function Footer({
             margin: 0,
             lineHeight: '92px',
             letterSpacing: '-3px',
-            fontVariationSettings: "'SOFT' 0, 'WONK' 1",
           }}>
             Travaillons
           </p>
           <p style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'var(--text-9xl)',
-            fontWeight: 'var(--font-weight-black)',
-            fontStyle: 'italic',
+            fontWeight: 'var(--font-weight-bold)',
+            fontStyle: 'normal',
             color: 'var(--color-electric)',
             margin: 0,
             lineHeight: '92px',
             letterSpacing: '-3px',
-            fontVariationSettings: "'SOFT' 0, 'WONK' 1",
           }}>
             ensemble
           </p>
           <p style={{
             fontFamily: 'var(--font-display)',
             fontSize: 'var(--text-9xl)',
-            fontWeight: 'var(--font-weight-black)',
-            color: 'var(--color-action-accent)',
+            fontWeight: 'var(--font-weight-bold)',
+            color: 'var(--color-text-on-deep)',
             margin: 0,
             lineHeight: '92px',
             letterSpacing: '-3px',
-            fontVariationSettings: "'SOFT' 0, 'WONK' 1",
           }}>
             maintenant.
           </p>
@@ -160,7 +143,7 @@ export function Footer({
 
           {/* Intro */}
           <p style={{
-            fontFamily: 'var(--font-mono)',
+            fontFamily: 'var(--font-body)',
             fontSize: 'var(--text-xl)',
             fontWeight: 'var(--font-weight-regular)',
             color: 'var(--color-text-secondary-on-deep)',
@@ -219,7 +202,7 @@ export function Footer({
 
         {/* Logo + tagline */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
-          <LogoButton onClick={onLogoClick} />
+          <LogoButton onClick={onLogoClick} onDark />
           <p style={{
             fontFamily: 'var(--font-mono)',
             fontSize: 'var(--text-sm)',

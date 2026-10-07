@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component:
-          'Row de liste avec icône (slot), contenu (label + detail) et chevron. Hover/Active ajoutent un padding horizontal. Active passe le label en accent violet.',
+          'Row de liste avec icône (slot), contenu (label + detail) et chevron. Hover/Active ajoutent un padding horizontal. Active passe le label en accent turquoise.',
       },
     },
   },

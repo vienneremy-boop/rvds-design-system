@@ -1,107 +1,110 @@
 /* ============================================================
-   Design OS — Rémy Vienne — Design Tokens v1.0
+   Design OS — Rémy Vienne — Design Tokens v2.0 (identité « le point final », 07/10/2026)
    ============================================================ */
 
-/* Fonts loaded via @fontsource — no CORS issues in Storybook */
+/* Polices : Outfit (titres et textes, src/assets/fonts/outfit) + JetBrains Mono (petits détails, @fontsource) */
 
 /* ---- Light mode (default) --------------------------------- */
 :root {
   /* Surface */
   --color-surface-page: #F2F2EE;
   --color-surface-card: #FFFFFF;
-  --color-surface-raised: #C4BAFF;
-  --color-surface-deep: #1D0A3D;
+  --color-surface-raised: #D9ECE8;
+  --color-surface-deep: #0C364E;
 
   /* Text on Surface/deep (inverts with the surface) */
-  --color-text-on-deep: #FFFFFF;
-  --color-text-secondary-on-deep: rgba(255, 255, 255, 0.5);
-  --color-text-muted-on-deep: #B3BCC3;
-  --color-border-on-deep: rgba(255, 255, 255, 0.12);
-  --color-divider-on-deep: rgba(255, 255, 255, 0.1);
-  --color-surface-overlay: rgba(29, 10, 56, 0.06);
+  --color-text-on-deep: #F2F2EE;
+  --color-text-secondary-on-deep: rgba(242, 242, 238, 0.62);
+  --color-text-muted-on-deep: #B9CAD3;
+  --color-border-on-deep: rgba(242, 242, 238, 0.14);
+  --color-divider-on-deep: rgba(242, 242, 238, 0.10);
+  --color-surface-overlay: rgba(12, 54, 78, 0.06);
 
   /* Text */
-  --color-text-primary: #1D0A3D;
-  --color-text-secondary: #4E5B6B;
-  --color-text-inverse: #F7F5FF;
-  --color-text-subtle: #535F6B;
-  --color-text-disabled: #B5ADBE;
+  --color-text-primary: #0C364E;
+  --color-text-secondary: #4C5E6A;
+  --color-text-inverse: #F2F2EE;
+  --color-text-subtle: #5A6B76;
+  --color-text-disabled: #A9B4BA;
 
-  /* Action — brand violet (buttons, interactive) */
-  --color-action-primary: #5A14BF;
-  --color-action-primary-hover: #4A1495;
-  --color-action-accent: #7115E0;
-  --color-action-deep: #1D0A3D;
-  --color-action-deep-hover: #2E1460;
+  /* Action — turquoise : point du logo, bouton principal, un titre mis en avant par écran */
+  --color-action-primary: #07786A;
+  --color-action-primary-hover: #06685C;
+  --color-action-accent: #07786A;
+  --color-action-deep: #0C364E;
+  --color-action-deep-hover: #0A2C40;
 
-  /* Electric lime accent */
+  /* Lime : uniquement sur fond bleu profond (jamais sur fond clair) */
   --color-electric: #D7FC41;
-  --color-electric-bg: #FAFFE9;
-  --color-electric-border: #DEE8A7;
-  --color-electric-text: #636b0c;
+  --color-electric-bg: #0C364E;
+  --color-electric-border: #0C364E;
+  --color-electric-text: #D7FC41;
 
   /* Button surfaces */
   --color-btn-primary-text: #FFFFFF;
-  --color-btn-secondary-bg: #F2F2EE;
-  --color-action-row-hover: #EFF1F3;
-  --color-btn-secondary-border: #5A14BF;
-  --color-btn-tertiary-hover: rgba(90, 20, 191, 0.08);
-  --color-nav-glass-bg: rgba(255, 255, 255, 0.5);
-  --color-nav-tab-hover: #ECEAFF;
+  --color-btn-secondary-bg: #FFFFFF;
+  --color-action-row-hover: #EEF2F1;
+  --color-btn-secondary-border: #0C364E;
+  --color-btn-tertiary-hover: rgba(7, 120, 106, 0.08);
+  --color-nav-glass-bg: rgba(255, 255, 255, 0.6);
+  --color-nav-tab-hover: #E3EFEC;
   --color-syntax-keyword: #7ee8a2;
   --color-syntax-purple: #c792ea;
   --color-syntax-green: #c3e88d;
   --color-syntax-blue: #82aaff;
-  --color-text-on-electric: #0C0619; /* dark text on electric/lime bg */
+  --color-text-on-electric: #0C364E; /* dark text on electric/lime bg */
 
   /* Input / Form */
   --color-input-bg: #FFFFFF;
-  --color-input-border: #EAE4E1;
-  --color-input-placeholder: #8C96A2;
+  --color-input-border: #D5D8D2;
+  --color-input-placeholder: #7D8B93;
   --color-input-focus-border: var(--color-action-primary);
   /* Chip */
-  --color-chip-bg: #F7F8F9;
-  --color-chip-selected-bg: var(--color-electric);
-  --color-chip-selected-text: #1D0A3D;
+  --color-chip-bg: #FFFFFF;
+  --color-chip-selected-bg: #0C364E;
+  --color-chip-selected-text: #F2F2EE;
   /* Skeleton */
-  --color-skeleton: #ECEAFF;
+  --color-skeleton: #E4E8E6;
 
   /* Tag surfaces */
-  --color-tag-brand-bg: #F8F7FF;
-  --color-tag-brand-border: #EAE7FF;
-  --color-tag-brand-text: #5A14BF;
-  --color-tag-inverse-bg: #EADCFA;
-  --color-tag-inverse-border: #C5ADE9;
-  --color-tag-neutral-bg: #F5F5F8;
-  --color-tag-neutral-border: #E4E8EA;
-  --color-tag-neutral-text: #4E5B6B;
+  --color-tag-brand-bg: #E6F2EF;
+  --color-tag-brand-border: #C7E2DC;
+  --color-tag-brand-text: #07786A;
+  --color-tag-inverse-bg: #DCE6EB;
+  --color-tag-inverse-border: #B9CAD3;
+  --color-tag-neutral-bg: #F2F2EE;
+  --color-tag-neutral-border: #D5D8D2;
+  --color-tag-neutral-text: #4C5E6A;
 
   /* Badge surfaces */
-  --color-badge-brand-bg: #DED9FF;
-  --color-badge-electric-bg: #E8FE91;
-  --color-badge-electric-border: #A1BC03;
-  --color-badge-success-bg: #BEEFE3;
-  --color-badge-success-text: #029E73;
-  --color-badge-error-bg: #FFE2E1;
-  --color-badge-error-text: #F8413B;
-  --color-badge-warning-bg: #FFDDB4;
-  --color-badge-warning-text: #FF5A02;
-  --color-badge-info-bg: #C4BAFF;
+  --color-badge-brand-bg: #E6F2EF;   /* éclairci : turquoise ≥ 4,5:1 sur le badge */
+  --color-badge-electric-bg: #0C364E;
+  --color-badge-electric-border: #0C364E;
+  --color-badge-success-bg: #DDF0E8;
+  --color-badge-success-text: #0B6B4F;
+  --color-badge-error-bg: #FBE3E1;
+  --color-badge-error-text: #B3261E;
+  --color-badge-warning-bg: #FBEBD3;
+  --color-badge-warning-text: #8A4B00;
+  --color-badge-info-bg: #DCE6EB;
   --color-badge-neutral-bg: #FFFFFF;
-  --color-badge-neutral-border: #EAE4E1;
-  --color-badge-neutral-text: #4E5B6B;
-  --color-badge-outline-border: #B3BCC3;
-  --color-divider: #EAE4E1;
+  --color-badge-neutral-border: #D5D8D2;
+  --color-badge-neutral-text: #4C5E6A;
+  --color-badge-outline-border: #B9CAD3;
+  --color-divider: #D5D8D2;
 
   /* Semantic */
-  --color-success: #22C55E;
-  --color-success-bg: #DCFCE7;
-  --color-warning: #F59E0B;
-  --color-warning-bg: #FEF3C7;
-  --color-error: #EF4444;
-  --color-error-bg: #FEE2E2;
-  --color-info: #3B82F6;
-  --color-info-bg: #DBEAFE;
+  --color-success: #0B6B4F;
+  --color-success-bg: #DDF0E8;
+  --color-warning: #8A4B00;
+  --color-warning-bg: #FBEBD3;
+  --color-error: #B3261E;
+  --color-error-bg: #FBE3E1;
+  --color-info: #0C364E;          /* plus de bleu vif : l'info prend le bleu profond */
+  --color-info-bg: #DCE6EB;
+
+  /* Focus clavier : turquoise en clair, lime en sombre (remplace l'anneau bleu du navigateur) */
+  --color-focus-ring: #07786A;
 
   /* Comparison block (Avant / Après) */
   --color-compare-before-bg: #FFF0EE;
@@ -115,13 +118,13 @@
   --color-surface-code: #0F1117;
 
   /* Border */
-  --color-border: rgba(29, 10, 56, 0.12);
-  --color-border-strong: rgba(29, 10, 56, 0.24);
+  --color-border: rgba(12, 54, 78, 0.12);
+  --color-border-strong: rgba(12, 54, 78, 0.24);
 
   /* Typography */
-  --font-display: 'Fraunces', Georgia, serif;
+  --font-display: 'Outfit', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', 'Courier New', monospace;
-  --font-body: system-ui, -apple-system, sans-serif;
+  --font-body: 'Outfit', system-ui, -apple-system, sans-serif;
 
   /* Font weights */
   --font-weight-thin: 200;
@@ -181,16 +184,22 @@
   --space-20: 80px;
 
   /* Border radius — Figma DS tokens */
-  --pf-radius-card: 8px;
-  --pf-radius-tag: 20px;
-  --pf-radius-btn: 9999px;
+  --pf-radius-card: 0px;
+  --pf-radius-tag: 0px;
+  --pf-radius-btn: 0px;
 
   /* Border radius — code */
-  --radius-btn: 100px;
-  --radius-card: 20px;
-  --radius-default: 12px;
-  --radius-sm: 6px;
+  --radius-btn: 0px;
+  --radius-card: 0px;
+  --radius-default: 4px;
+  --radius-sm: 4px;
   --radius-full: 9999px;
+
+  /* Le point décliné : coin bas-droit coupé à 60°, taille fixe */
+  --cut-point: polygon(0 0, 100% 0, 100% 62%, 78% 100%, 0 100%);
+  --cut-xs: polygon(0 0, 100% 0, 100% calc(100% - 9px), calc(100% - 5px) 100%, 0 100%);
+  --cut-s: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 8px) 100%, 0 100%);
+  --cut-m: polygon(0 0, 100% 0, 100% calc(100% - 28px), calc(100% - 16px) 100%, 0 100%);
 
   /* Border width — Figma DS tokens */
   --pf-stroke-default: 1px;
@@ -202,16 +211,16 @@
   --pf-shadow-2: 0 4px 10px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
   --pf-shadow-3: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 20px rgba(0, 0, 0, 0.04);
   --pf-shadow-4: 0 24px 60px rgba(0, 0, 0, 0.12), 0 8px 20px rgba(0, 0, 0, 0.06);
-  --pf-shadow-brand: 0 16px 40px rgba(90, 20, 191, 0.18);
+  --pf-shadow-brand: 0 16px 40px rgba(7, 120, 106, 0.18);
   --pf-shadow-electric: 0 8px 24px rgba(215, 252, 65, 0.24);
-  --pf-shadow-focus-ring: 0 0 0 3px rgba(90, 20, 191, 0.30);
+  --pf-shadow-focus-ring: 0 0 0 2px var(--color-focus-ring);
 
   /* Shadows — code */
-  --shadow-sm: 0 1px 3px rgba(29, 10, 56, 0.08), 0 1px 2px rgba(29, 10, 56, 0.06);
-  --shadow-md: 0 4px 16px rgba(29, 10, 56, 0.10), 0 2px 6px rgba(29, 10, 56, 0.06);
-  --shadow-lg: 0 12px 40px rgba(29, 10, 56, 0.14), 0 4px 12px rgba(29, 10, 56, 0.08);
-  --shadow-modal: 0 24px 80px rgba(29, 10, 56, 0.20);
-  --shadow-accent: 0 16px 40px rgba(113, 21, 224, 0.12);
+  --shadow-sm: 0 1px 3px rgba(12, 54, 78, 0.08), 0 1px 2px rgba(12, 54, 78, 0.06);
+  --shadow-md: 0 4px 16px rgba(12, 54, 78, 0.10), 0 2px 6px rgba(12, 54, 78, 0.06);
+  --shadow-lg: 0 12px 40px rgba(12, 54, 78, 0.14), 0 4px 12px rgba(12, 54, 78, 0.08);
+  --shadow-modal: 0 24px 80px rgba(12, 54, 78, 0.20);
+  --shadow-accent: 0 16px 40px rgba(7, 120, 106, 0.14);
 
   /* Transitions */
   --transition-fast: 120ms ease;
@@ -222,93 +231,102 @@
 /* ---- Dark mode -------------------------------------------- */
 [data-theme="dark"] {
   /* Surface — synced from Figma Semantic collection */
-  --color-surface-page: #1d0a3d;
-  --color-surface-card: #4a1495;
-  --color-surface-raised: #7115e0;
-  --color-surface-deep: #c4baff;
+  --color-surface-page: #0C364E;
+  --color-surface-card: #12445F;
+  --color-surface-raised: #1A5270;
+  --color-surface-deep: #08283A;   /* les sections de marque restent sombres en dark */
 
   /* Text on Surface/deep (deep inverts in dark → dark text on light violet) */
-  --color-text-on-deep: #1d0a3d;
-  --color-text-secondary-on-deep: rgba(29, 10, 61, 0.55);
-  --color-text-muted-on-deep: rgba(29, 10, 61, 0.45);
-  --color-border-on-deep: rgba(29, 10, 61, 0.12);
-  --color-divider-on-deep: rgba(29, 10, 61, 0.1);
-  --color-surface-overlay: rgba(251, 249, 248, 0.06);
+  --color-text-on-deep: #F2F2EE;
+  --color-text-secondary-on-deep: rgba(242, 242, 238, 0.62);
+  --color-text-muted-on-deep: #B9CAD3;
+  --color-border-on-deep: rgba(242, 242, 238, 0.14);
+  --color-divider-on-deep: rgba(242, 242, 238, 0.10);
+  --color-surface-overlay: rgba(242, 242, 238, 0.06);
 
   /* Text */
-  --color-text-primary: #fbf9f8;
-  --color-text-secondary: #b3bcc3;
-  --color-text-inverse: #1d0a3d;
-  --color-text-subtle: #8A9AA8;
-  --color-text-disabled: #344050;
+  --color-text-primary: #F2F2EE;
+  --color-text-secondary: #B9CAD3;
+  --color-text-inverse: #0C364E;
+  --color-text-subtle: #93A9B5;
+  --color-text-disabled: #3D6276;
 
   /* Action */
-  --color-action-primary: #d7fc41;
-  --color-action-primary-hover: #eef71e;
-  --color-action-accent: #d7fc41;
-  --color-action-deep: #fbf9f8;
-  --color-action-deep-hover: #ffffff;
+  --color-action-primary: #D7FC41;
+  --color-action-primary-hover: #E4FD7A;
+  --color-action-accent: #D7FC41;
+  --color-action-deep: #F2F2EE;
+  --color-action-deep-hover: #FFFFFF;
 
   /* Button surfaces */
-  --color-btn-primary-text: #081018;
-  --color-btn-secondary-bg: #1d0a3d;
-  --color-action-row-hover: #1d0a3d;
-  --color-btn-secondary-border: #d7fc41;
-  --color-btn-tertiary-hover: rgba(251, 249, 248, 0.10);
-  --color-nav-glass-bg: rgba(29, 10, 61, 0.85);
-  --color-nav-tab-hover: rgba(196, 186, 255, 0.12);
+  --color-btn-primary-text: #0C364E;
+  --color-btn-secondary-bg: #0C364E;
+  --color-action-row-hover: #12445F;
+  --color-btn-secondary-border: #D7FC41;
+  --color-btn-tertiary-hover: rgba(242, 242, 238, 0.10);
+  --color-nav-glass-bg: rgba(12, 54, 78, 0.85);
+  --color-nav-tab-hover: rgba(215, 252, 65, 0.10);
   --color-syntax-keyword: #7ee8a2;
 
   /* Input / Form */
-  --color-input-bg: #1d0a3d;
-  --color-input-border: #4a1495;
-  --color-input-placeholder: #4e5b6b;
+  --color-input-bg: #0A2C40;
+  --color-input-border: #2B5A73;
+  --color-input-placeholder: #7F9AA8;
   /* Chip */
-  --color-chip-bg: rgba(251, 249, 248, 0.06);
-  --color-chip-selected-bg: var(--color-electric);
-  --color-chip-selected-text: #0C0619;
+  --color-chip-bg: rgba(242, 242, 238, 0.06);
+  --color-chip-selected-bg: #D7FC41;
+  --color-chip-selected-text: #0C364E;
   /* Skeleton */
-  --color-skeleton: #4a1495;
+  --color-skeleton: #1A5270;
 
   /* Electric lime */
-  --color-electric: #d7fc41;
-  --color-electric-bg: #260c4f;
-  --color-electric-border: #391d81;
-  --color-electric-text: #d7fc41;
+  --color-electric: #D7FC41;
+  --color-electric-bg: #12445F;
+  --color-electric-border: #2B5A73;
+  --color-electric-text: #D7FC41;
 
   /* Tag surfaces */
-  --color-tag-brand-bg: #2a1c37;
-  --color-tag-brand-border: #453f2c;
-  --color-tag-brand-text: #c4baff;
-  --color-tag-inverse-bg: #372e31;
-  --color-tag-inverse-border: #4b4829;
-  --color-tag-neutral-bg: #4a3b64;
-  --color-tag-neutral-border: #52486c;
-  --color-tag-neutral-text: #b3bcc3;
+  --color-tag-brand-bg: #12445F;
+  --color-tag-brand-border: #2B5A73;
+  --color-tag-brand-text: #D7FC41;
+  --color-tag-inverse-bg: #1A5270;
+  --color-tag-inverse-border: #2B5A73;
+  --color-tag-neutral-bg: #12445F;
+  --color-tag-neutral-border: #2B5A73;
+  --color-tag-neutral-text: #B9CAD3;
 
   /* Badge surfaces */
-  --color-badge-brand-bg: #4a1495;
-  --color-badge-electric-bg: #260c4f;
-  --color-badge-electric-border: #391d81;
+  --color-badge-brand-bg: #1A5270;
+  --color-badge-electric-bg: #12445F;
+  --color-badge-electric-border: #2B5A73;
+  --color-badge-info-bg: #1A5270;
+  --color-badge-success-bg: #0F4A45;
+  --color-badge-success-text: #7FE0BF;
+  --color-badge-error-bg: #4A2230;
+  --color-badge-error-text: #FF9B94;
+  --color-badge-warning-bg: #4A3520;
+  --color-badge-warning-text: #FFC27A;
   --color-badge-neutral-bg: rgba(251, 249, 248, 0.06);
-  --color-badge-neutral-border: rgba(251, 249, 248, 0.10);
-  --color-badge-neutral-text: #b3bcc3;
-  --color-badge-outline-border: rgba(251, 249, 248, 0.20);
+  --color-badge-neutral-border: rgba(242, 242, 238, 0.12);
+  --color-badge-neutral-text: #B9CAD3;
+  --color-badge-outline-border: rgba(242, 242, 238, 0.22);
 
   /* Divider / Border */
-  --color-divider: #4a1495;
-  --color-border: #4a1495;
-  --color-border-strong: #344050;
+  --color-divider: #2B5A73;
+  --color-border: #2B5A73;
+  --color-border-strong: #3D6E87;
 
   /* Semantic status */
-  --color-success: #017f5c;
-  --color-success-bg: #006f43;
-  --color-warning: #b7490f;
-  --color-warning-bg: #91390b;
-  --color-error: #e5231d;
-  --color-error-bg: #4b0907;
-  --color-info: #00a3bd;
-  --color-info-bg: #1d0a3d;
+  --color-success: #7FE0BF;
+  --color-success-bg: #0F4A45;
+  --color-warning: #FFC27A;
+  --color-warning-bg: #4A3520;
+  --color-error: #FF8A80;
+  --color-error-bg: #4A2230;
+  --color-info: #B9CAD3;
+  --color-info-bg: #12445F;
+
+  --color-focus-ring: #D7FC41;
 
   /* Shadows */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.30);

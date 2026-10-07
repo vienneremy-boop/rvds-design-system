@@ -40,7 +40,7 @@ export function Skeleton({
           top: '12px',
           width: '140px',
           height: '16px',
-          borderRadius: '6px',
+          borderRadius: 'var(--radius-sm)',
           ...pulseStyle,
         }}
       />
@@ -52,7 +52,7 @@ export function Skeleton({
           top: '36px',
           width: '110px',
           height: '12px',
-          borderRadius: '6px',
+          borderRadius: 'var(--radius-sm)',
           ...pulseStyle,
         }}
       />
@@ -64,7 +64,7 @@ export function Skeleton({
           top: '82px',
           width: '240px',
           height: '12px',
-          borderRadius: '6px',
+          borderRadius: 'var(--radius-sm)',
           ...pulseStyle,
         }}
       />
@@ -76,7 +76,7 @@ export function Skeleton({
           top: '102px',
           width: '200px',
           height: '12px',
-          borderRadius: '6px',
+          borderRadius: 'var(--radius-sm)',
           ...pulseStyle,
         }}
       />

@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component:
-          'Seconde bande de réassurance sur fond Surface/page. 4 métriques techniques (accessibilité, perf, sobriété, inclusif) avec bullet 24px violet, label accent mono bold et sublabel mono caption.',
+          'Seconde bande de réassurance sur fond Surface/page. 4 métriques techniques (accessibilité, perf, sobriété, inclusif) avec bullet 24px, label accent mono bold et sublabel mono caption.',
       },
     },
     layout: 'fullscreen',

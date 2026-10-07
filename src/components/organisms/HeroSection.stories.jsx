@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component:
-          'Section hero portfolio. Badge electric lime, rôle + tiret accent, titre Fraunces 48px avec mots-clés italic accent 56px, sous-titre mono, CTAs primary + secondary. Largeur fixe 956px.',
+          'Section hero portfolio. Badge electric lime, rôle + tiret accent, titre Outfit Bold 48px avec mots-clés en turquoise 56px, sous-titre Outfit, CTAs primary + secondary. Largeur fixe 956px.',
       },
     },
     layout: 'padded',

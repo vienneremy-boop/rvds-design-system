@@ -152,7 +152,7 @@ export function HeroSection({
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-5xl)',
-                fontWeight: 'var(--font-weight-semibold)',
+                fontWeight: 'var(--font-weight-bold)',
                 color: 'var(--color-text-primary)',
                 lineHeight: '52.8px',
               }}
@@ -165,7 +165,7 @@ export function HeroSection({
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-7xl)',
                 fontWeight: 'var(--font-weight-regular)',
-                fontStyle: 'italic',
+                fontStyle: 'normal',
                 color: 'var(--color-action-accent)',
                 lineHeight: '52.8px',
               }}
@@ -177,7 +177,7 @@ export function HeroSection({
                 style={{
                   fontFamily: 'var(--font-display)',
                   fontSize: 'var(--text-5xl)',
-                  fontWeight: 'var(--font-weight-semibold)',
+                  fontWeight: 'var(--font-weight-bold)',
                   color: 'var(--color-text-primary)',
                   lineHeight: '52.8px',
                 }}
@@ -190,7 +190,7 @@ export function HeroSection({
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-7xl)',
                 fontWeight: 'var(--font-weight-regular)',
-                fontStyle: 'italic',
+                fontStyle: 'normal',
                 color: 'var(--color-action-accent)',
                 lineHeight: '52.8px',
               }}
@@ -201,7 +201,7 @@ export function HeroSection({
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-5xl)',
-                fontWeight: 'var(--font-weight-semibold)',
+                fontWeight: 'var(--font-weight-bold)',
                 color: 'var(--color-action-accent)',
                 lineHeight: '52.8px',
               }}
@@ -214,7 +214,7 @@ export function HeroSection({
           {subtitle && (
             <p
               style={{
-                fontFamily: 'var(--font-mono)',
+                fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-sm)',
                 fontWeight: 'var(--font-weight-regular)',
                 color: 'var(--color-text-secondary)',

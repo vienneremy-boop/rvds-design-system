@@ -23,7 +23,8 @@ export function Card({
       style={{
         background: 'var(--color-surface-card)',
         border: '1px solid var(--color-divider)',
-        borderRadius: '16px',
+        borderRadius: 0,
+        clipPath: 'var(--cut-m)',
         overflow: 'hidden',
         width,
         height,
@@ -72,7 +73,7 @@ export function Card({
               padding: '4px 8px',
               background: 'var(--color-tag-brand-bg)',
               border: '1px solid var(--color-tag-brand-border)',
-              borderRadius: '8px',
+              borderRadius: 0,
               flexShrink: 0,
             }}
           >
@@ -108,7 +109,7 @@ export function Card({
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-2xl)',
-                fontWeight: 'var(--font-weight-semibold)',
+                fontWeight: 'var(--font-weight-bold)',
                 color: 'var(--color-text-primary)',
                 lineHeight: 1,
               }}
@@ -121,7 +122,7 @@ export function Card({
               style={{
                 fontFamily: 'var(--font-display)',
                 fontSize: 'var(--text-lg)',
-                fontWeight: 'var(--font-weight-semibold)',
+                fontWeight: 'var(--font-weight-bold)',
                 color: 'var(--color-text-primary)',
                 lineHeight: 1.2,
                 margin: 0,
@@ -134,7 +135,7 @@ export function Card({
           {description && (
             <p
               style={{
-                fontFamily: 'var(--font-mono)',
+                fontFamily: 'var(--font-body)',
                 fontSize: 'var(--text-sm)',
                 fontWeight: 'var(--font-weight-regular)',
                 color: 'var(--color-text-secondary)',

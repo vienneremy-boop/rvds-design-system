@@ -21,11 +21,14 @@ const preview = {
   decorators: [
     (Story, context) => {
       const theme = context.globals.theme || 'light';
+      // Le thème est aussi posé sur <html> : body, modales et portails suivent le mode sombre.
+      if (typeof document !== 'undefined') document.documentElement.setAttribute('data-theme', theme);
       return (
         <div
           data-theme={theme}
           style={{
-            backgroundColor: theme === 'dark' ? '#0C0619' : '#F2F2EE',
+            backgroundColor: 'var(--color-surface-page)',
+            color: 'var(--color-text-primary)',
             minHeight: '100vh',
             padding: '32px',
             transition: 'background-color 200ms ease',

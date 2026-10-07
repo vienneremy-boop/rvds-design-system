@@ -60,7 +60,7 @@ export function Textarea({
           border: borderStyle,
           borderRadius: 'var(--radius-sm)',
           background: 'var(--color-input-bg)',
-          fontFamily: 'var(--font-mono)',
+          fontFamily: 'var(--font-body)',
           fontSize: 'var(--text-sm)',
           fontWeight: 'var(--font-weight-regular)',
           color: 'var(--color-text-primary)',

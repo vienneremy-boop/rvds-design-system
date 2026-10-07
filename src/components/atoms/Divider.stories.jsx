@@ -7,7 +7,7 @@ export default {
     docs: {
       description: {
         component:
-          'Séparateur visuel. 4 types : Default (gris), Brand (violet), Label (ligne + texte centré), Pill (badge pill avec dots).',
+          'Séparateur visuel. 4 types : Default (gris), Brand (turquoise), Label (ligne + texte centré), Pill (étiquette coupée avec points carrés).',
       },
     },
   },
