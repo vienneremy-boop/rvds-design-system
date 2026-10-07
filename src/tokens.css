@@ -44,7 +44,7 @@
   --color-btn-primary-text: #FFFFFF;
   --color-btn-secondary-bg: #FFFFFF;
   --color-action-row-hover: #EEF2F1;
-  --color-btn-secondary-border: #0C364E;
+  --color-btn-secondary-border: var(--color-action-primary);
   --color-btn-tertiary-hover: rgba(7, 120, 106, 0.08);
   --color-nav-glass-bg: rgba(255, 255, 255, 0.6);
   --color-nav-tab-hover: #E3EFEC;

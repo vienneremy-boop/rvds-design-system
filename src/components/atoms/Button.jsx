@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Cut } from './Cut';
 
 // v2 « le point final » : coin bas-droit coupé à 60° (coupe S), Outfit Bold, flèche optionnelle à droite.
-// Primary = turquoise + texte blanc (lime + texte bleu en dark) | Secondary = contour bleu, fond blanc | Tertiary = ghost, sans coupe
+// Primary = turquoise + texte blanc (lime + texte bleu en dark) | Secondary = contour turquoise, texte bleu, fond blanc | Tertiary = ghost, sans coupe
 const sizeMap = {
   large:  { padding: '16px 24px 16px 22px', fontSize: 'var(--text-base)', gap: '12px', iconSize: '20px' },
   medium: { padding: '12px 20px 12px 18px', fontSize: '15px',             gap: '10px', iconSize: '18px' },
