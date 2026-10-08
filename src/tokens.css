@@ -75,7 +75,7 @@
   --color-tag-brand-bg: #E6F2EF;
   --color-tag-brand-border: #C7E2DC;
   --color-tag-brand-text: #07786A;
-  --color-tag-inverse-bg: #DCE6EB;
+  --color-tag-inverse-bg: #EEF6F4;   /* Turquoise 50 : texte turquoise ≥ 4,5:1 */
   --color-tag-inverse-border: #B9CAD3;
   --color-tag-neutral-bg: #F2F2EE;
   --color-tag-neutral-border: #D5D8D2;
@@ -268,7 +268,7 @@
   --color-text-primary: #F2F2EE;
   --color-text-secondary: #B9CAD3;
   --color-text-inverse: #0C364E;
-  --color-text-subtle: #93A9B5;
+  --color-text-subtle: #A3B8C4;   /* ≥ 4,5:1 sur les cartes #12445F */
   --color-text-disabled: #3D6276;
 
   /* Action */

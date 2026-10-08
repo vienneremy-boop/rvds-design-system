@@ -11,12 +11,17 @@
   #status { margin-top: 10px; font-weight: 600; }
 </style>
 <h1>Passage à l'identité v2</h1>
-<p>1. Aperçu : rien n'est modifié. 2. Vérifie la liste. 3. Appliquer. Annulable avec ⌘Z.</p>
+<p>Déjà passé : 1 à 3. Seconde passe : 4 · re-câbler le Semantic sur les teintes v2 (aperçu puis appliquer), 5 · archiver les anciennes primitives. Annulable avec ⌘Z.</p>
 <div class="row">
   <button id="scan">1 · Aperçu</button>
   <button id="apply" class="primary" disabled>2 · Appliquer</button>
   <button id="tnt">3 · Ajouter les teintes</button>
   <button id="inv">Exporter l'inventaire</button>
+</div>
+<div class="row">
+  <button id="rws">4 · Re-câbler (aperçu)</button>
+  <button id="rwa" class="primary" disabled>Appliquer le re-câblage</button>
+  <button id="arc">5 · Archiver les anciennes couleurs</button>
 </div>
 <div id="list"></div>
 <div id="status"></div>
@@ -25,6 +30,9 @@
   $('scan').onclick = () => parent.postMessage({ pluginMessage: { type: 'scan' } }, '*');
   $('apply').onclick = () => { $('apply').disabled = true; parent.postMessage({ pluginMessage: { type: 'apply' } }, '*'); };
   $('inv').onclick = () => parent.postMessage({ pluginMessage: { type: 'inventory' } }, '*');
+  $('rws').onclick = () => parent.postMessage({ pluginMessage: { type: 'rewire-scan' } }, '*');
+  $('rwa').onclick = () => { $('rwa').disabled = true; parent.postMessage({ pluginMessage: { type: 'rewire-apply' } }, '*'); };
+  $('arc').onclick = () => parent.postMessage({ pluginMessage: { type: 'archive' } }, '*');
   $('tnt').onclick = () => parent.postMessage({ pluginMessage: { type: 'teintes' } }, '*');
   onmessage = (e) => {
     const m = e.data.pluginMessage;
@@ -33,6 +41,18 @@
       $('status').textContent = `${m.changes.length} modification(s) prête(s).`;
       $('apply').disabled = m.changes.length === 0;
     }
+    if (m.type === 'rewire-scan') {
+      $('list').innerHTML = m.changes.map((c) => `<div class="it"><span class="lb" title="${c.label}">${c.label}</span><span>→ ${c.to}</span></div>`).join('') + (m.missing.length ? `<div class="it">Sans règle (inchangés) : ${m.missing.join(', ')}</div>` : '');
+      $('status').textContent = `${m.changes.length} valeur(s) à re-câbler.`; $('rwa').disabled = m.changes.length === 0;
+    }
+    if (m.type === 'rewired') {
+      $('status').textContent = m.errors.length
+        ? `Re-câblage partiel : ${m.done} valeur(s) mises à jour, ${m.errors.length} refusée(s) par Figma (liste ci-dessous). Copie-moi la première erreur.`
+        : `Re-câblage fait : ${m.done} valeur(s). Relance « 5 · Archiver » pour ranger les anciennes primitives devenues inutiles.`;
+      if (m.errors.length) $('list').innerHTML = m.errors.map((e) => `<div class="it"><span class="lb" title="${e}">${e}</span></div>`).join('');
+    }
+    if (m.type === 'failed') $('status').textContent = `${m.step} interrompu : ${m.message}`;
+    if (m.type === 'archived') $('status').textContent = `${m.archived} couleur(s) archivée(s) dans « _archives-v1 » (masquées, pas supprimées). ${m.kept.length} encore utilisée(s) : ${m.kept.join(', ')}`;
     if (m.type === 'applied') $('status').textContent = `${m.done} modification(s) appliquée(s). ${m.errors.length ? 'Erreurs : ' + m.errors.join(' · ') : ''}`;
     if (m.type === 'inventory') { $('list').innerHTML = `<textarea readonly>${JSON.stringify(m.data, null, 1).replace(/</g, '&lt;')}</textarea>`; $('status').textContent = `${m.data.length} variables. Copie le texte et colle-le dans Claude pour un réglage fin.`; }
   };

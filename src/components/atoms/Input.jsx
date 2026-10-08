@@ -48,6 +48,7 @@ export function Input({
         type={type}
         value={value}
         onChange={onChange}
+        readOnly={value !== undefined && !onChange}
         placeholder={placeholder}
         disabled={isDisabled}
         aria-invalid={isError || undefined}

@@ -21,6 +21,7 @@ export function Switch({
         type="checkbox"
         checked={checked}
         onChange={disabled ? undefined : onChange}
+        readOnly={disabled || !onChange} // sans gestionnaire, lecture seule explicite (évite l'avertissement React)
         disabled={disabled}
         style={{
           position: 'absolute',
