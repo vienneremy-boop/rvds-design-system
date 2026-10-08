@@ -5,11 +5,11 @@ import { TabItem } from '../atoms/TabItem';
 import { Button } from '../atoms/Button';
 import { Icon } from '../atoms/Icon';
 
+// Charte p. 43 : trois entrées en mono, un seul bouton turquoise « Me contacter »
 const DEFAULT_TABS = [
   { label: 'Projets' },
-  { label: 'Expertise' },
+  { label: 'Offres' },
   { label: 'Lab' },
-  { label: 'Contact' },
 ];
 
 function IconButton({ onClick, children, label }) {
@@ -77,7 +77,7 @@ export function NavDesktop({
   onTabClick,
   onLogoClick,
   onCtaClick,
-  ctaLabel = "Discuter d'un projet",
+  ctaLabel = 'Me contacter',
   lang = 'FR / EN',
   onLangClick,
   onDarkModeClick,
@@ -123,7 +123,7 @@ export function NavDesktop({
         {/* Right actions */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-1)' }}>
           <Button
-            variant="secondary"
+            variant="primary"
             size="small"
             label={ctaLabel}
             onClick={onCtaClick}

@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { Logo } from './Logo';
 
 // v2 : le logo vectoriel compact (jamais retapé). Au survol, le point passe en bleu puis revient : un clin d'œil, pas une animation.
-export function LogoButton({ onClick, height = 26, onDark = false }) {
+// variant="picto" : le « r. » seul, pour les petites largeurs (charte p. 43 : picto sous 80 px de logo)
+export function LogoButton({ onClick, height = 26, onDark = false, variant = 'compact' }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -28,7 +29,7 @@ export function LogoButton({ onClick, height = 26, onDark = false }) {
         transition: 'transform var(--transition-fast)',
       }}
     >
-      <Logo variant="compact" height={height} />
+      <Logo variant={variant} height={height} />
     </button>
   );
 }
@@ -37,6 +38,7 @@ LogoButton.propTypes = {
   onClick: PropTypes.func,
   height:  PropTypes.number,
   onDark:  PropTypes.bool,
+  variant: PropTypes.oneOf(['compact', 'picto']),
 };
 
 export default LogoButton;

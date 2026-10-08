@@ -52,8 +52,8 @@ export function TabItem({
       >
         <span
           style={{
-            fontFamily: 'var(--font-body)',
-            fontSize: 'var(--text-sm)',
+            fontFamily: 'var(--font-mono)', // charte p. 43 : menu en mono
+            fontSize: '13px',
             fontWeight: active ? 700 : 500,
             lineHeight: 1,
             color: active ? 'var(--color-action-accent)' : 'var(--color-text-primary)',
