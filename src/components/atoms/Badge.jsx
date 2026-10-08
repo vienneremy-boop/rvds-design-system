@@ -24,7 +24,7 @@ export function Badge({ type = 'neutral', label }) {
         gap: cfg.dot ? 'var(--space-1)' : 0,
         height: '22px',
         padding: '0 var(--space-2)',
-        borderRadius: 2,
+        borderRadius: 0,
         background: cfg.bg,
         border: cfg.border,
         fontFamily: 'var(--font-mono)',

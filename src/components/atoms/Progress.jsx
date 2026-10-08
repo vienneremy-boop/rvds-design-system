@@ -34,7 +34,7 @@ export function Progress({
         style={{
           flex: 1,
           height: '5px',
-          borderRadius: 'var(--radius-full)',
+          borderRadius: 0,
           background: track,
           overflow: 'hidden',
         }}
@@ -43,7 +43,7 @@ export function Progress({
           style={{
             height: '5px',
             width: `${clamped}%`,
-            borderRadius: 'var(--radius-full)',
+            borderRadius: 0,
             background: bar,
             transition: 'width var(--transition-base)',
           }}

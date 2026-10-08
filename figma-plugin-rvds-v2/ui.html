@@ -15,6 +15,7 @@
 <div class="row">
   <button id="scan">1 · Aperçu</button>
   <button id="apply" class="primary" disabled>2 · Appliquer</button>
+  <button id="tnt">3 · Ajouter les teintes</button>
   <button id="inv">Exporter l'inventaire</button>
 </div>
 <div id="list"></div>
@@ -24,6 +25,7 @@
   $('scan').onclick = () => parent.postMessage({ pluginMessage: { type: 'scan' } }, '*');
   $('apply').onclick = () => { $('apply').disabled = true; parent.postMessage({ pluginMessage: { type: 'apply' } }, '*'); };
   $('inv').onclick = () => parent.postMessage({ pluginMessage: { type: 'inventory' } }, '*');
+  $('tnt').onclick = () => parent.postMessage({ pluginMessage: { type: 'teintes' } }, '*');
   onmessage = (e) => {
     const m = e.data.pluginMessage;
     if (m.type === 'scan') {

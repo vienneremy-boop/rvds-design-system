@@ -17,3 +17,8 @@ Seules les valeurs brutes sont modifiées (en pratique : la collection _Primitiv
 sémantiques qui pointent dessus suivent automatiquement.
 « Exporter l'inventaire » sort toutes les variables en JSON : à coller dans Claude pour régler
 finement les cas particuliers (rôles qui changent, comme le lime sur fond clair).
+
+
+## Nouveau (charte graphique 2.0, 08/10/2026)
+- Le bouton **3 · Ajouter les teintes** crée la collection « Teintes v2 » : 9 bleus, 8 turquoises, 4 limes, 3 neutres. Relancer le bouton met simplement les valeurs à jour.
+- L'aperçu remplace aussi les anciennes couleurs d'état (vert, orange, rouge, bleu vif génériques) par celles de la charte. Vérifier la liste avant d'appliquer.

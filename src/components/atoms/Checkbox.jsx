@@ -49,7 +49,7 @@ export function Checkbox({
           justifyContent: 'center',
           width: '18px',
           height: '18px',
-          borderRadius: '4px',
+          borderRadius: 0,
           border: boxBorder,
           background: checked ? 'var(--color-action-primary)' : 'transparent',
           flexShrink: 0,

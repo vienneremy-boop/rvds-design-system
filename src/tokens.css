@@ -106,6 +106,16 @@
   /* Focus clavier : turquoise en clair, lime en sombre (remplace l'anneau bleu du navigateur) */
   --color-focus-ring: #07786A;
 
+  /* Teintes v2 (charte graphique 2.0) — primitives, à n'utiliser qu'à travers les tokens sémantiques */
+  --blue-nuit: #08283A;  --blue-profond: #0C364E; --blue-80: #12445F; --blue-70: #1A5270; --blue-60: #2B5A73;
+  --blue-gris: #4C5E6A;  --blue-40: #7F9AA8;      --blue-brume: #B9CAD3; --blue-10: #DCE6EB;
+  --turquoise-900: #043A33; --turquoise-800: #05564C; --turquoise-700: #06685C; --turquoise-600: #07786A;
+  --turquoise-400: #4C9C92; --turquoise-200: #A9D2CB; --turquoise-100: #D9ECE8; --turquoise-50: #EEF6F4;
+  --lime-600: #C6EE2E; --lime-500: #D7FC41; --lime-300: #E4FD7A; --lime-100: #F0FEBD;
+  --neutral-ligne: #D5D8D2; --neutral-toile: #F2F2EE; --neutral-blanc: #FFFFFF;
+  --color-action-primary-active: var(--turquoise-800);
+
+
   /* Comparison block (Avant / Après) */
   --color-compare-before-bg: #FFF0EE;
   --color-compare-before-border: #FBBFB8;
@@ -191,8 +201,8 @@
   /* Border radius — code */
   --radius-btn: 0px;
   --radius-card: 0px;
-  --radius-default: 4px;
-  --radius-sm: 4px;
+  --radius-default: 0px;
+  --radius-sm: 0px;
   --radius-full: 9999px;
 
   /* Le point décliné : coin bas-droit coupé à 60°, taille fixe */
@@ -231,10 +241,10 @@
 /* ---- Dark mode -------------------------------------------- */
 [data-theme="dark"] {
   /* Surface — synced from Figma Semantic collection */
-  --color-surface-page: #0C364E;
+  --color-surface-page: #08283A;   /* un cran sous le bleu du logo pour que les sections de marque ressortent */
   --color-surface-card: #12445F;
   --color-surface-raised: #1A5270;
-  --color-surface-deep: #08283A;   /* les sections de marque restent sombres en dark */
+  --color-surface-deep: #0C364E;   /* bleu profond du logo, identique au mode clair */
 
   /* Text on Surface/deep (deep inverts in dark → dark text on light violet) */
   --color-text-on-deep: #F2F2EE;
@@ -260,7 +270,7 @@
 
   /* Button surfaces */
   --color-btn-primary-text: #0C364E;
-  --color-btn-secondary-bg: #0C364E;
+  --color-btn-secondary-bg: #08283A;
   --color-action-row-hover: #12445F;
   --color-btn-secondary-border: #D7FC41;
   --color-btn-tertiary-hover: rgba(242, 242, 238, 0.10);
@@ -327,6 +337,7 @@
   --color-info-bg: #12445F;
 
   --color-focus-ring: #D7FC41;
+  --color-action-primary-active: var(--lime-600);
 
   /* Shadows */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.40), 0 1px 2px rgba(0, 0, 0, 0.30);

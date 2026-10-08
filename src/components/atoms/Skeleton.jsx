@@ -88,7 +88,7 @@ export function Skeleton({
           top: '126px',
           width: '72px',
           height: '22px',
-          borderRadius: 'var(--radius-full)',
+          borderRadius: 0,
           ...pulseStyle,
         }}
       />

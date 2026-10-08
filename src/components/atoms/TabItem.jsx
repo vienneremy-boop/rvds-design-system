@@ -44,7 +44,7 @@ export function TabItem({
           justifyContent: 'center',
           padding: '8px 20px',
           background: contentBg,
-          borderRadius: 'var(--radius-full)',
+          borderRadius: 0,
           flexShrink: 0,
           transition: 'background var(--transition-fast)',
           whiteSpace: 'nowrap',
