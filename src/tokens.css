@@ -11,6 +11,10 @@
   --color-surface-card: #FFFFFF;
   --color-surface-raised: #D9ECE8;
   --color-surface-deep: #0C364E;
+  /* Sections de marque (bleu profond) : cartes, filets et texte secondaire, identiques dans les deux modes (charte p. 22) */
+  --color-surface-deep-card: #12445F;
+  --color-border-on-deep: #2B5A73;
+  --color-text-soft-on-deep: #B9CAD3;
 
   /* Text on Surface/deep (inverts with the surface) */
   --color-text-on-deep: #F2F2EE;
@@ -245,6 +249,10 @@
   --color-surface-card: #12445F;
   --color-surface-raised: #1A5270;
   --color-surface-deep: #0C364E;   /* bleu profond du logo, identique au mode clair */
+  /* Sections de marque (bleu profond) : cartes, filets et texte secondaire, identiques dans les deux modes (charte p. 22) */
+  --color-surface-deep-card: #12445F;
+  --color-border-on-deep: #2B5A73;
+  --color-text-soft-on-deep: #B9CAD3;
 
   /* Text on Surface/deep (deep inverts in dark → dark text on light violet) */
   --color-text-on-deep: #F2F2EE;
