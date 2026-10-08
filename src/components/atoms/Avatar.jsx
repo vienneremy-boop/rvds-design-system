@@ -21,7 +21,7 @@ export function Avatar({
       style={{
         width: diameter,
         height: diameter,
-        borderRadius: '50%',
+        borderRadius: 0,
         background: 'var(--color-skeleton)',
         display: 'inline-flex',
         alignItems: 'center',
