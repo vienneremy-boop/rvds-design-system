@@ -34,6 +34,7 @@ export function Button({
   disabled = false,
   fullWidth = false,
   onClick,
+  href,
   type = 'button',
   'aria-label': ariaLabel,
 }) {
@@ -60,10 +61,15 @@ export function Button({
   );
   const inner = { alignItems: 'center', justifyContent: 'center', gap, padding, width: '100%', color: v.color, transition: 'background var(--transition-fast)' };
 
+  // Avec `href`, le bouton est un vrai lien (navigation, ancre) : même rendu, sémantique <a>.
+  const Tag = href ? 'a' : 'button';
+  const tagProps = href
+    ? { href: disabled ? undefined : href, 'aria-disabled': disabled || undefined }
+    : { type, disabled };
+
   return (
-    <button
-      type={type}
-      disabled={disabled}
+    <Tag
+      {...tagProps}
       aria-label={ariaLabel}
       onClick={disabled ? undefined : onClick}
       onMouseEnter={() => setHovered(true)}
@@ -84,6 +90,7 @@ export function Button({
         whiteSpace: 'nowrap',
         userSelect: 'none',
         outlineOffset: 3,
+        textDecoration: 'none',
       }}
     >
       {variant === 'tertiary' ? (
@@ -93,7 +100,7 @@ export function Button({
           {content}
         </Cut>
       )}
-    </button>
+    </Tag>
   );
 }
 
@@ -107,6 +114,7 @@ Button.propTypes = {
   disabled:     PropTypes.bool,
   fullWidth:    PropTypes.bool,
   onClick:      PropTypes.func,
+  href:         PropTypes.string,
   type:         PropTypes.oneOf(['button', 'submit', 'reset']),
   'aria-label': PropTypes.string,
 };
