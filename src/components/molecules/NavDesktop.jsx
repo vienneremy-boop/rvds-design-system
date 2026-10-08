@@ -5,7 +5,8 @@ import { TabItem } from '../atoms/TabItem';
 import { Button } from '../atoms/Button';
 import { Icon } from '../atoms/Icon';
 
-// Charte p. 43 : trois entrées en mono, un seul bouton turquoise « Me contacter »
+// Charte p. 43 : trois entrées en mono et « Me contacter » en secondary,
+// pour laisser l'unique bouton plein turquoise à l'action principale de chaque page
 const DEFAULT_TABS = [
   { label: 'Projets' },
   { label: 'Offres' },
@@ -123,7 +124,7 @@ export function NavDesktop({
         {/* Right actions */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-1)' }}>
           <Button
-            variant="primary"
+            variant="secondary"
             size="small"
             label={ctaLabel}
             onClick={onCtaClick}

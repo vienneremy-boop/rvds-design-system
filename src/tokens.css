@@ -11,6 +11,7 @@
   --color-surface-card: #FFFFFF;
   --color-surface-raised: #D9ECE8;
   --color-surface-deep: #0C364E;
+  --color-surface-tint: #EEF6F4;   /* Turquoise 50 : fond de section (charte p. 22) */
   /* Sections de marque (bleu profond) : cartes, filets et texte secondaire, identiques dans les deux modes (charte p. 22) */
   --color-surface-deep-card: #12445F;
   --color-border-on-deep: #2B5A73;
@@ -249,6 +250,7 @@
   --color-surface-card: #12445F;
   --color-surface-raised: #1A5270;
   --color-surface-deep: #0C364E;   /* bleu profond du logo, identique au mode clair */
+  --color-surface-tint: #0C364E;   /* en sombre : un cran au-dessus du fond de page */
   /* Sections de marque (bleu profond) : cartes, filets et texte secondaire, identiques dans les deux modes (charte p. 22) */
   --color-surface-deep-card: #12445F;
   --color-border-on-deep: #2B5A73;
