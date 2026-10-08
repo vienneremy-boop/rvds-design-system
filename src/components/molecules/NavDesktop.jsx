@@ -28,7 +28,7 @@ function IconButton({ onClick, children, label }) {
         height: '32px',
         background: hovered ? 'var(--color-btn-tertiary-hover)' : 'transparent',
         border: 'none',
-        borderRadius: '50%',
+        borderRadius: 0,
         cursor: 'pointer',
         padding: 0,
         transition: 'background var(--transition-fast)',

@@ -49,7 +49,7 @@ export function Card({
               style={{
                 width: '5px',
                 height: '5px',
-                borderRadius: '50%',
+                borderRadius: 0,
                 background: 'var(--color-action-accent)',
                 flexShrink: 0,
               }}

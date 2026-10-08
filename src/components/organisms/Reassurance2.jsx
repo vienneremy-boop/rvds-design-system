@@ -14,7 +14,7 @@ function InfoItem({ label, sublabel }) {
         style={{
           width: '24px',
           height: '24px',
-          borderRadius: '50%',
+          borderRadius: 0,
           background: 'var(--color-surface-raised)',
           flexShrink: 0,
           marginRight: '-12px',
