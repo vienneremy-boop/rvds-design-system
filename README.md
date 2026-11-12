@@ -1,16 +1,38 @@
-# React + Vite
+# RVDS · Design system « le point final »
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Le design system de [remyvienne.fr](https://remyvienne.fr) : il naît dans Figma, passe par des tokens partagés avec le code, et vit en composants React documentés dans Storybook.
 
-Currently, two official plugins are available:
+**Storybook en ligne** : https://main--6a007879e04efd70506f43d1.chromatic.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Le flow
 
-## React Compiler
+Une seule source de vérité, de Figma jusqu'aux pages du site.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Figma** : la charte, les variables (couleurs, typographies, espacements) et les composants sont d'abord conçus dans Figma. Le dossier `figma-plugin-rvds-v2` contient le plugin qui a basculé tout le fichier vers l'identité « le point final ».
+2. **Les tokens** (`src/tokens.css`) : les variables Figma deviennent un fichier unique, en trois couches : primitives, rôles (texte, surface, action), composants. Le mode sombre est un jeu de tokens.
+3. **Les composants** (`src/components`) : atomes, molécules, organismes, codés en React avec leurs variantes et leurs états.
+4. **Storybook** : chaque composant est documenté, avec un contrôle d'accessibilité dans chaque story (addon a11y).
+5. **La revue visuelle** : chaque mise en production publie Storybook sur Chromatic et compare les changements visuels.
+6. **Le site** : les pages de remyvienne.fr consomment les mêmes tokens et composants.
 
-## Expanding the ESLint configuration
+## La charte en bref
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Bleu profond `#0C364E`, turquoise `#07786A` (un seul accent par écran), lime `#D7FC41` (uniquement sur bleu), toile `#F2F2EE`. Outfit pour parler, JetBrains Mono pour préciser. Le point : un carré coupé à 60° en bas à droite, décliné sur chaque composant. Aucun arrondi.
+
+## Règles
+
+- WCAG 2.2 AA : contrastes vérifiés, focus visible, cibles de 44 px, mouvement réduit respecté.
+- Le mouvement passe par des tokens (`--motion-sweep` pour le balayage à 60° des boutons).
+
+## Lancer en local
+
+```bash
+npm install
+npm run storybook
+```
+
+Storybook s'ouvre sur http://localhost:6006.
+
+## Licence
+
+Code des composants : libre de lecture et d'inspiration. La marque (nom, logo, charte « le point final ») reste la propriété de Rémy Vienne.
