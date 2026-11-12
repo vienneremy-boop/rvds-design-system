@@ -4,7 +4,7 @@ import { Button } from '../atoms/Button';
 import { LogoButton } from '../atoms/LogoButton';
 
 const availabilityItems = [
-  { label: 'Disponible immédiatement', detail: 'Prêt pour de nouveaux défis en immersion ou en mode sprint.' },
+  { label: 'Disponible pour mission', detail: 'Pour rejoindre votre équipe ou mener un projet court.' },
   { label: 'Remote · Lille', detail: 'Mobilité sur Lille & Paris pour vos ateliers stratégiques.' },
   { label: 'Réponse sous 24h', detail: 'Un premier échange pour cadrer votre projet sans attendre.' },
 ];
