@@ -11,6 +11,7 @@ export function Textarea({
   helperText,
   errorText,
   id,
+  required = false,
 }) {
   const [focused, setFocused] = useState(false);
 
@@ -49,6 +50,8 @@ export function Textarea({
         placeholder={placeholder}
         disabled={isDisabled}
         rows={rows}
+        required={required || undefined}
+        aria-required={required || undefined}
         aria-invalid={isError || undefined}
         aria-describedby={isError && errorText && id ? `${id}-error` : undefined}
         onFocus={() => setFocused(true)}
@@ -95,6 +98,8 @@ Textarea.propTypes = {
   helperText: PropTypes.string,
   errorText:  PropTypes.string,
   id:         PropTypes.string,
+  /** Champ obligatoire (annoncé aux lecteurs d'écran) */
+  required:   PropTypes.bool,
 };
 
 export default Textarea;

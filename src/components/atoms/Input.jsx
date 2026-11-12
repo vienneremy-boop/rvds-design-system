@@ -12,6 +12,8 @@ export function Input({
   errorText,
   id,
   fullWidth = false,
+  required = false,
+  autoComplete,
 }) {
   const [focused, setFocused] = useState(false);
 
@@ -51,6 +53,9 @@ export function Input({
         readOnly={value !== undefined && !onChange}
         placeholder={placeholder}
         disabled={isDisabled}
+        required={required || undefined}
+        aria-required={required || undefined}
+        autoComplete={autoComplete}
         aria-invalid={isError || undefined}
         aria-describedby={isError && errorText && id ? `${id}-error` : undefined}
         onFocus={() => setFocused(true)}
@@ -97,6 +102,10 @@ Input.propTypes = {
   errorText:  PropTypes.string,
   id:         PropTypes.string,
   fullWidth:  PropTypes.bool,
+  /** Champ obligatoire (annoncé aux lecteurs d'écran) */
+  required:   PropTypes.bool,
+  /** Finalité du champ pour le remplissage automatique (WCAG 1.3.5), ex. name, email */
+  autoComplete: PropTypes.string,
 };
 
 export default Input;
