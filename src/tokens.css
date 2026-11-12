@@ -47,6 +47,7 @@
 
   /* Button surfaces */
   --color-btn-primary-text: #FFFFFF;
+  --color-btn-primary-sweep: #0C364E; /* balayage au survol : bleu profond, texte blanc */
   --color-btn-secondary-bg: #FFFFFF;
   --color-action-row-hover: #EEF2F1;
   --color-btn-secondary-border: var(--color-action-primary);
@@ -241,6 +242,7 @@
   /* Transitions */
   --transition-fast: 120ms ease;
   --transition-base: 200ms ease;
+  --motion-sweep: 500ms cubic-bezier(0.16, 1, 0.3, 1); /* balayage à 60° des boutons */
   --transition-slow: 350ms ease;
 }
 
@@ -281,6 +283,7 @@
 
   /* Button surfaces */
   --color-btn-primary-text: #0C364E;
+  --color-btn-primary-sweep: #F2F2EE; /* sombre : bouton lime, balayage toile, texte bleu */
   --color-btn-secondary-bg: #08283A;
   --color-action-row-hover: #12445F;
   --color-btn-secondary-border: #D7FC41;
@@ -357,3 +360,10 @@
   --shadow-modal: 0 24px 80px rgba(0, 0, 0, 0.75);
 }
 
+
+/* Mouvement réduit : le balayage des boutons devient instantané */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-sweep: 0ms;
+  }
+}

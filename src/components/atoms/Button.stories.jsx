@@ -8,7 +8,7 @@ export default {
     docs: {
       description: {
         component:
-          'Action principale ou secondaire. 3 variants × 3 tailles. Primary = turquoise #07786A, texte blanc (lime en dark). Secondary = contour bleu, fond blanc. Tertiary = ghost. Primary et Secondary portent la coupe du point (coin bas-droit, 60°). Option `arrow` : flèche à droite du libellé.',
+          'Action principale ou secondaire. 3 variants × 3 tailles. Primary = turquoise #07786A, texte blanc (lime en dark). Secondary = contour bleu, fond blanc. Tertiary = ghost. Primary et Secondary portent la coupe du point (coin bas-droit, 60°). Option `arrow` : flèche à droite du libellé.\n\n**Motion (survol et focus clavier).** Primary et Secondary : la couleur de survol balaie le bouton depuis la gauche, en diagonale à 60°, l’angle de la coupe du point. La flèche sort à droite et une seconde flèche revient par la gauche. Durée et courbe : token `--motion-sweep` (500 ms, sortie expo `cubic-bezier(0.16, 1, 0.3, 1)`), ramené à 0 ms sous `prefers-reduced-motion`. Tertiary : simple changement de fond. Pas d’effet magnétique ni de rebond : le bouton reste là où on l’attend.',
       },
     },
   },
@@ -94,4 +94,24 @@ export const AllVariants = {
       ))}
     </div>
   ),
+};
+
+/* Motion : survolez ou tabulez sur chaque bouton pour voir le balayage à 60° et la flèche qui boucle */
+export const Motion = {
+  name: 'Motion (survol et focus)',
+  render: () => (
+    <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', alignItems: 'center' }}>
+      <Button variant="primary" size="large" label="Voir mes études de cas" arrow />
+      <Button variant="secondary" size="large" label="Me contacter" />
+      <Button variant="secondary" size="medium" label="En parler" arrow />
+      <Button variant="tertiary" size="medium" label="Annuler" />
+    </div>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story: 'Survol ou focus clavier : balayage de la couleur de survol en diagonale à 60° (token `--motion-sweep`), flèche qui sort à droite et revient par la gauche. Instantané si l’utilisateur réduit les animations.',
+      },
+    },
+  },
 };

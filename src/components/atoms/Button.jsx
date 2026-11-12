@@ -3,6 +3,9 @@ import { useState } from 'react';
 import { Cut } from './Cut';
 
 // v2 « le point final » : coin bas-droit coupé à 60° (coupe S), Outfit Bold, flèche optionnelle à droite.
+// Motion (survol / focus) : la couleur de survol balaie le bouton depuis la gauche, en diagonale à 60°
+// (l'angle de la coupe) ; la flèche sort à droite et revient par la gauche. Durée et courbe : token --motion-sweep,
+// ramené à 0 si l'utilisateur réduit les animations.
 // Primary = turquoise + texte blanc (lime + texte bleu en dark) | Secondary = contour turquoise, texte bleu, fond blanc | Tertiary = ghost, sans coupe
 const sizeMap = {
   large:  { padding: '16px 24px 16px 22px', fontSize: 'var(--text-base)', gap: '12px', iconSize: '20px' },
@@ -11,10 +14,15 @@ const sizeMap = {
 };
 
 const variantBase = {
-  primary:   { background: 'var(--color-action-primary)', color: 'var(--color-btn-primary-text)', hoverBackground: 'var(--color-action-primary-hover)' },
+  primary:   { background: 'var(--color-action-primary)', color: 'var(--color-btn-primary-text)', hoverBackground: 'var(--color-action-primary-hover)', sweep: 'var(--color-btn-primary-sweep)' },
   secondary: { background: 'var(--color-btn-secondary-bg)', color: 'var(--color-action-deep)', border: 'var(--color-btn-secondary-border)', hoverBackground: 'var(--color-action-row-hover)' },
   tertiary:  { background: 'transparent', color: 'var(--color-action-deep)', hoverBackground: 'var(--color-btn-tertiary-hover)' },
 };
+
+// Balayage à 60° : polygones de même structure, donc animables. décalage de 2em ≈ 0,58 × la hauteur du bouton, soit une pente à 60°.
+const SWEEP_HIDDEN = 'polygon(0 0, 0 0, -2em 100%, -2em 100%)';
+const SWEEP_SHOWN = 'polygon(0 0, calc(100% + 2em) 0, 100% 100%, -2em 100%)';
+const SWEEP_TRANSITION = 'clip-path var(--motion-sweep, 0.5s cubic-bezier(0.16, 1, 0.3, 1))';
 
 export function Arrow({ size = 18 }) {
   return (
@@ -39,27 +47,47 @@ export function Button({
   'aria-label': ariaLabel,
 }) {
   const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
   const { padding, fontSize, gap, iconSize } = sizeMap[size] || sizeMap.large;
   const v = variantBase[variant] || variantBase.primary;
-  const active = hovered && !disabled;
-  const bg = active ? v.hoverBackground : v.background;
+  const active = (hovered || focused) && !disabled;
+  const sweeps = variant !== 'tertiary';
+  // Tertiary garde un simple changement de fond ; Primary et Secondary balaient
+  const bg = sweeps ? v.background : (active ? v.hoverBackground : v.background);
+  const arrowSize = parseInt(iconSize, 10) - 2;
 
   const iconEl = icon ? <span style={{ display: 'flex', alignItems: 'center', fontSize: iconSize }}>{icon}</span> : null;
+  // Flèche : sort à droite, une seconde flèche entre par la gauche
+  const arrowMove = 'transform var(--motion-sweep, 0.5s cubic-bezier(0.16, 1, 0.3, 1))';
   const arrowEl = arrow ? (
-    <span style={{ display: 'flex', transform: active ? 'translateX(3px)' : 'none', transition: 'transform var(--transition-base)' }}>
-      <Arrow size={parseInt(iconSize, 10) - 2} />
+    <span aria-hidden="true" style={{ position: 'relative', display: 'flex', width: arrowSize, height: arrowSize, overflow: 'hidden' }}>
+      <span style={{ display: 'flex', transform: active ? 'translateX(130%)' : 'none', transition: arrowMove }}><Arrow size={arrowSize} /></span>
+      <span style={{ position: 'absolute', inset: 0, display: 'flex', transform: active ? 'none' : 'translateX(-130%)', transition: arrowMove }}><Arrow size={arrowSize} /></span>
     </span>
+  ) : null;
+
+  const sweepEl = sweeps ? (
+    <span
+      aria-hidden="true"
+      style={{
+        position: 'absolute', inset: 0, background: v.sweep || v.hoverBackground,
+        clipPath: active ? SWEEP_SHOWN : SWEEP_HIDDEN, transition: SWEEP_TRANSITION,
+      }}
+    />
   ) : null;
 
   const content = (
     <>
-      {iconPosition === 'left' && iconEl}
-      {label}
-      {iconPosition === 'right' && iconEl}
-      {arrowEl}
+      {sweepEl}
+      <span style={{ position: 'relative', display: 'inline-flex', alignItems: 'center', gap }}>
+        {iconPosition === 'left' && iconEl}
+        {label}
+        {iconPosition === 'right' && iconEl}
+        {arrowEl}
+      </span>
     </>
   );
-  const inner = { alignItems: 'center', justifyContent: 'center', gap, padding, width: '100%', color: v.color, transition: 'background var(--transition-fast)' };
+  const inner = { position: 'relative', alignItems: 'center', justifyContent: 'center', gap, padding, width: '100%', color: v.color, transition: 'background var(--transition-fast)' };
 
   // Avec `href`, le bouton est un vrai lien (navigation, ancre) : même rendu, sémantique <a>.
   const Tag = href ? 'a' : 'button';
@@ -74,6 +102,8 @@ export function Button({
       onClick={disabled ? undefined : onClick}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onFocus={() => setFocused(true)}
+      onBlur={() => setFocused(false)}
       style={{
         display: fullWidth ? 'flex' : 'inline-flex',
         padding: 0,
