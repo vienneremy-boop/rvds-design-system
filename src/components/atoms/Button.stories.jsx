@@ -8,7 +8,7 @@ export default {
     docs: {
       description: {
         component:
-          'Action principale ou secondaire. 3 variants × 3 tailles. Primary = turquoise #07786A, texte blanc (lime en dark). Secondary = contour bleu, fond blanc. Tertiary = ghost. Primary et Secondary portent la coupe du point (coin bas-droit, 60°). Option `arrow` : flèche à droite du libellé.\n\n**Motion (survol et focus clavier).** Primary et Secondary : la couleur de survol balaie le bouton depuis la gauche, en diagonale à 60°, l’angle de la coupe du point. La flèche sort à droite et une seconde flèche revient par la gauche. Durée et courbe : token `--motion-sweep` (500 ms, sortie expo `cubic-bezier(0.16, 1, 0.3, 1)`), ramené à 0 ms sous `prefers-reduced-motion`. Tertiary : simple changement de fond. Pas d’effet magnétique ni de rebond : le bouton reste là où on l’attend.',
+          'Action principale ou secondaire. 3 variants × 3 tailles. Primary = turquoise #07786A, texte blanc (lime en dark). Secondary = contour bleu, fond blanc. Tertiary = ghost. Primary et Secondary portent la coupe du point (coin bas-droit, 60°). Option `arrow` : flèche à droite du libellé.\n\n**Motion (survol et focus clavier).** Primary et Secondary : la couleur de survol (Primary : Turquoise 800, token `--color-btn-primary-sweep`) balaie le bouton depuis la gauche, en diagonale à 60°, l’angle de la coupe du point. La flèche sort à droite et une seconde flèche revient par la gauche. Durée et courbe : token `--motion-sweep` (500 ms, sortie expo `cubic-bezier(0.16, 1, 0.3, 1)`), ramené à 0 ms sous `prefers-reduced-motion`. Tertiary : simple changement de fond. Pas d’effet magnétique ni de rebond : le bouton reste là où on l’attend.',
       },
     },
   },

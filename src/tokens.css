@@ -47,7 +47,7 @@
 
   /* Button surfaces */
   --color-btn-primary-text: #FFFFFF;
-  --color-btn-primary-sweep: #0C364E; /* balayage au survol : bleu profond, texte blanc */
+  --color-btn-primary-sweep: #05564C; /* balayage au survol : Turquoise 800, un cran plus dense que le bouton */
   --color-btn-secondary-bg: #FFFFFF;
   --color-action-row-hover: #EEF2F1;
   --color-btn-secondary-border: var(--color-action-primary);
@@ -283,7 +283,7 @@
 
   /* Button surfaces */
   --color-btn-primary-text: #0C364E;
-  --color-btn-primary-sweep: #F2F2EE; /* sombre : bouton lime, balayage toile, texte bleu */
+  --color-btn-primary-sweep: #E4FD7A; /* sombre : lime un cran plus clair, même logique */
   --color-btn-secondary-bg: #08283A;
   --color-action-row-hover: #12445F;
   --color-btn-secondary-border: #D7FC41;
