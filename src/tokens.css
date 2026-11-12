@@ -215,6 +215,7 @@
   --cut-xs: polygon(0 0, 100% 0, 100% calc(100% - 9px), calc(100% - 5px) 100%, 0 100%);
   --cut-s: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 8px) 100%, 0 100%);
   --cut-m: polygon(0 0, 100% 0, 100% calc(100% - 28px), calc(100% - 16px) 100%, 0 100%);
+  --cut-l: polygon(0 0, 100% 0, 100% calc(100% - 52px), calc(100% - 30px) 100%, 0 100%);
 
   /* Border width — Figma DS tokens */
   --pf-stroke-default: 1px;
