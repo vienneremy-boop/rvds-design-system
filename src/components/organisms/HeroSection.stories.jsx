@@ -32,16 +32,16 @@ export default {
 
 export const Default = {
   args: {
-    badge: 'Disponible 2027',
+    badge: 'Disponible pour mission',
     roleTitle: 'Senior Product Designer × Design Engineer',
     roleLocation: 'Freelance · Lille',
-    eyebrow: 'Expert Retail, B2B & SaaS',
-    titleMain: 'Je transforme la complexité métier en interfaces digitales',
-    titleAccent1: 'fluides',
+    eyebrow: 'Retail, B2B & SaaS',
+    titleMain: 'Transformons vos sites et applications en expériences',
+    titleAccent1: 'claires',
     titleConnector: 'et',
-    titleAccent2: 'performantes',
-    subtitle: "De la conception initiale au lancement du produit, en passant par votre identité visuelle ; Je livre des interfaces mesurables axées sur votre ROI, grâce à un workflow optimisé par l'IA.",
-    primaryCta: 'Découvrez mes projets',
-    secondaryCta: 'Contactez-moi',
+    titleAccent2: 'mémorables',
+    subtitle: "De l'audit au lancement : repérer ce qui bloque vos utilisateurs, repenser leurs parcours, tester avec eux, puis mesurer ce que ça vous rapporte. L'IA accélère chaque étape.",
+    primaryCta: 'Voir mes études de cas',
+    secondaryCta: 'Me contacter',
   },
 };

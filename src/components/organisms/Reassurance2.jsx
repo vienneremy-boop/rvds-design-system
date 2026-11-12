@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 
 const defaultItems = [
-  { label: 'ACCESSIBILITY - WCAG 2.2', sublabel: '98.2% (AA/AAA)' },
-  { label: 'Performance Lighthouse', sublabel: '100/100/100/100' },
-  { label: 'Digital Sobriety', sublabel: '0.12g CO2e / view' },
+  { label: 'ACCESSIBILITÉ - WCAG 2.2 AA', sublabel: 'Pré-audit : 0 erreur automatique' },
+  { label: 'Mode sombre', sublabel: 'Géré par tokens' },
+  { label: 'Mouvement réduit', sublabel: 'Respecté sur tout le site' },
   { label: 'Design Inclusif', sublabel: 'Accessibilité AA WCAG 2.2' },
 ];
 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import './Reassurance.css';
 
 const defaultItems = [
-  { metric: '12 ans', description: 'Design produit - Direction artistique' },
+  { metric: '14 ans', description: 'Design : 8 en print, 6 en product design' },
   { metric: 'IA & MCP workflows', description: '+ 50% de vélocité' },
   { metric: 'Retail, B2B\n& SaaS', description: 'Spécialiste' },
   { metric: 'Design Inclusif', description: 'Accessibilité AA WCAG 2.2' },

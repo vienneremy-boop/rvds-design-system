@@ -48,7 +48,7 @@ export const Default = {
         category: 'DESIGN ENGINEER',
         index: '03',
         title: 'ASES Électricité',
-        description: "Identité visuelle + site web end-to-end via Figma Make. ×2 prospects dès J+7.",
+        description: "Identité visuelle, charte et site web de bout en bout, via Figma Make.",
         tags: ['Branding', 'Web', 'Dev'],
         cta: 'Voir le case',
       },
